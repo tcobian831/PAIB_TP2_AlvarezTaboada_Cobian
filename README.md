@@ -1,4 +1,4 @@
-# TP2 · Caracterización cuantitativa de retinas
+# TP2 · Caracterización cuantitativa, textura y descriptores de retinas
 
 Widget de Napari para las ocho actividades de intensidad, forma, estructura vascular, textura, multiescala, puntos de interés, radiómica y comparación global. Se trabaja por lotes: cada actividad conserva sus regiones y parámetros y recorre las imágenes seleccionadas.
 
