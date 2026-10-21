@@ -220,7 +220,7 @@ class Panel(QWidget):
         for layer in self.roi_layers:
             old=[r for r in self.regions if r['layer_name']==layer.name]
             if len(layer.data)!=len(old):
-                raise ValueError('Para agregar/eliminar figuras, importar un regiones.json con IDs únicos; este guardado conserva las cinco figuras registradas.')
+                raise ValueError('Para agregar/eliminar figuras, importar un regiones.json con IDs únicos; este guardado conserva las figuras registradas.')
             ids=[];kinds=[];backgrounds=[]
             for region in old:
                 row=next(i for i,r in enumerate(self.regions) if r is region)
