@@ -1,15 +1,29 @@
-# Verificación de la versión por lotes
+# Verificación del proyecto
 
-Se mantuvo el entorno fijado por `pixi.lock`: Python 3.9.23, Napari 0.5.6, PyQt5, OpenCV 4.10.0 y PyRadiomics 3.1.0. El lanzador conserva la carga de las cuatro variantes OpenSans desde memoria para evitar el error de acceso por ruta de FreeType en Windows.
+El entorno reproducible está definido en `pixi.toml` y `pixi.lock`.
+Las versiones principales son Python 3.9.23, Napari 0.5.6,
+OpenCV 4.10.0 y PyRadiomics 3.1.0.
 
-Pasaron 14 pruebas: nueve pruebas científicas (estadística y fondo, geometría, esqueletos rectos/cíclicos/ramificados, LBP, Gabor, GLCM independiente, correspondencias identidad, guardado y repetición), más identidad de las cinco ROIs frente a las 65 mediciones de referencia, expansión explícita de barridos, corrección/repetición/reanudación, revisión obligatoria de máscaras y conservación de configuraciones en la matriz global.
+La suite contiene 19 pruebas automatizadas de estadística,
+corrección por fondo, geometría, estructura vascular, textura,
+correspondencias, almacenamiento y reproducción de mediciones.
+También comprueba la persistencia de ROIs, la revisión de máscaras,
+la conservación de configuraciones y las comparaciones globales.
 
-Se ejecutó una prueba integral con las 13 imágenes y los parámetros iniciales: 346 combinaciones de intensidad/textura/multiescala/puntos/radiómica, 39 segmentaciones y 52 mediciones de forma/estructura: 437 operaciones sin errores. La matriz resultante tenía 65 filas y 606 columnas. En el entorno de prueba demoró aproximadamente 151 segundos, incluyendo figuras y consolidación; no es una garantía de tiempo en otro equipo.
+Las pruebas se ejecutan con:
 
-Las máscaras de esa prueba integral se aprobaron de forma sintética únicamente para comprobar el flujo numérico. Esa aprobación NO equivale a revisión anatómica y no se incluye en el proyecto. Los resultados de las pruebas se almacenaron por separado de los datos experimentales. El conjunto de referencia contiene cinco ROIs y 65 mediciones.
+    pixi run --locked test
 
-También se verificó la interfaz con Qt sin pantalla: carga de 13 imágenes y capa Shapes, selección por fila, ejecución real en un hilo secundario y guardado de cinco mediciones, duplicación/edición/guardado de una ROI sin modificar su original, captura visual del panel y creación de láminas de revisión. Se comprobó que la ROI de fondo no se superpone con las otras cuatro.
+El widget se utilizó en Windows para obtener los resultados
+incluidos en el repositorio. El lanzador carga las fuentes
+OpenSans desde memoria para evitar problemas de FreeType
+con determinadas rutas de Windows.
 
-El entorno de ejecución de estas pruebas es Linux sin pantalla OpenGL interactiva. No se afirma haber probado la ventana con un controlador gráfico de Windows. El arranque gráfico debe verificarse en su equipo al ejecutar `pixi run --locked widget`.
+Cada medición conserva sus parámetros, características,
+geometría de la ROI y referencias a las imágenes y máscaras
+utilizadas. La selección de mediciones de la matriz global
+queda documentada en los archivos de la actividad 8.
 
-Los límites metodológicos se documentan en `definiciones.md` y `cobertura.md`. Las regiones se delinearon manualmente; sus identificadores no constituyen validación de nomenclatura anatómica. Las segmentaciones automáticas nuevas requieren revisión antes de medir vasos. Las tablas de correlación y sensibilidad son descriptivas y no inferencia entre pacientes independientes.
+Las pruebas numéricas no sustituyen la evaluación visual
+de las segmentaciones. Sus limitaciones y las convenciones
+de cálculo se describen en `definiciones.md`.

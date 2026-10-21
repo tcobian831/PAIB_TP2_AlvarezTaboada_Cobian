@@ -70,7 +70,7 @@ La matriz conserva configuraciones por separado. Dentro de intensidad usa la úl
 - `scripts/`: comprobación del entorno, reproducción de mediciones y exportación de matriz sin abrir Napari.
 - `tests/`: verificaciones numéricas y de identidad de ROIs, reanudación, fondo, revisión de máscaras y conservación de configuraciones. Ejecutar `pixi run --locked test`.
 
-El código documenta cada función. El informe de análisis se escribe después de revisar los resultados y debe respetar el máximo de tres páginas. No hay informe experimental prefabricado.
+El código documenta cada función. El informe de análisis se escribe después de revisar los resultados.
 
 ## GitHub
 

@@ -12,7 +12,7 @@ Intensidad integrada = suma de intensidades de la ROI. Integrada corregida = sum
 
 Convex hull: máscara convexa de la región; solidity = área/área_convexa. Extent = área/área de bounding box alineada con ejes. Feret máximo: distancia máxima entre puntos del hull del contorno de marching squares a 0.5; Feret mínimo: mínimo ancho entre rectas soporte paralelas del mismo hull. Ambos son una convención digital explícita y no se sustituyen por los ejes de la elipse.
 
-Conectividad del objeto: 8. Número de Euler con foreground 8-conexo/background 4-conexo; agujeros = componentes−Euler. Por defecto se mide la unión de la máscara; el control de separación crea una medición por componente, con su ID propio. La geometría de una ROI rectangular de textura describe el recorte, no la anatomía vascular.
+Conectividad del objeto: 8. Número de Euler con foreground 8-conexo/background 4-conexo; agujeros = componentes−Euler. En la interfaz por lotes se mide la unión de los píxeles de la máscara vascular dentro de cada ROI. La geometría de una ROI rectangular de textura describe el recorte, no la anatomía vascular.
 
 ## Segmentación y estructura
 
@@ -32,7 +32,7 @@ Los recortes de ROI pueden crear extremos artificiales: se informan los extremos
 
 LBP circular sobre valores nativos flotantes; P muestras, R px, interpolación de scikit-image. `uniform` corresponde a riu2: patrones con <=2 transiciones se etiquetan por cantidad de unos, los demás como P+1. Histograma de P+2 categorías normalizado. `default`: 2^P categorías; `ror`: mínimo código bajo rotación circular, sin agrupar todos los no uniformes. Se limita P crudo/ror a 12 para evitar histogramas enormes. Solo se incluyen centros cuyas muestras y soportes de interpolación bilineal están contenidos en la ROI y en la imagen. Se guarda la máscara de soporte efectiva.
 
-Gabor complejo con kernel de media cero y norma L2 uno, imagen/255, extensión gaussiana de tres sigmas y bordes reflectantes. Energía = media(|respuesta compleja|²) en la ROI. θ es la **normal de las franjas** (dirección de oscilación), no su eje longitudinal. λ en px, frecuencia=1/λ; sigma=sigma_ratio·λ; sigma_y=sigma/gamma. Se conserva toda la respuesta de magnitud en NPZ. Las unidades de energía dependen de esta normalización fija, por eso no se comparan con otra implementación sin revisarla.
+Gabor complejo con kernel de media cero y norma L2 uno, imagen/255, extensión gaussiana de tres sigmas y bordes reflectantes. Energía = media(|respuesta compleja|²) en la ROI. θ es la **normal de las franjas** (dirección de oscilación), no su eje longitudinal. λ en px, frecuencia=1/λ; sigma=sigma_ratio·λ; sigma_y=sigma/gamma. El mapa completo de magnitud se guarda en NPZ cuando se activa el guardado de todos los mapas completos. Las características y la figura se guardan en ambos casos. Las unidades de energía dependen de esta normalización fija, por eso no se comparan con otra implementación sin revisarla.
 
 Wavelet: `wavedec2`, modo simétrico, familia y nivel explícitos. LL del nivel máximo y detalles H,V,D de cada nivel (convención de PyWavelets). El soporte de coeficientes se selecciona al remapear la máscara a la grilla de cada subbanda por vecino próximo. Se mide media, desviación, energía media, valor absoluto medio y extremos. No es una selección exacta de wavelets totalmente contenidas: coeficientes cerca del borde de ROI incluyen contexto externo. Wavelet discreta es sensible a traslaciones; no se afirma invariancia.
 
@@ -40,7 +40,7 @@ Gabor, Wavelet y filtros de escala se calculan en la **imagen completa**, y se r
 
 ## Escala
 
-Gauss = G_sigma*I. LoG normalizado = sigma²·laplaciano(G_sigma*I). DoG = G_(k sigma)*I−G_sigma*I, k>1. Cada escala produce un mapa y medidas con signo, magnitud y energía. Una respuesta absoluta media por ROI no es automáticamente la escala exacta de cada vaso: se deben inspeccionar también mapas y estructuras finas/gruesas.
+Gauss = G*sigma*I. LoG normalizado = sigma²·laplaciano(G_sigma*I). DoG = G*(k sigma)*I−G_sigma*I, k>1. Cada escala produce un mapa y medidas con signo, magnitud y energía. Una respuesta absoluta media por ROI no es automáticamente la escala exacta de cada vaso: se deben inspeccionar también mapas y estructuras finas/gruesas.
 
 ## Puntos y correspondencias
 

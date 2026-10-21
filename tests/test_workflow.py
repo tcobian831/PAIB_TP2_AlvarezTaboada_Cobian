@@ -13,7 +13,7 @@ REGIONS=PROJECT/'rois/seleccion_final/regiones.json'
 
 
 def test_user_regions_and_snapshots():
-    """Las cinco figuras recibidas conservan las máscaras de las 65 mediciones originales."""
+    """Las ROIs originales conservan sus máscaras y coordenadas."""
     payload,regions=wf.load_regions(REGIONS)
     records=read_records(PROJECT/'resultados')
     # Las copias añadidas para sensibilidad y los cambios de nombre son válidos.
