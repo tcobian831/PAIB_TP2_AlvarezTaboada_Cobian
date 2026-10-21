@@ -1,0 +1,88 @@
+{
+  "imagen_id": "Retina4",
+  "variante": "corregida",
+  "roi_id": "vaso_grueso",
+  "capa_imagen": "Retina4_wiener",
+  "capa_region": "Shapes",
+  "indice_region": 1,
+  "roi_geometria": {
+    "shape_type": "rectangle",
+    "vertices_fila_columna": [
+      [
+        31.113821029663086,
+        174.10911560058594
+      ],
+      [
+        31.113821029663086,
+        221.5545654296875
+      ],
+      [
+        60.108253479003906,
+        221.5545654296875
+      ],
+      [
+        60.108253479003906,
+        174.10911560058594
+      ]
+    ]
+  },
+  "fuente": {
+    "case_id": "Retina4",
+    "variant": "corregida",
+    "layer_name": "Retina4_wiener",
+    "path": "data/procesadas/Retina4_wiener.tif",
+    "crop": null,
+    "sha256": "edb6cf5bdb2781b386117f540a28ceff43db9185b59cb1e68b0899b1810126f6",
+    "original_source": "resultados/imagenes_procesadas/Retina4_wiener.tif",
+    "source_blob_sha": "c5d41e1807216345fbf29b7a97d3c15864e98039"
+  },
+  "propiedad": "",
+  "justificacion": "",
+  "coordinate_frame": "row,col; px; matriz visible sin transformaciones",
+  "imagen_snapshot": "insumos/imagen_88201fdb7320e2044df8.tif",
+  "imagen_hash": "88201fdb7320e2044df8a44b20daf6acb536ea959bdba22f9bf5896e0000d011",
+  "roi_snapshot": "insumos/roi_315bf8fe78e19a8b389e.tif",
+  "roi_hash": "315bf8fe78e19a8b389ea19163aa139804363844d9ecaa38f3ce048a4187b65a",
+  "medicion_id": "0649574f8a9a4a27",
+  "actividad": "01_intensidad",
+  "parametros": {
+    "percentiles": [
+      1.0,
+      5.0,
+      10.0,
+      25.0,
+      50.0,
+      75.0,
+      90.0,
+      95.0,
+      99.0
+    ]
+  },
+  "caracteristicas": {
+    "n_pixeles": 1363,
+    "media": 71.58926097123819,
+    "mediana": 80.09086939725448,
+    "desviacion": 19.318651661479624,
+    "varianza": 373.2103020175894,
+    "minimo": 24.461166605783387,
+    "maximo": 102.26472149072117,
+    "iqr": 29.164205393690025,
+    "mad": 7.250363644024418,
+    "asimetria": -0.9267605692556501,
+    "curtosis_pearson": 2.45367310517502,
+    "intensidad_integrada": 97576.16270379766,
+    "p1": 27.900346949778964,
+    "p5": 33.23289775072169,
+    "p10": 38.651686736128646,
+    "p25": 56.24914954175739,
+    "p50": 80.09086939725448,
+    "p75": 85.41335493544742,
+    "p90": 89.34740201947383,
+    "p95": 92.09182688756307,
+    "p99": 95.11385166916845,
+    "media_fondo": null,
+    "media_corregida_fondo": null,
+    "intensidad_integrada_corregida": null
+  },
+  "registro_json": "mediciones/0649574f8a9a4a27/medicion.json"
+}

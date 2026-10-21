@@ -1,0 +1,97 @@
+{
+  "imagen_id": "Retina1_2",
+  "variante": "realzada",
+  "roi_id": "region_ramificada",
+  "capa_imagen": "Retina2_gaussiano_clahe",
+  "capa_region": "Shapes",
+  "indice_region": 4,
+  "roi_geometria": {
+    "shape_type": "rectangle",
+    "vertices_fila_columna": [
+      [
+        335.555419921875,
+        122.70988464355469
+      ],
+      [
+        335.555419921875,
+        371.79852294921875
+      ],
+      [
+        422.5386047363281,
+        371.79852294921875
+      ],
+      [
+        422.5386047363281,
+        122.70988464355469
+      ]
+    ]
+  },
+  "fuente": {
+    "case_id": "Retina1_2",
+    "variant": "realzada",
+    "layer_name": "Retina2_gaussiano_clahe",
+    "path": "data/procesadas/Retina2_gaussiano_clahe.tif",
+    "crop": null,
+    "sha256": "104e9f927137c2592f1adea1c70eb1984c7292d8600c934d78af376dd15d79f5",
+    "original_source": "resultados/imagenes_procesadas/Retina2_gaussiano_clahe.tif",
+    "source_blob_sha": "1ceb86178f20a2406457b0a6ed003adfaadcceb4"
+  },
+  "coordinate_frame": "row,col; px; sin transformaciones",
+  "propiedad": "",
+  "justificacion": "Comparación de la geometría de máscaras automáticas con parámetros comunes por ROI. Algunas versiones presentan falsos positivos y pérdidas de ramas; sus medidas incluyen errores de segmentación.",
+  "parametros_solicitados": {},
+  "actividad_solicitada": "02_geometria",
+  "segmentacion": {
+    "imagen": "Retina2_gaussiano_clahe",
+    "imagen_hash": "867cda7443fb997739e6b12241643d6de1047c10c5f84853826cb4965f85c5f5",
+    "roi_id": "region_ramificada",
+    "roi_hash": "a14a212b431aacb1d507d6c034863259d923e8961fc596af36c99b47a4dec7db",
+    "archivo_mascara": "mascara_2f5cea4695367eeb270b.tif",
+    "mascara_hash": "2f5cea4695367eeb270b18f7ad9adc21b090e7ce55f0245c2a1f55554432e237",
+    "parametros": {
+      "sigmas": [
+        1,
+        2,
+        3
+      ],
+      "threshold": 0.025,
+      "min_size": 20,
+      "closing": 1,
+      "fill_holes": 0
+    },
+    "umbral_efectivo": 0.025,
+    "aprobada": true,
+    "editada_manualmente": false,
+    "nota_revision": "Revisada visualmente por el usuario"
+  },
+  "firma_lote": "85ebaa20fc2547e5ff07434de0e73079e7920925211ce751097716e13f2e1643",
+  "mapas_completos_guardados": false,
+  "imagen_snapshot": "insumos/imagen_867cda7443fb997739e6.tif",
+  "imagen_hash": "867cda7443fb997739e6b12241643d6de1047c10c5f84853826cb4965f85c5f5",
+  "roi_snapshot": "insumos/roi_a14a212b431aacb1d507.tif",
+  "roi_hash": "a14a212b431aacb1d507d6c034863259d923e8961fc596af36c99b47a4dec7db",
+  "medicion_id": "55dc9931994048e8",
+  "actividad": "02_geometria",
+  "parametros": {},
+  "caracteristicas": {
+    "area_px2": 2613.0,
+    "perimetro_px": 1799.9243114977567,
+    "centroide_fila_px": 382.95828549559894,
+    "centroide_columna_px": 255.84500574052814,
+    "circularidad": 0.010135397542059233,
+    "eje_mayor_px": 260.5330055315284,
+    "eje_menor_px": 87.45190346405633,
+    "orientacion_grados": -82.52673155173832,
+    "excentricidad": 0.9419813003956444,
+    "area_convexa_px2": 19469.0,
+    "solidity": 0.13421336483640658,
+    "extent": 0.12062041268522365,
+    "feret_max_px": 251.88290930509754,
+    "feret_min_px": 87.0,
+    "componentes": 10,
+    "euler": 10,
+    "agujeros": 0
+  },
+  "vasos_snapshot": "insumos/vasos_2f5cea4695367eeb270b.tif",
+  "matrices": "matrices.npz"
+}

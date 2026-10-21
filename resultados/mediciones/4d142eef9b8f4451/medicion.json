@@ -1,0 +1,102 @@
+{
+  "imagen_id": "Retina6",
+  "variante": "original",
+  "roi_id": "region_ramificada",
+  "capa_imagen": "Retina6_degradada",
+  "capa_region": "Shapes",
+  "indice_region": 4,
+  "roi_geometria": {
+    "shape_type": "rectangle",
+    "vertices_fila_columna": [
+      [
+        335.555419921875,
+        122.70988464355469
+      ],
+      [
+        335.555419921875,
+        371.79852294921875
+      ],
+      [
+        422.5386047363281,
+        371.79852294921875
+      ],
+      [
+        422.5386047363281,
+        122.70988464355469
+      ]
+    ]
+  },
+  "fuente": {
+    "case_id": "Retina6",
+    "variant": "original",
+    "layer_name": "Retina6_degradada",
+    "path": "data/originales/Retina6.png",
+    "crop": [
+      10,
+      549,
+      10,
+      549
+    ],
+    "sha256": "27d894c4ad5ccb2022661afc5b3c5890d9ffa5b5faaccf13e7e3e5b0498d978d",
+    "original_source": "data/Retina6.png",
+    "source_blob_sha": "d115aa54be01390e987d60673b88a74f8d0ff773"
+  },
+  "coordinate_frame": "row,col; px; sin transformaciones",
+  "propiedad": "",
+  "justificacion": "Análisis estructural de las máscaras automáticas revisadas, sin poda. Los extremos y bifurcaciones pueden incluir errores de segmentación y cortes en el borde de la ROI.",
+  "parametros_solicitados": {
+    "calculate_thickness": true,
+    "prune_length": 0.0
+  },
+  "actividad_solicitada": "03_estructura",
+  "segmentacion": {
+    "imagen": "Retina6_degradada",
+    "imagen_hash": "f865eed5440cf0d3f7a0bf5388ca3e507d2975a34f13c6db764de15f567033ae",
+    "roi_id": "region_ramificada",
+    "roi_hash": "a14a212b431aacb1d507d6c034863259d923e8961fc596af36c99b47a4dec7db",
+    "archivo_mascara": "mascara_4183bf156ac14b4a1fbb.tif",
+    "mascara_hash": "4183bf156ac14b4a1fbb5e5b012befa7b32532cf6e6c97e8dea8e4891893c2ab",
+    "parametros": {
+      "sigmas": [
+        1,
+        2,
+        3
+      ],
+      "threshold": 0.025,
+      "min_size": 20,
+      "closing": 1,
+      "fill_holes": 0
+    },
+    "umbral_efectivo": 0.025,
+    "aprobada": true,
+    "editada_manualmente": false,
+    "nota_revision": "Revisada visualmente por el usuario"
+  },
+  "firma_lote": "94cbfd0f920c32ca4e32e830783ae4c4528655109c36691a9c38b0bb400ea605",
+  "mapas_completos_guardados": true,
+  "imagen_snapshot": "insumos/imagen_f865eed5440cf0d3f7a0.tif",
+  "imagen_hash": "f865eed5440cf0d3f7a0bf5388ca3e507d2975a34f13c6db764de15f567033ae",
+  "roi_snapshot": "insumos/roi_a14a212b431aacb1d507.tif",
+  "roi_hash": "a14a212b431aacb1d507d6c034863259d923e8961fc596af36c99b47a4dec7db",
+  "medicion_id": "4d142eef9b8f4451",
+  "actividad": "03_estructura",
+  "parametros": {
+    "prune_length": 0.0,
+    "calculate_thickness": true
+  },
+  "caracteristicas": {
+    "area_vascular_px2": 2553,
+    "longitud_esqueleto_px": 926.2224381515889,
+    "n_extremos": 44,
+    "n_bifurcaciones": 25,
+    "n_ramas": 60,
+    "diametro_edt_eje_medio_px": 3.0996917584764456,
+    "diametro_edt_eje_mediana_px": 2.8284271247461903,
+    "espesor_local_medio_px": 3.9924473832421192,
+    "espesor_local_max_px": 6.324555320336759,
+    "tortuosidad_media": 1.0814744898422624,
+    "n_extremos_cerca_borde_roi": 14
+  },
+  "vasos_snapshot": "insumos/vasos_4183bf156ac14b4a1fbb.tif",
+  "matrices": "matrices.npz"
+}

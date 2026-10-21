@@ -1,0 +1,23 @@
+{
+  "imagen": "Retina7_gris_mediana",
+  "imagen_hash": "9cad5008b9702641a9eed51648d8ff047fd0337818208c3b09ab70cb5826a312",
+  "roi_id": "vaso_grueso",
+  "roi_hash": "315bf8fe78e19a8b389ea19163aa139804363844d9ecaa38f3ce048a4187b65a",
+  "archivo_mascara": "mascara_d0e63ddc5bf3aaa1aea2.tif",
+  "mascara_hash": "d0e63ddc5bf3aaa1aea2b32d0627798b3ce9659707b83a6aaf212cf2c3a18918",
+  "parametros": {
+    "sigmas": [
+      2,
+      3,
+      4
+    ],
+    "threshold": null,
+    "min_size": 20,
+    "closing": 0,
+    "fill_holes": 0
+  },
+  "umbral_efectivo": 0.1575096616920456,
+  "aprobada": false,
+  "editada_manualmente": false,
+  "nota_revision": ""
+}

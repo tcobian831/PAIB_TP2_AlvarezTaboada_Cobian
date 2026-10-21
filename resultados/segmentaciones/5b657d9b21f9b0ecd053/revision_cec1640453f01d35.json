@@ -1,0 +1,22 @@
+{
+  "imagen": "Retina4_wiener",
+  "imagen_hash": "88201fdb7320e2044df8a44b20daf6acb536ea959bdba22f9bf5896e0000d011",
+  "roi_id": "vaso_fino",
+  "roi_hash": "8ed059aaf347372ac3abc802070d2416e44e88128cbdb12c5ec898c943371b20",
+  "archivo_mascara": "mascara_a84db8648a982e32b44a.tif",
+  "mascara_hash": "a84db8648a982e32b44a09d6fd812f2d1b8c886117c69f9295533e37450d3534",
+  "parametros": {
+    "sigmas": [
+      2,
+      3
+    ],
+    "threshold": null,
+    "min_size": 20,
+    "closing": 0,
+    "fill_holes": 0
+  },
+  "umbral_efectivo": 0.0688818734259483,
+  "aprobada": false,
+  "editada_manualmente": false,
+  "nota_revision": ""
+}

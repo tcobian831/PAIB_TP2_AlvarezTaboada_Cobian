@@ -1,0 +1,134 @@
+{
+  "imagen_id": "Retina7",
+  "variante": "corregida",
+  "roi_id": "region_ramificada",
+  "capa_imagen": "Retina7_gris_mediana",
+  "capa_region": "Shapes",
+  "indice_region": 4,
+  "roi_geometria": {
+    "shape_type": "rectangle",
+    "vertices_fila_columna": [
+      [
+        335.555419921875,
+        122.70988464355469
+      ],
+      [
+        335.555419921875,
+        371.79852294921875
+      ],
+      [
+        422.5386047363281,
+        371.79852294921875
+      ],
+      [
+        422.5386047363281,
+        122.70988464355469
+      ]
+    ]
+  },
+  "fuente": {
+    "case_id": "Retina7",
+    "variant": "corregida",
+    "layer_name": "Retina7_gris_mediana",
+    "path": "data/procesadas/Retina7_gris_mediana.tif",
+    "crop": null,
+    "sha256": "236bd7b8448c95db5ab7141fc9126536b6d542e551579f46b8fdd7b876797146",
+    "original_source": "resultados/imagenes_procesadas/Retina7_gris_mediana.tif",
+    "source_blob_sha": "1bed9ee6fe7b9c0f8427b4e68759331ab610fc32"
+  },
+  "coordinate_frame": "row,col; px; sin transformaciones",
+  "propiedad": "Detección y correspondencia de puntos de interés en la región vascular ramificada.",
+  "justificacion": "Comparación de Harris, SIFT y ORB entre cada versión procesada y su original, utilizando la misma ROI y parámetros comunes para evaluar estabilidad y correspondencias.",
+  "parametros_solicitados": {
+    "max_points": 500,
+    "ratio": 0.75,
+    "mutual": true,
+    "tolerance": 3,
+    "low": 0,
+    "high": 255,
+    "harris_k": 0.04,
+    "harris_threshold": 0.01,
+    "min_distance": 5,
+    "harris_block": 3,
+    "harris_size": 3,
+    "subpixel": true,
+    "sift_contrast": 0.04,
+    "sift_edge": 10,
+    "sift_sigma": 1.6,
+    "orb_scale": 1.2,
+    "orb_levels": 8,
+    "orb_fast": 20,
+    "orb_patch": 31,
+    "method": "ORB"
+  },
+  "actividad_solicitada": "06_puntos",
+  "imagen_b_fuente": {
+    "case_id": "Retina7",
+    "variant": "original",
+    "layer_name": "Retina7_degradada",
+    "path": "data/originales/Retina7.png",
+    "crop": [
+      10,
+      549,
+      10,
+      549
+    ],
+    "sha256": "07032a2f84b48f481732efe690212e53af125af359360ad0e8c5296aa7aa4d6e",
+    "original_source": "data/Retina7.png",
+    "source_blob_sha": "acdade2234891593830178256a05b4a01f83a425"
+  },
+  "firma_lote": "b5cd5323aedcd11ae3abf962dabcb0e4e28a0820edb1f952f7abbc94d2d59074",
+  "mapas_completos_guardados": false,
+  "imagen_snapshot": "insumos/imagen_9cad5008b9702641a9ee.tif",
+  "imagen_hash": "9cad5008b9702641a9eed51648d8ff047fd0337818208c3b09ab70cb5826a312",
+  "roi_snapshot": "insumos/roi_a14a212b431aacb1d507.tif",
+  "roi_hash": "a14a212b431aacb1d507d6c034863259d923e8961fc596af36c99b47a4dec7db",
+  "medicion_id": "68c78faea5ed4b2e",
+  "actividad": "06_puntos",
+  "parametros": {
+    "method": "ORB",
+    "max_points": 500,
+    "low": 0,
+    "high": 255,
+    "harris_k": 0.04,
+    "harris_threshold": 0.01,
+    "min_distance": 5,
+    "harris_block": 3,
+    "harris_size": 3,
+    "subpixel": true,
+    "sift_contrast": 0.04,
+    "sift_edge": 10,
+    "sift_sigma": 1.6,
+    "orb_scale": 1.2,
+    "orb_levels": 8,
+    "orb_fast": 20,
+    "orb_patch": 31,
+    "ratio": 0.75,
+    "mutual": true,
+    "tolerance": 3,
+    "descriptor": "ORB rBRIEF 256 bits",
+    "modelo_geometrico": "identidad; imágenes del pool alineadas"
+  },
+  "caracteristicas": {
+    "n_puntos_a": 6,
+    "n_puntos_b": 296,
+    "densidad_a_por_1000px": 0.27696994876055947,
+    "densidad_b_por_1000px": 13.663850805520934,
+    "n_correspondencias": 2,
+    "n_compatibles_posicion": 2,
+    "fraccion_compatibles": 1.0,
+    "error_mediano_px": 0.0,
+    "repetibilidad_espacial": 1.0,
+    "n_a_cuadrante_00": 0,
+    "n_a_cuadrante_01": 0,
+    "n_a_cuadrante_10": 3,
+    "n_a_cuadrante_11": 3,
+    "n_b_cuadrante_00": 0,
+    "n_b_cuadrante_01": 0,
+    "n_b_cuadrante_10": 162,
+    "n_b_cuadrante_11": 134
+  },
+  "imagen_b_snapshot": "insumos/imagen_e86157795d3cf31318c7.tif",
+  "imagen_b_hash": "e86157795d3cf31318c74089a8abc0ce821b40c157f20027fad9aa60a164a47d",
+  "matrices": "matrices.npz"
+}

@@ -1,0 +1,88 @@
+{
+  "imagen_id": "Retina5",
+  "variante": "corregida",
+  "roi_id": "vaso_fino",
+  "capa_imagen": "Retina5_notch",
+  "capa_region": "Shapes",
+  "indice_region": 2,
+  "roi_geometria": {
+    "shape_type": "rectangle",
+    "vertices_fila_columna": [
+      [
+        303.92510986328125,
+        403.4287414550781
+      ],
+      [
+        303.92510986328125,
+        437.6948547363281
+      ],
+      [
+        360.5960388183594,
+        437.6949462890625
+      ],
+      [
+        360.59613037109375,
+        403.42877197265625
+      ]
+    ]
+  },
+  "fuente": {
+    "case_id": "Retina5",
+    "variant": "corregida",
+    "layer_name": "Retina5_notch",
+    "path": "data/procesadas/Retina5_notch.tif",
+    "crop": null,
+    "sha256": "7237c76af0f1f3fe7cf143679d3f5e05ecb002dc951443c508c9479196f86bc0",
+    "original_source": "resultados/imagenes_procesadas/Retina5_notch.tif",
+    "source_blob_sha": "e2a7e17911fa758713dd4055afb1a0352b6e70dc"
+  },
+  "propiedad": "",
+  "justificacion": "",
+  "coordinate_frame": "row,col; px; matriz visible sin transformaciones",
+  "imagen_snapshot": "insumos/imagen_fe17e1ef28c33151b5eb.tif",
+  "imagen_hash": "fe17e1ef28c33151b5ebf0315aafbb418fb4929ae7d4a9f4b9d643310ab0e691",
+  "roi_snapshot": "insumos/roi_8ed059aaf347372ac3ab.tif",
+  "roi_hash": "8ed059aaf347372ac3abc802070d2416e44e88128cbdb12c5ec898c943371b20",
+  "medicion_id": "ff6727de0c6c460c",
+  "actividad": "01_intensidad",
+  "parametros": {
+    "percentiles": [
+      1.0,
+      5.0,
+      10.0,
+      25.0,
+      50.0,
+      75.0,
+      90.0,
+      95.0,
+      99.0
+    ]
+  },
+  "caracteristicas": {
+    "n_pixeles": 1938,
+    "media": 72.78727510756612,
+    "mediana": 73.4577131512406,
+    "desviacion": 5.595366345646603,
+    "varianza": 31.308124541994626,
+    "minimo": 52.74356804367268,
+    "maximo": 89.09950482033653,
+    "iqr": 6.614014885817937,
+    "mad": 3.336248893784486,
+    "asimetria": -0.9699417061166592,
+    "curtosis_pearson": 4.345949300271545,
+    "intensidad_integrada": 141061.73915846314,
+    "p1": 55.08452925992381,
+    "p5": 61.237914460028335,
+    "p10": 66.05928358679971,
+    "p25": 70.05188418898518,
+    "p50": 73.4577131512406,
+    "p75": 76.66589907480312,
+    "p90": 78.94697777613042,
+    "p95": 80.47896537252653,
+    "p99": 82.51010752858664,
+    "media_fondo": null,
+    "media_corregida_fondo": null,
+    "intensidad_integrada_corregida": null
+  },
+  "registro_json": "mediciones/ff6727de0c6c460c/medicion.json"
+}

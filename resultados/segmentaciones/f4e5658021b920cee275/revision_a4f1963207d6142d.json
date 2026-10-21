@@ -1,0 +1,23 @@
+{
+  "imagen": "Retina4_degradada",
+  "imagen_hash": "092adc95b00229756b2861f19047f1d3e753bc73a4a96f1538d2df8550c5ffa1",
+  "roi_id": "vaso_fino",
+  "roi_hash": "8ed059aaf347372ac3abc802070d2416e44e88128cbdb12c5ec898c943371b20",
+  "archivo_mascara": "mascara_3d9b91cce463d4fb78c6.tif",
+  "mascara_hash": "3d9b91cce463d4fb78c6a0f59324a58d6b19cb09e64024c2fa152505db5eb6be",
+  "parametros": {
+    "sigmas": [
+      1,
+      2,
+      3
+    ],
+    "threshold": null,
+    "min_size": 20,
+    "closing": 0,
+    "fill_holes": 0
+  },
+  "umbral_efectivo": 0.09003162357963287,
+  "aprobada": false,
+  "editada_manualmente": false,
+  "nota_revision": ""
+}

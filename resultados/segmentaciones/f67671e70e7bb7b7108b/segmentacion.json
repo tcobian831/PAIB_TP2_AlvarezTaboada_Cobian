@@ -1,0 +1,23 @@
+{
+  "imagen": "Retina5_degradada",
+  "imagen_hash": "0e8667246b0c635a34e351cad973e31e68496ca21a84dcef49d23a96a69f365f",
+  "roi_id": "vaso_grueso",
+  "roi_hash": "315bf8fe78e19a8b389ea19163aa139804363844d9ecaa38f3ce048a4187b65a",
+  "archivo_mascara": "mascara_5d582bc4350239ea9443.tif",
+  "mascara_hash": "5d582bc4350239ea94430148e5c642c4294f68662e1d606d9c6cb074ee45e6fa",
+  "parametros": {
+    "sigmas": [
+      2,
+      3,
+      4
+    ],
+    "threshold": null,
+    "min_size": 20,
+    "closing": 0,
+    "fill_holes": 0
+  },
+  "umbral_efectivo": 0.15870358948890503,
+  "aprobada": true,
+  "editada_manualmente": false,
+  "nota_revision": "Revisada visualmente por el usuario"
+}

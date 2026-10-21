@@ -1,0 +1,69 @@
+{
+  "imagen_id": "Retina6",
+  "variante": "intermedia",
+  "roi_id": "region_ramificada",
+  "capa_imagen": "Retina6_kernel_de_gran_escala",
+  "capa_region": "Shapes",
+  "indice_region": 4,
+  "roi_geometria": {
+    "shape_type": "rectangle",
+    "vertices_fila_columna": [
+      [
+        335.555419921875,
+        122.70988464355469
+      ],
+      [
+        335.555419921875,
+        371.79852294921875
+      ],
+      [
+        422.5386047363281,
+        371.79852294921875
+      ],
+      [
+        422.5386047363281,
+        122.70988464355469
+      ]
+    ]
+  },
+  "fuente": {
+    "case_id": "Retina6",
+    "variant": "intermedia",
+    "layer_name": "Retina6_kernel_de_gran_escala",
+    "path": "data/procesadas/Retina6_kernel_de_gran_escala.tif",
+    "crop": null,
+    "sha256": "0b56b387ba06dc8a3df5282be83821cd76f2bf9133fc9a0baa22683ae2c4a4d3",
+    "original_source": "resultados/imagenes_procesadas/Retina6_kernel_de_gran_escala.tif",
+    "source_blob_sha": "d6cd61d8114c7bd321022ac294966952ae77c4f4"
+  },
+  "coordinate_frame": "row,col; px; sin transformaciones",
+  "propiedad": "",
+  "justificacion": "Comparación de la textura del fondo y de una región vascular mediante configuraciones comunes entre versiones de la imagen.",
+  "parametros_solicitados": {
+    "method": "uniform",
+    "points": 24,
+    "radius": 3.0
+  },
+  "actividad_solicitada": "04_lbp",
+  "firma_lote": "8235f016450cb9fd2edc691cc951ec5d016916f9ae99ec39ffa896aff679cc4d",
+  "mapas_completos_guardados": false,
+  "imagen_snapshot": "insumos/imagen_aca97fc7d23ea7974335.tif",
+  "imagen_hash": "aca97fc7d23ea797433573a2178964ef4f0b62a75f8d6042ee8ea2d574d80c4b",
+  "roi_snapshot": "insumos/roi_a14a212b431aacb1d507.tif",
+  "roi_hash": "a14a212b431aacb1d507d6c034863259d923e8961fc596af36c99b47a4dec7db",
+  "medicion_id": "54c8a4c525d8413d",
+  "actividad": "04_lbp",
+  "parametros": {
+    "points": 24,
+    "radius": 3.0,
+    "method": "uniform"
+  },
+  "caracteristicas": {
+    "lbp_n_muestras": 19683,
+    "lbp_categorias": 26,
+    "lbp_entropia": 3.562482188492677,
+    "lbp_uniformidad": 0.19224302047690617,
+    "lbp_categoria_moda": 25
+  },
+  "matrices": "matrices.npz"
+}

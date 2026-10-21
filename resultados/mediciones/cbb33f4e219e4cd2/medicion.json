@@ -1,0 +1,74 @@
+{
+  "imagen_id": "Retina6",
+  "variante": "original",
+  "roi_id": "fondo",
+  "capa_imagen": "Retina6_degradada",
+  "capa_region": "Shapes",
+  "indice_region": 3,
+  "roi_geometria": {
+    "shape_type": "rectangle",
+    "vertices_fila_columna": [
+      [
+        154.9991455078125,
+        444.2845458984375
+      ],
+      [
+        154.9991455078125,
+        493.0479431152344
+      ],
+      [
+        180.0398406982422,
+        493.0479431152344
+      ],
+      [
+        180.0398406982422,
+        444.2845458984375
+      ]
+    ]
+  },
+  "fuente": {
+    "case_id": "Retina6",
+    "variant": "original",
+    "layer_name": "Retina6_degradada",
+    "path": "data/originales/Retina6.png",
+    "crop": [
+      10,
+      549,
+      10,
+      549
+    ],
+    "sha256": "27d894c4ad5ccb2022661afc5b3c5890d9ffa5b5faaccf13e7e3e5b0498d978d",
+    "original_source": "data/Retina6.png",
+    "source_blob_sha": "d115aa54be01390e987d60673b88a74f8d0ff773"
+  },
+  "coordinate_frame": "row,col; px; sin transformaciones",
+  "propiedad": "",
+  "justificacion": "Comparación de la textura del fondo y de una región vascular mediante configuraciones comunes entre versiones de la imagen.",
+  "parametros_solicitados": {
+    "method": "uniform",
+    "points": 16,
+    "radius": 2.0
+  },
+  "actividad_solicitada": "04_lbp",
+  "firma_lote": "636d4d0c2e3ec9e9200f5315cd10418153a0dbd77480d4903da7f69359f011b9",
+  "mapas_completos_guardados": false,
+  "imagen_snapshot": "insumos/imagen_f865eed5440cf0d3f7a0.tif",
+  "imagen_hash": "f865eed5440cf0d3f7a0bf5388ca3e507d2975a34f13c6db764de15f567033ae",
+  "roi_snapshot": "insumos/roi_9a1c06f86507cf4cc13c.tif",
+  "roi_hash": "9a1c06f86507cf4cc13c471cc41ba4dd0a7ac157ae224d795560a33baab5b885",
+  "medicion_id": "cbb33f4e219e4cd2",
+  "actividad": "04_lbp",
+  "parametros": {
+    "points": 16,
+    "radius": 2.0,
+    "method": "uniform"
+  },
+  "caracteristicas": {
+    "lbp_n_muestras": 990,
+    "lbp_categorias": 18,
+    "lbp_entropia": 3.7191378653963505,
+    "lbp_uniformidad": 0.11363738394041424,
+    "lbp_categoria_moda": 17
+  },
+  "matrices": "matrices.npz"
+}

@@ -1,0 +1,23 @@
+{
+  "imagen": "Retina3_variacion_total",
+  "imagen_hash": "3b996981ab3ca21fe16bdf52d7e364f0acebf802f777b45c23a4908c3f73c075",
+  "roi_id": "vaso_grueso",
+  "roi_hash": "315bf8fe78e19a8b389ea19163aa139804363844d9ecaa38f3ce048a4187b65a",
+  "archivo_mascara": "mascara_15593aac211bb3f2d741.tif",
+  "mascara_hash": "15593aac211bb3f2d74190d02c10a1b8b45bf486dfa983c7ab55b918d59e25e0",
+  "parametros": {
+    "sigmas": [
+      2,
+      3,
+      4
+    ],
+    "threshold": null,
+    "min_size": 20,
+    "closing": 0,
+    "fill_holes": 0
+  },
+  "umbral_efectivo": 0.15331184137364562,
+  "aprobada": false,
+  "editada_manualmente": false,
+  "nota_revision": ""
+}

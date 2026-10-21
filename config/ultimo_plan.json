@@ -1,0 +1,169 @@
+{
+  "actividades": [
+    "07_radiomica"
+  ],
+  "imagenes": [
+    "Retina1_referencia"
+  ],
+  "rois": {
+    "01_intensidad": [
+      "vaso_grueso",
+      "vaso_fino",
+      "fondo",
+      "region_ramificada",
+      "region_macular"
+    ],
+    "00_segmentacion": [
+      "fondo",
+      "region_ramificada"
+    ],
+    "02_geometria": [
+      "vaso_grueso",
+      "vaso_fino",
+      "region_ramificada"
+    ],
+    "02_forma_roi": [
+      "region_macular"
+    ],
+    "03_estructura": [
+      "region_ramificada"
+    ],
+    "04_lbp": [
+      "fondo",
+      "region_ramificada"
+    ],
+    "04_gabor": [
+      "fondo",
+      "region_ramificada"
+    ],
+    "05_multiescala": [
+      "vaso_grueso",
+      "vaso_fino"
+    ],
+    "04_wavelet": [
+      "fondo",
+      "region_ramificada"
+    ],
+    "06_puntos": [
+      "region_ramificada"
+    ],
+    "07_radiomica": [
+      "region_ramificada",
+      "region_ramificada_ampliada"
+    ]
+  },
+  "parametros": {
+    "01_intensidad": {
+      "percentiles": [
+        10,
+        25,
+        50,
+        75,
+        90
+      ]
+    },
+    "00_segmentacion": {
+      "sigmas": [
+        1,
+        2,
+        3
+      ],
+      "threshold": 0.025,
+      "min_size": 20,
+      "closing": 1,
+      "fill_holes": 0
+    },
+    "02_geometria": {},
+    "02_forma_roi": {},
+    "03_estructura": {
+      "prune_lengths": [
+        0
+      ],
+      "calculate_thickness": true
+    },
+    "04_lbp": {
+      "pairs": "8:1;16:2;24:3",
+      "method": "uniform"
+    },
+    "04_gabor": {
+      "wavelengths": [
+        4,
+        8,
+        16
+      ],
+      "angles": [
+        0,
+        45,
+        90,
+        135
+      ],
+      "sigma_ratio": 0.56,
+      "gamma": 0.5
+    },
+    "04_wavelet": {
+      "wavelet": "db2",
+      "levels": [
+        2,
+        3
+      ]
+    },
+    "05_multiescala": {
+      "sigmas": [
+        1,
+        2,
+        4,
+        8
+      ],
+      "dog_k": 1.2599210498948732
+    },
+    "06_puntos": {
+      "methods": [
+        "SIFT",
+        "ORB"
+      ],
+      "pair_mode": "original_procesada",
+      "max_points": 500,
+      "ratio": 0.75,
+      "mutual": true,
+      "tolerance": 3,
+      "low": 0,
+      "high": 255,
+      "harris_k": 0.04,
+      "harris_threshold": 0.01,
+      "min_distance": 5,
+      "harris_block": 3,
+      "harris_size": 3,
+      "subpixel": true,
+      "sift_contrast": 0.02,
+      "sift_edge": 10,
+      "sift_sigma": 1.6,
+      "orb_scale": 1.2,
+      "orb_levels": 8,
+      "orb_fast": 5,
+      "orb_patch": 31
+    },
+    "07_radiomica": {
+      "mode": "count",
+      "bin_counts": [
+        32
+      ],
+      "bin_widths": [
+        4,
+        8,
+        16
+      ],
+      "low": 0,
+      "high": 255,
+      "distance_sets": "1",
+      "alpha": 0
+    }
+  },
+  "opciones": {
+    "correct_background": true,
+    "skip_existing": true,
+    "save_maps": false,
+    "propiedad": "Características de intensidad, geometría de la ROI y organización espacial de la textura.",
+    "justificacion": "Evaluación de sensibilidad a la definición de la ROI mediante ampliación de su borde derecho, manteniendo imagen, discretización y vecindario."
+  },
+  "n_calculos": 2
+}

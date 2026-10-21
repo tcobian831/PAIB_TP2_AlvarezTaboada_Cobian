@@ -1,0 +1,91 @@
+{
+  "imagen_id": "Retina1_2",
+  "variante": "realzada",
+  "roi_id": "fondo",
+  "capa_imagen": "Retina2_gaussiano_clahe",
+  "capa_region": "Shapes",
+  "indice_region": 3,
+  "roi_geometria": {
+    "shape_type": "rectangle",
+    "vertices_fila_columna": [
+      [
+        154.9991455078125,
+        444.2845458984375
+      ],
+      [
+        154.9991455078125,
+        493.0479431152344
+      ],
+      [
+        180.0398406982422,
+        493.0479431152344
+      ],
+      [
+        180.0398406982422,
+        444.2845458984375
+      ]
+    ]
+  },
+  "fuente": {
+    "case_id": "Retina1_2",
+    "variant": "realzada",
+    "layer_name": "Retina2_gaussiano_clahe",
+    "path": "data/procesadas/Retina2_gaussiano_clahe.tif",
+    "crop": null,
+    "sha256": "104e9f927137c2592f1adea1c70eb1984c7292d8600c934d78af376dd15d79f5",
+    "original_source": "resultados/imagenes_procesadas/Retina2_gaussiano_clahe.tif",
+    "source_blob_sha": "1ceb86178f20a2406457b0a6ed003adfaadcceb4"
+  },
+  "coordinate_frame": "row,col; px; sin transformaciones",
+  "propiedad": "",
+  "justificacion": "",
+  "parametros_solicitados": {
+    "percentiles": [
+      10,
+      25,
+      50,
+      75,
+      90
+    ]
+  },
+  "actividad_solicitada": "01_intensidad",
+  "firma_lote": "7ec5fbcb50900375e3b526b168d3e51e465248ece9dba5c2d59049d17cc15ba7",
+  "mapas_completos_guardados": false,
+  "imagen_snapshot": "insumos/imagen_867cda7443fb997739e6.tif",
+  "imagen_hash": "867cda7443fb997739e6b12241643d6de1047c10c5f84853826cb4965f85c5f5",
+  "roi_snapshot": "insumos/roi_9a1c06f86507cf4cc13c.tif",
+  "roi_hash": "9a1c06f86507cf4cc13c471cc41ba4dd0a7ac157ae224d795560a33baab5b885",
+  "medicion_id": "00270484ca684ee3",
+  "actividad": "01_intensidad",
+  "parametros": {
+    "percentiles": [
+      10,
+      25,
+      50,
+      75,
+      90
+    ]
+  },
+  "caracteristicas": {
+    "n_pixeles": 1274,
+    "media": 82.15196462947111,
+    "mediana": 81.80024745481543,
+    "desviacion": 7.322670233498825,
+    "varianza": 53.621499348569735,
+    "minimo": 62.26328588227125,
+    "maximo": 104.40092482951587,
+    "iqr": 9.70304966989437,
+    "mad": 4.680249265605539,
+    "asimetria": 0.20207821979421475,
+    "curtosis_pearson": 2.9498310317924945,
+    "intensidad_integrada": 104661.6029379462,
+    "p10": 72.93548585239546,
+    "p25": 77.2931982031509,
+    "p50": 81.80024745481543,
+    "p75": 86.99624787304526,
+    "p90": 91.78734514757305,
+    "media_fondo": null,
+    "media_corregida_fondo": null,
+    "intensidad_integrada_corregida": null
+  }
+}

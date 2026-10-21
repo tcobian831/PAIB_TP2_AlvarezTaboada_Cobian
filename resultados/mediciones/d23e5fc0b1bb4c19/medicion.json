@@ -1,0 +1,96 @@
+{
+  "imagen_id": "Retina6",
+  "variante": "corregida",
+  "roi_id": "vaso_fino",
+  "capa_imagen": "Retina6_kernel_de_gran_escala_clahe",
+  "capa_region": "Shapes",
+  "indice_region": 2,
+  "roi_geometria": {
+    "shape_type": "rectangle",
+    "vertices_fila_columna": [
+      [
+        303.92510986328125,
+        403.4287414550781
+      ],
+      [
+        303.92510986328125,
+        437.6948547363281
+      ],
+      [
+        360.5960388183594,
+        437.6949462890625
+      ],
+      [
+        360.59613037109375,
+        403.42877197265625
+      ]
+    ]
+  },
+  "fuente": {
+    "case_id": "Retina6",
+    "variant": "corregida",
+    "layer_name": "Retina6_kernel_de_gran_escala_clahe",
+    "path": "data/procesadas/Retina6_kernel_de_gran_escala_clahe.tif",
+    "crop": null,
+    "sha256": "5be7f18b7602d12b7ab70ba8263f57c7859eed0722bdc71b74c4a67acf91922c",
+    "original_source": "resultados/imagenes_procesadas/Retina6_kernel_de_gran_escala_clahe.tif",
+    "source_blob_sha": "0469e250c55e4dcecdfb1f01ed7d26479d6359d4"
+  },
+  "coordinate_frame": "row,col; px; sin transformaciones",
+  "propiedad": "",
+  "justificacion": "Comparación de la geometría de máscaras automáticas con parámetros comunes por ROI. Algunas versiones presentan falsos positivos y pérdidas de ramas; sus medidas incluyen errores de segmentación.",
+  "parametros_solicitados": {},
+  "actividad_solicitada": "02_geometria",
+  "segmentacion": {
+    "imagen": "Retina6_kernel_de_gran_escala_clahe",
+    "imagen_hash": "ccdb261bc53952b01c1a3b74d0a510d5cb09d2bf407cd7703c57e0b418e144b5",
+    "roi_id": "vaso_fino",
+    "roi_hash": "8ed059aaf347372ac3abc802070d2416e44e88128cbdb12c5ec898c943371b20",
+    "archivo_mascara": "mascara_fd409047875162970b5a.tif",
+    "mascara_hash": "fd409047875162970b5ac8b765e8bbb17d4ff09073f264230571db3840b3a24a",
+    "parametros": {
+      "sigmas": [
+        2,
+        3
+      ],
+      "threshold": null,
+      "min_size": 20,
+      "closing": 0,
+      "fill_holes": 0
+    },
+    "umbral_efectivo": 0.12210299315319714,
+    "aprobada": true,
+    "editada_manualmente": false,
+    "nota_revision": "Revisada visualmente por el usuario"
+  },
+  "firma_lote": "4027fe856ceac9b366833fe3f29d7cfdf5fa2459a163a7f67ad173d1dbc5b237",
+  "mapas_completos_guardados": false,
+  "imagen_snapshot": "insumos/imagen_ccdb261bc53952b01c1a.tif",
+  "imagen_hash": "ccdb261bc53952b01c1a3b74d0a510d5cb09d2bf407cd7703c57e0b418e144b5",
+  "roi_snapshot": "insumos/roi_8ed059aaf347372ac3ab.tif",
+  "roi_hash": "8ed059aaf347372ac3abc802070d2416e44e88128cbdb12c5ec898c943371b20",
+  "medicion_id": "d23e5fc0b1bb4c19",
+  "actividad": "02_geometria",
+  "parametros": {},
+  "caracteristicas": {
+    "area_px2": 124.0,
+    "perimetro_px": 95.86084910247575,
+    "centroide_fila_px": 339.2983870967742,
+    "centroide_columna_px": 420.16129032258067,
+    "circularidad": 0.1695699945369541,
+    "eje_mayor_px": 50.884966717647536,
+    "eje_menor_px": 5.585870741987493,
+    "orientacion_grados": 7.423656243470341,
+    "excentricidad": 0.9939565199865773,
+    "area_convexa_px2": 254.0,
+    "solidity": 0.4881889763779528,
+    "extent": 0.2505050505050505,
+    "feret_max_px": 45.89117562233506,
+    "feret_min_px": 6.8906171373836855,
+    "componentes": 1,
+    "euler": 1,
+    "agujeros": 0
+  },
+  "vasos_snapshot": "insumos/vasos_fd409047875162970b5a.tif",
+  "matrices": "matrices.npz"
+}

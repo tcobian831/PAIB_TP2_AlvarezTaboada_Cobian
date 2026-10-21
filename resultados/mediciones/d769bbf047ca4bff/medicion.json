@@ -1,0 +1,91 @@
+{
+  "imagen_id": "Retina7",
+  "variante": "corregida",
+  "roi_id": "fondo",
+  "capa_imagen": "Retina7_gris_mediana",
+  "capa_region": "Shapes",
+  "indice_region": 3,
+  "roi_geometria": {
+    "shape_type": "rectangle",
+    "vertices_fila_columna": [
+      [
+        154.9991455078125,
+        444.2845458984375
+      ],
+      [
+        154.9991455078125,
+        493.0479431152344
+      ],
+      [
+        180.0398406982422,
+        493.0479431152344
+      ],
+      [
+        180.0398406982422,
+        444.2845458984375
+      ]
+    ]
+  },
+  "fuente": {
+    "case_id": "Retina7",
+    "variant": "corregida",
+    "layer_name": "Retina7_gris_mediana",
+    "path": "data/procesadas/Retina7_gris_mediana.tif",
+    "crop": null,
+    "sha256": "236bd7b8448c95db5ab7141fc9126536b6d542e551579f46b8fdd7b876797146",
+    "original_source": "resultados/imagenes_procesadas/Retina7_gris_mediana.tif",
+    "source_blob_sha": "1bed9ee6fe7b9c0f8427b4e68759331ab610fc32"
+  },
+  "coordinate_frame": "row,col; px; sin transformaciones",
+  "propiedad": "",
+  "justificacion": "",
+  "parametros_solicitados": {
+    "percentiles": [
+      10,
+      25,
+      50,
+      75,
+      90
+    ]
+  },
+  "actividad_solicitada": "01_intensidad",
+  "firma_lote": "272df14879e906fef901707c2c5d96fda3ec4c35acb80bbfe88d1554e415a82e",
+  "mapas_completos_guardados": false,
+  "imagen_snapshot": "insumos/imagen_9cad5008b9702641a9ee.tif",
+  "imagen_hash": "9cad5008b9702641a9eed51648d8ff047fd0337818208c3b09ab70cb5826a312",
+  "roi_snapshot": "insumos/roi_9a1c06f86507cf4cc13c.tif",
+  "roi_hash": "9a1c06f86507cf4cc13c471cc41ba4dd0a7ac157ae224d795560a33baab5b885",
+  "medicion_id": "d769bbf047ca4bff",
+  "actividad": "01_intensidad",
+  "parametros": {
+    "percentiles": [
+      10,
+      25,
+      50,
+      75,
+      90
+    ]
+  },
+  "caracteristicas": {
+    "n_pixeles": 1274,
+    "media": 62.26766091051805,
+    "mediana": 62.0,
+    "desviacion": 3.293555816025558,
+    "varianza": 10.847509913275779,
+    "minimo": 54.0,
+    "maximo": 85.0,
+    "iqr": 5.0,
+    "mad": 2.0,
+    "asimetria": 0.4176099829569006,
+    "curtosis_pearson": 5.845193323620492,
+    "intensidad_integrada": 79329.0,
+    "p10": 59.0,
+    "p25": 60.0,
+    "p50": 62.0,
+    "p75": 65.0,
+    "p90": 66.0,
+    "media_fondo": null,
+    "media_corregida_fondo": null,
+    "intensidad_integrada_corregida": null
+  }
+}

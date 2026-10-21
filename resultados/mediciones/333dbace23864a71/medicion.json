@@ -1,0 +1,114 @@
+{
+  "imagen_id": "Retina5",
+  "variante": "corregida",
+  "roi_id": "region_ramificada",
+  "capa_imagen": "Retina5_notch",
+  "capa_region": "Shapes",
+  "indice_region": 4,
+  "roi_geometria": {
+    "shape_type": "rectangle",
+    "vertices_fila_columna": [
+      [
+        335.555419921875,
+        122.70988464355469
+      ],
+      [
+        335.555419921875,
+        371.79852294921875
+      ],
+      [
+        422.5386047363281,
+        371.79852294921875
+      ],
+      [
+        422.5386047363281,
+        122.70988464355469
+      ]
+    ]
+  },
+  "fuente": {
+    "case_id": "Retina5",
+    "variant": "corregida",
+    "layer_name": "Retina5_notch",
+    "path": "data/procesadas/Retina5_notch.tif",
+    "crop": null,
+    "sha256": "7237c76af0f1f3fe7cf143679d3f5e05ecb002dc951443c508c9479196f86bc0",
+    "original_source": "resultados/imagenes_procesadas/Retina5_notch.tif",
+    "source_blob_sha": "e2a7e17911fa758713dd4055afb1a0352b6e70dc"
+  },
+  "coordinate_frame": "row,col; px; sin transformaciones",
+  "propiedad": "",
+  "justificacion": "",
+  "parametros_solicitados": {
+    "percentiles": [
+      10,
+      25,
+      50,
+      75,
+      90
+    ]
+  },
+  "actividad_solicitada": "01_intensidad",
+  "fondo_roi_id": "fondo",
+  "fondo_geometria": {
+    "shape_type": "rectangle",
+    "vertices_fila_columna": [
+      [
+        154.9991455078125,
+        444.2845458984375
+      ],
+      [
+        154.9991455078125,
+        493.0479431152344
+      ],
+      [
+        180.0398406982422,
+        493.0479431152344
+      ],
+      [
+        180.0398406982422,
+        444.2845458984375
+      ]
+    ]
+  },
+  "firma_lote": "7939273449125b016c96504ed3032894abd0c0de7e3ab5bb34a48f4ef4ecbe92",
+  "mapas_completos_guardados": false,
+  "imagen_snapshot": "insumos/imagen_fe17e1ef28c33151b5eb.tif",
+  "imagen_hash": "fe17e1ef28c33151b5ebf0315aafbb418fb4929ae7d4a9f4b9d643310ab0e691",
+  "roi_snapshot": "insumos/roi_a14a212b431aacb1d507.tif",
+  "roi_hash": "a14a212b431aacb1d507d6c034863259d923e8961fc596af36c99b47a4dec7db",
+  "medicion_id": "333dbace23864a71",
+  "actividad": "01_intensidad",
+  "parametros": {
+    "percentiles": [
+      10,
+      25,
+      50,
+      75,
+      90
+    ]
+  },
+  "caracteristicas": {
+    "n_pixeles": 21663,
+    "media": 90.12181451292167,
+    "mediana": 91.42589822405328,
+    "desviacion": 11.207981981545801,
+    "varianza": 125.61886009865535,
+    "minimo": 43.948747013649445,
+    "maximo": 120.63845222806329,
+    "iqr": 14.392825916122618,
+    "mad": 7.183049240201839,
+    "asimetria": -0.7995228953208757,
+    "curtosis_pearson": 4.228304134955167,
+    "intensidad_integrada": 1952308.8677934222,
+    "p10": 77.35181989829296,
+    "p25": 83.3562245395172,
+    "p50": 91.42589822405328,
+    "p75": 97.74905045563982,
+    "p90": 103.23645479419989,
+    "media_fondo": 62.081602217062276,
+    "media_corregida_fondo": 28.040212295859398,
+    "intensidad_integrada_corregida": 607435.118965202
+  },
+  "fondo_snapshot": "insumos/fondo_9a1c06f86507cf4cc13c.tif"
+}

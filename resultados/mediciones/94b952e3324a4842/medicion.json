@@ -1,0 +1,153 @@
+{
+  "imagen_id": "Retina5",
+  "variante": "original",
+  "roi_id": "fondo",
+  "capa_imagen": "Retina5_degradada",
+  "capa_region": "Shapes",
+  "indice_region": 3,
+  "roi_geometria": {
+    "shape_type": "rectangle",
+    "vertices_fila_columna": [
+      [
+        154.9991455078125,
+        444.2845458984375
+      ],
+      [
+        154.9991455078125,
+        493.0479431152344
+      ],
+      [
+        180.0398406982422,
+        493.0479431152344
+      ],
+      [
+        180.0398406982422,
+        444.2845458984375
+      ]
+    ]
+  },
+  "fuente": {
+    "case_id": "Retina5",
+    "variant": "original",
+    "layer_name": "Retina5_degradada",
+    "path": "data/originales/Retina5.png",
+    "crop": [
+      10,
+      549,
+      10,
+      549
+    ],
+    "sha256": "0ab3453251f7172de6bcb1633db68f9f5d6bda993efcacd6ec6ae3ab6ba75a66",
+    "original_source": "data/Retina5.png",
+    "source_blob_sha": "a87de3fa9c9c953f265f5f8cf6217d0f79aaf93c"
+  },
+  "coordinate_frame": "row,col; px; sin transformaciones",
+  "propiedad": "Características de intensidad, geometría de la ROI y organización espacial de la textura.",
+  "justificacion": "Comparación de fondo y región ramificada entre versiones del pool, utilizando 16, 32 y 64 bins con límites comunes de intensidad y distancias de vecindario de 1 y 2 píxeles.",
+  "parametros_solicitados": {
+    "mode": "count",
+    "low": 0,
+    "high": 255,
+    "alpha": 0,
+    "bins": 16,
+    "width": 8,
+    "distances": [
+      2
+    ]
+  },
+  "actividad_solicitada": "07_radiomica",
+  "firma_lote": "fe84db8bb359cc4eef9677b98d7968ecb42bb8908ec1a111391c1f1bcaa4b08b",
+  "mapas_completos_guardados": false,
+  "imagen_snapshot": "insumos/imagen_0e8667246b0c635a34e3.tif",
+  "imagen_hash": "0e8667246b0c635a34e351cad973e31e68496ca21a84dcef49d23a96a69f365f",
+  "roi_snapshot": "insumos/roi_9a1c06f86507cf4cc13c.tif",
+  "roi_hash": "9a1c06f86507cf4cc13c471cc41ba4dd0a7ac157ae224d795560a33baab5b885",
+  "medicion_id": "94b952e3324a4842",
+  "actividad": "07_radiomica",
+  "parametros": {
+    "mode": "count",
+    "bins": 16,
+    "width": 8,
+    "low": 0,
+    "high": 255,
+    "distances": [
+      2
+    ],
+    "alpha": 0,
+    "bin_mode": "count",
+    "bin_count_efectivo": 16,
+    "bin_width_efectivo": 15.9375,
+    "bin_low": 0,
+    "bin_high": 255,
+    "gldm_alpha": 0,
+    "glszm_connectivity": 8,
+    "dimensions": 2,
+    "directions": "GLCM/GLRLM: cuatro direcciones 2D, promedio de características; GLCM simétrica",
+    "engine": "PyRadiomics 3.1.0 + FixedBins"
+  },
+  "caracteristicas": {
+    "primer_orden_n_pixeles": 1274,
+    "primer_orden_media": 61.67111459968603,
+    "primer_orden_mediana": 61.0,
+    "primer_orden_desviacion": 13.43141181724577,
+    "primer_orden_varianza": 180.40282340444932,
+    "primer_orden_minimo": 36.0,
+    "primer_orden_maximo": 87.0,
+    "primer_orden_iqr": 25.0,
+    "primer_orden_mad": 13.0,
+    "primer_orden_asimetria": 0.05791128331678565,
+    "primer_orden_curtosis_pearson": 1.6502353245466943,
+    "primer_orden_intensidad_integrada": 78569.0,
+    "primer_orden_p1": 40.0,
+    "primer_orden_p5": 42.0,
+    "primer_orden_p10": 45.0,
+    "primer_orden_p25": 49.0,
+    "primer_orden_p50": 61.0,
+    "primer_orden_p75": 74.0,
+    "primer_orden_p90": 80.0,
+    "primer_orden_p95": 82.0,
+    "primer_orden_p99": 84.0,
+    "primer_orden_media_fondo": null,
+    "primer_orden_media_corregida_fondo": null,
+    "primer_orden_intensidad_integrada_corregida": null,
+    "forma_area_px2": 1274.0,
+    "forma_perimetro_px": 141.0981966107384,
+    "forma_centroide_fila_px": 167.5,
+    "forma_centroide_columna_px": 469.0,
+    "forma_circularidad": 0.804148703267551,
+    "forma_eje_mayor_px": 56.568542494923804,
+    "forma_eje_menor_px": 30.0,
+    "forma_orientacion_grados": 90.0,
+    "forma_excentricidad": 0.8477912478906585,
+    "forma_area_convexa_px2": 1274.0,
+    "forma_solidity": 1.0,
+    "forma_extent": 1.0,
+    "forma_feret_max_px": 55.00909015790027,
+    "forma_feret_min_px": 26.0,
+    "forma_componentes": 1,
+    "forma_euler": 1,
+    "forma_agujeros": 0,
+    "glcm_Contrast": 0.385875077066424,
+    "glcm_JointEntropy": 3.000157145535754,
+    "glcm_JointEnergy": 0.1534419900934794,
+    "glcm_Idm": 0.8082228542654787,
+    "glcm_Correlation": 0.7647439379813931,
+    "glrlm_ShortRunEmphasis": 0.20260805453131436,
+    "glrlm_LongRunEmphasis": 46.285513844859935,
+    "glrlm_GrayLevelNonUniformityNormalized": 0.2837097196370483,
+    "glrlm_RunPercentage": 0.24077708006279436,
+    "glszm_SmallAreaEmphasis": 0.09792556918044151,
+    "glszm_LargeAreaEmphasis": 16189.538461538461,
+    "glszm_ZonePercentage": 0.01020408163265306,
+    "glszm_ZoneEntropy": 3.700439718141088,
+    "gldm_SmallDependenceEmphasis": 0.016682300552785998,
+    "gldm_LargeDependenceEmphasis": 111.2072213500785,
+    "gldm_DependenceEntropy": 5.361989787606278,
+    "ngtdm_Coarseness": 0.008367611633806817,
+    "ngtdm_Contrast": 0.04677955006201485,
+    "ngtdm_Busyness": 13.550526891056222,
+    "ngtdm_Complexity": 1.759235932554849,
+    "ngtdm_Strength": 0.0390421612762728,
+    "n_intensidades_recortadas": 0
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "imagen_id": "Retina6",
+  "variante": "corregida",
+  "roi_id": "fondo",
+  "capa_imagen": "Retina6_kernel_de_gran_escala_clahe",
+  "capa_region": "Shapes",
+  "indice_region": 3,
+  "roi_geometria": {
+    "shape_type": "rectangle",
+    "vertices_fila_columna": [
+      [
+        154.9991455078125,
+        444.2845458984375
+      ],
+      [
+        154.9991455078125,
+        493.0479431152344
+      ],
+      [
+        180.0398406982422,
+        493.0479431152344
+      ],
+      [
+        180.0398406982422,
+        444.2845458984375
+      ]
+    ]
+  },
+  "fuente": {
+    "case_id": "Retina6",
+    "variant": "corregida",
+    "layer_name": "Retina6_kernel_de_gran_escala_clahe",
+    "path": "data/procesadas/Retina6_kernel_de_gran_escala_clahe.tif",
+    "crop": null,
+    "sha256": "5be7f18b7602d12b7ab70ba8263f57c7859eed0722bdc71b74c4a67acf91922c",
+    "original_source": "resultados/imagenes_procesadas/Retina6_kernel_de_gran_escala_clahe.tif",
+    "source_blob_sha": "0469e250c55e4dcecdfb1f01ed7d26479d6359d4"
+  },
+  "coordinate_frame": "row,col; px; sin transformaciones",
+  "propiedad": "",
+  "justificacion": "",
+  "parametros_solicitados": {
+    "percentiles": [
+      10,
+      25,
+      50,
+      75,
+      90
+    ]
+  },
+  "actividad_solicitada": "01_intensidad",
+  "firma_lote": "41cefbaaa0ace1879d8d2a285b0e4fca77953c3bd535def20e04805f4e9c3bc7",
+  "mapas_completos_guardados": false,
+  "imagen_snapshot": "insumos/imagen_ccdb261bc53952b01c1a.tif",
+  "imagen_hash": "ccdb261bc53952b01c1a3b74d0a510d5cb09d2bf407cd7703c57e0b418e144b5",
+  "roi_snapshot": "insumos/roi_9a1c06f86507cf4cc13c.tif",
+  "roi_hash": "9a1c06f86507cf4cc13c471cc41ba4dd0a7ac157ae224d795560a33baab5b885",
+  "medicion_id": "4fd89d873be94746",
+  "actividad": "01_intensidad",
+  "parametros": {
+    "percentiles": [
+      10,
+      25,
+      50,
+      75,
+      90
+    ]
+  },
+  "caracteristicas": {
+    "n_pixeles": 1274,
+    "media": 97.23114740589149,
+    "mediana": 97.08072321539206,
+    "desviacion": 4.594176545051272,
+    "varianza": 21.10645812709924,
+    "minimo": 82.63131909084751,
+    "maximo": 110.32076134520577,
+    "iqr": 6.155483949743314,
+    "mad": 3.0171162056045375,
+    "asimetria": 0.2265024901201529,
+    "curtosis_pearson": 2.922711878557355,
+    "intensidad_integrada": 123872.48179510576,
+    "p10": 91.54094513015364,
+    "p25": 94.17068629057097,
+    "p50": 97.08072321539206,
+    "p75": 100.32617024031428,
+    "p90": 103.22077515114012,
+    "media_fondo": null,
+    "media_corregida_fondo": null,
+    "intensidad_integrada_corregida": null
+  }
+}

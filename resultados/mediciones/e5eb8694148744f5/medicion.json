@@ -1,0 +1,114 @@
+{
+  "imagen_id": "Retina4",
+  "variante": "corregida",
+  "roi_id": "region_macular",
+  "capa_imagen": "Retina4_wiener",
+  "capa_region": "Shapes",
+  "indice_region": 5,
+  "roi_geometria": {
+    "shape_type": "rectangle",
+    "vertices_fila_columna": [
+      [
+        236.7107391357422,
+        221.55455017089844
+      ],
+      [
+        236.71115112304688,
+        332.2606201171875
+      ],
+      [
+        305.2431945800781,
+        332.26068115234375
+      ],
+      [
+        305.24285888671875,
+        221.55465698242188
+      ]
+    ]
+  },
+  "fuente": {
+    "case_id": "Retina4",
+    "variant": "corregida",
+    "layer_name": "Retina4_wiener",
+    "path": "data/procesadas/Retina4_wiener.tif",
+    "crop": null,
+    "sha256": "edb6cf5bdb2781b386117f540a28ceff43db9185b59cb1e68b0899b1810126f6",
+    "original_source": "resultados/imagenes_procesadas/Retina4_wiener.tif",
+    "source_blob_sha": "c5d41e1807216345fbf29b7a97d3c15864e98039"
+  },
+  "coordinate_frame": "row,col; px; sin transformaciones",
+  "propiedad": "",
+  "justificacion": "",
+  "parametros_solicitados": {
+    "percentiles": [
+      10,
+      25,
+      50,
+      75,
+      90
+    ]
+  },
+  "actividad_solicitada": "01_intensidad",
+  "fondo_roi_id": "fondo",
+  "fondo_geometria": {
+    "shape_type": "rectangle",
+    "vertices_fila_columna": [
+      [
+        154.9991455078125,
+        444.2845458984375
+      ],
+      [
+        154.9991455078125,
+        493.0479431152344
+      ],
+      [
+        180.0398406982422,
+        493.0479431152344
+      ],
+      [
+        180.0398406982422,
+        444.2845458984375
+      ]
+    ]
+  },
+  "firma_lote": "7743319f4a50139d571162b8035549c21f63f62f850a9bae04a81396d88faf1a",
+  "mapas_completos_guardados": false,
+  "imagen_snapshot": "insumos/imagen_88201fdb7320e2044df8.tif",
+  "imagen_hash": "88201fdb7320e2044df8a44b20daf6acb536ea959bdba22f9bf5896e0000d011",
+  "roi_snapshot": "insumos/roi_d39e946c0a567ff53794.tif",
+  "roi_hash": "d39e946c0a567ff53794d64da7beddf0a60abc9adefa3e6642fbd9c9626424d2",
+  "medicion_id": "e5eb8694148744f5",
+  "actividad": "01_intensidad",
+  "parametros": {
+    "percentiles": [
+      10,
+      25,
+      50,
+      75,
+      90
+    ]
+  },
+  "caracteristicas": {
+    "n_pixeles": 7659,
+    "media": 46.275237185604134,
+    "mediana": 46.79582979938091,
+    "desviacion": 16.9945621833701,
+    "varianza": 288.81514380443315,
+    "minimo": 1.412311829769774,
+    "maximo": 86.52785981949073,
+    "iqr": 25.589915570500196,
+    "mad": 12.848005884425696,
+    "asimetria": -0.157141492407022,
+    "curtosis_pearson": 2.2387461307434044,
+    "intensidad_integrada": 354422.04160454206,
+    "p10": 22.018555743641997,
+    "p25": 34.15945125924799,
+    "p50": 46.79582979938091,
+    "p75": 59.74936682974818,
+    "p90": 68.86474157933478,
+    "media_fondo": 62.109992382049455,
+    "media_corregida_fondo": -15.834755196445322,
+    "intensidad_integrada_corregida": -121278.39004957472
+  },
+  "fondo_snapshot": "insumos/fondo_9a1c06f86507cf4cc13c.tif"
+}

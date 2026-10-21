@@ -1,0 +1,22 @@
+{
+  "imagen": "Retina1_referencia",
+  "imagen_hash": "6e994af1eaeb975b07ff150084e7d5b12a974e1938b50ade6ffc0d01ef64c2ae",
+  "roi_id": "vaso_fino",
+  "roi_hash": "8ed059aaf347372ac3abc802070d2416e44e88128cbdb12c5ec898c943371b20",
+  "archivo_mascara": "mascara_ee0ae4b3269f1d0cbfda.tif",
+  "mascara_hash": "ee0ae4b3269f1d0cbfda77ad06468a31208c784f75d05c1c7f3b21705ef3d685",
+  "parametros": {
+    "sigmas": [
+      2,
+      3
+    ],
+    "threshold": null,
+    "min_size": 20,
+    "closing": 0,
+    "fill_holes": 0
+  },
+  "umbral_efectivo": 0.06423858693221626,
+  "aprobada": false,
+  "editada_manualmente": false,
+  "nota_revision": ""
+}

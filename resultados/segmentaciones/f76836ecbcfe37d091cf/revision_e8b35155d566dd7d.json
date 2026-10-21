@@ -1,0 +1,23 @@
+{
+  "imagen": "Retina7_gris_mediana",
+  "imagen_hash": "9cad5008b9702641a9eed51648d8ff047fd0337818208c3b09ab70cb5826a312",
+  "roi_id": "region_ramificada",
+  "roi_hash": "a14a212b431aacb1d507d6c034863259d923e8961fc596af36c99b47a4dec7db",
+  "archivo_mascara": "mascara_c20aa7bd6f1f572c19e0.tif",
+  "mascara_hash": "c20aa7bd6f1f572c19e02d462579ce8949a935a8bcc735cdce1fbe7bb98a9a38",
+  "parametros": {
+    "sigmas": [
+      1,
+      2,
+      3
+    ],
+    "threshold": null,
+    "min_size": 20,
+    "closing": 0,
+    "fill_holes": 0
+  },
+  "umbral_efectivo": 0.06592015756637987,
+  "aprobada": false,
+  "editada_manualmente": false,
+  "nota_revision": ""
+}

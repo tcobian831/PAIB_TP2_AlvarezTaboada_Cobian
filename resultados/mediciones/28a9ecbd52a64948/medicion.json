@@ -1,0 +1,103 @@
+{
+  "imagen_id": "Retina7",
+  "variante": "corregida",
+  "roi_id": "region_ramificada",
+  "capa_imagen": "Retina7_gris_mediana",
+  "capa_region": "Shapes",
+  "indice_region": 4,
+  "roi_geometria": {
+    "shape_type": "rectangle",
+    "vertices_fila_columna": [
+      [
+        335.555419921875,
+        122.70988464355469
+      ],
+      [
+        335.555419921875,
+        371.79852294921875
+      ],
+      [
+        422.5386047363281,
+        371.79852294921875
+      ],
+      [
+        422.5386047363281,
+        122.70988464355469
+      ]
+    ]
+  },
+  "fuente": {
+    "case_id": "Retina7",
+    "variant": "corregida",
+    "layer_name": "Retina7_gris_mediana",
+    "path": "data/procesadas/Retina7_gris_mediana.tif",
+    "crop": null,
+    "sha256": "236bd7b8448c95db5ab7141fc9126536b6d542e551579f46b8fdd7b876797146",
+    "original_source": "resultados/imagenes_procesadas/Retina7_gris_mediana.tif",
+    "source_blob_sha": "1bed9ee6fe7b9c0f8427b4e68759331ab610fc32"
+  },
+  "coordinate_frame": "row,col; px; sin transformaciones",
+  "propiedad": "",
+  "justificacion": "Comparación de la textura del fondo y de una región vascular mediante configuraciones comunes entre versiones de la imagen.",
+  "parametros_solicitados": {
+    "wavelet": "db2",
+    "level": 2
+  },
+  "actividad_solicitada": "04_wavelet",
+  "firma_lote": "c66095fe5424a8991aadec8bb2ee6b217766b43d644b2e5b5e796fde26c2892c",
+  "mapas_completos_guardados": false,
+  "imagen_snapshot": "insumos/imagen_9cad5008b9702641a9ee.tif",
+  "imagen_hash": "9cad5008b9702641a9eed51648d8ff047fd0337818208c3b09ab70cb5826a312",
+  "roi_snapshot": "insumos/roi_a14a212b431aacb1d507.tif",
+  "roi_hash": "a14a212b431aacb1d507d6c034863259d923e8961fc596af36c99b47a4dec7db",
+  "medicion_id": "28a9ecbd52a64948",
+  "actividad": "04_wavelet",
+  "parametros": {
+    "wavelet": "db2",
+    "level": 2
+  },
+  "caracteristicas": {
+    "wavelet_LL2_media": 359.680302401711,
+    "wavelet_LL2_desviacion": 44.43699509690345,
+    "wavelet_LL2_energia": 131344.5664690285,
+    "wavelet_LL2_abs_media": 359.680302401711,
+    "wavelet_LL2_minimo": 196.06064693517305,
+    "wavelet_LL2_maximo": 473.1489124735032,
+    "wavelet_H2_media": -0.20171904087048315,
+    "wavelet_H2_desviacion": 8.221193416190289,
+    "wavelet_H2_energia": 67.62871175786026,
+    "wavelet_H2_abs_media": 5.303173465205675,
+    "wavelet_H2_minimo": -36.028218161640936,
+    "wavelet_H2_maximo": 39.30507075198831,
+    "wavelet_V2_media": -0.00434254198235016,
+    "wavelet_V2_desviacion": 6.517158744149988,
+    "wavelet_V2_energia": 42.47337695412153,
+    "wavelet_V2_abs_media": 4.439153039544911,
+    "wavelet_V2_minimo": -29.851146100970233,
+    "wavelet_V2_maximo": 33.29668404495225,
+    "wavelet_D2_media": 0.0031304157232331232,
+    "wavelet_D2_desviacion": 2.8105398959571453,
+    "wavelet_D2_energia": 7.899144306269401,
+    "wavelet_D2_abs_media": 1.9631721742069221,
+    "wavelet_D2_minimo": -12.887915722520967,
+    "wavelet_D2_maximo": 14.929867276910247,
+    "wavelet_H1_media": 0.02124909415929847,
+    "wavelet_H1_desviacion": 2.081487173119373,
+    "wavelet_H1_energia": 4.33304037586307,
+    "wavelet_H1_abs_media": 1.3392516826545278,
+    "wavelet_H1_minimo": -13.217944566227679,
+    "wavelet_H1_maximo": 15.303203230275514,
+    "wavelet_V1_media": 0.004820016479637646,
+    "wavelet_V1_desviacion": 1.7494880326931785,
+    "wavelet_V1_energia": 3.0607316090955123,
+    "wavelet_V1_abs_media": 1.1572289430668334,
+    "wavelet_V1_minimo": -9.989500862371322,
+    "wavelet_V1_maximo": 25.063058020886317,
+    "wavelet_D1_media": 0.007119726118009856,
+    "wavelet_D1_desviacion": 0.9114335369520129,
+    "wavelet_D1_energia": 0.8307617827808516,
+    "wavelet_D1_abs_media": 0.5866332273620057,
+    "wavelet_D1_minimo": -14.339981809533006,
+    "wavelet_D1_maximo": 10.611215932167726
+  }
+}

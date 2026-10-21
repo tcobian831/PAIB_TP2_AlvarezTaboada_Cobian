@@ -1,0 +1,93 @@
+{
+  "imagen_id": "Retina1_2",
+  "variante": "original",
+  "roi_id": "disco_optico",
+  "capa_imagen": "Retina1_referencia",
+  "capa_region": "Shapes",
+  "indice_region": 5,
+  "roi_geometria": {
+    "shape_type": "rectangle",
+    "vertices_fila_columna": [
+      [
+        236.7107391357422,
+        221.55455017089844
+      ],
+      [
+        236.71115112304688,
+        332.2606201171875
+      ],
+      [
+        305.2431945800781,
+        332.26068115234375
+      ],
+      [
+        305.24285888671875,
+        221.55465698242188
+      ]
+    ]
+  },
+  "fuente": {
+    "case_id": "Retina1_2",
+    "variant": "original",
+    "layer_name": "Retina1_referencia",
+    "path": "data/originales/Retina1.png",
+    "crop": [
+      10,
+      549,
+      10,
+      549
+    ],
+    "sha256": "e3400f5c7de92a37be14d538ca006ec5adf29112580404753f35a1233b1e50e5",
+    "original_source": "data/Retina1.png",
+    "source_blob_sha": "60324520687e806dae2f734414348c22ba970b11"
+  },
+  "propiedad": "",
+  "justificacion": "",
+  "coordinate_frame": "row,col; px; matriz visible sin transformaciones",
+  "imagen_snapshot": "insumos/imagen_6e994af1eaeb975b07ff.tif",
+  "imagen_hash": "6e994af1eaeb975b07ff150084e7d5b12a974e1938b50ade6ffc0d01ef64c2ae",
+  "roi_snapshot": "insumos/roi_d39e946c0a567ff53794.tif",
+  "roi_hash": "d39e946c0a567ff53794d64da7beddf0a60abc9adefa3e6642fbd9c9626424d2",
+  "medicion_id": "2f4a23e7e85a4e93",
+  "actividad": "01_intensidad",
+  "parametros": {
+    "percentiles": [
+      1.0,
+      5.0,
+      10.0,
+      25.0,
+      50.0,
+      75.0,
+      90.0,
+      95.0,
+      99.0
+    ]
+  },
+  "caracteristicas": {
+    "n_pixeles": 7659,
+    "media": 46.28424076250163,
+    "mediana": 47.0,
+    "desviacion": 16.652764306941513,
+    "varianza": 277.31455906254524,
+    "minimo": 3.0,
+    "maximo": 85.0,
+    "iqr": 24.0,
+    "mad": 12.0,
+    "asimetria": -0.1532111209845317,
+    "curtosis_pearson": 2.2023923695243086,
+    "intensidad_integrada": 354491.0,
+    "p1": 12.0,
+    "p5": 18.0,
+    "p10": 22.0,
+    "p25": 35.0,
+    "p50": 47.0,
+    "p75": 59.0,
+    "p90": 68.0,
+    "p95": 72.0,
+    "p99": 77.0,
+    "media_fondo": null,
+    "media_corregida_fondo": null,
+    "intensidad_integrada_corregida": null
+  },
+  "registro_json": "mediciones/2f4a23e7e85a4e93/medicion.json"
+}

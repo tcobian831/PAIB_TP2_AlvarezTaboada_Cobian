@@ -1,0 +1,143 @@
+{
+  "imagen_id": "Retina1_2",
+  "variante": "realzada",
+  "roi_id": "vaso_fino",
+  "capa_imagen": "Retina2_gaussiano_clahe",
+  "capa_region": "Shapes",
+  "indice_region": 2,
+  "roi_geometria": {
+    "shape_type": "rectangle",
+    "vertices_fila_columna": [
+      [
+        303.92510986328125,
+        403.4287414550781
+      ],
+      [
+        303.92510986328125,
+        437.6948547363281
+      ],
+      [
+        360.5960388183594,
+        437.6949462890625
+      ],
+      [
+        360.59613037109375,
+        403.42877197265625
+      ]
+    ]
+  },
+  "fuente": {
+    "case_id": "Retina1_2",
+    "variant": "realzada",
+    "layer_name": "Retina2_gaussiano_clahe",
+    "path": "data/procesadas/Retina2_gaussiano_clahe.tif",
+    "crop": null,
+    "sha256": "104e9f927137c2592f1adea1c70eb1984c7292d8600c934d78af376dd15d79f5",
+    "original_source": "resultados/imagenes_procesadas/Retina2_gaussiano_clahe.tif",
+    "source_blob_sha": "1ceb86178f20a2406457b0a6ed003adfaadcceb4"
+  },
+  "coordinate_frame": "row,col; px; sin transformaciones",
+  "propiedad": "",
+  "justificacion": "Comparación de las respuestas a distintas escalas en segmentos vasculares de diferente calibre, manteniendo configuraciones comunes entre versiones.",
+  "parametros_solicitados": {
+    "sigmas": [
+      1,
+      2,
+      4,
+      8
+    ],
+    "dog_k": 1.2599210498948732
+  },
+  "actividad_solicitada": "05_multiescala",
+  "firma_lote": "b41f6b53b18275f306184875fb5085dd9a2fd5d76b5b9b6e8fde4a872494d958",
+  "mapas_completos_guardados": false,
+  "imagen_snapshot": "insumos/imagen_867cda7443fb997739e6.tif",
+  "imagen_hash": "867cda7443fb997739e6b12241643d6de1047c10c5f84853826cb4965f85c5f5",
+  "roi_snapshot": "insumos/roi_8ed059aaf347372ac3ab.tif",
+  "roi_hash": "8ed059aaf347372ac3abc802070d2416e44e88128cbdb12c5ec898c943371b20",
+  "medicion_id": "d579f64f63654abd",
+  "actividad": "05_multiescala",
+  "parametros": {
+    "sigmas": [
+      1,
+      2,
+      4,
+      8
+    ],
+    "dog_k": 1.2599210498948732
+  },
+  "caracteristicas": {
+    "Gauss_s1_media": 94.90578906553436,
+    "Gauss_s1_desviacion": 13.400520238149747,
+    "Gauss_s1_energia": 9186.682740804765,
+    "Gauss_s1_abs_media": 94.90578906553436,
+    "Gauss_s1_minimo": 55.323344030650276,
+    "Gauss_s1_maximo": 121.29401208066994,
+    "LoG_s1_media": -0.03901936384298119,
+    "LoG_s1_desviacion": 4.3862980466447965,
+    "LoG_s1_energia": 19.24113306475467,
+    "LoG_s1_abs_media": 3.103412204185435,
+    "LoG_s1_minimo": -14.186777339656285,
+    "LoG_s1_maximo": 17.82230365258961,
+    "DoG_s1_media": -0.008921265255418547,
+    "DoG_s1_desviacion": 1.1205301171129698,
+    "DoG_s1_energia": 1.255667332330963,
+    "DoG_s1_abs_media": 0.7928591071279413,
+    "DoG_s1_minimo": -3.4234621608251246,
+    "DoG_s1_maximo": 4.540795229809234,
+    "Gauss_s2_media": 94.84027234399846,
+    "Gauss_s2_desviacion": 11.330305237771004,
+    "Gauss_s2_energia": 9123.053075064861,
+    "Gauss_s2_abs_media": 94.84027234399846,
+    "Gauss_s2_minimo": 65.78639287181284,
+    "Gauss_s2_maximo": 118.52957926768912,
+    "LoG_s2_media": -0.2849398705186126,
+    "LoG_s2_desviacion": 6.555892044117068,
+    "LoG_s2_energia": 43.06091122392864,
+    "LoG_s2_abs_media": 4.790234711996809,
+    "LoG_s2_minimo": -20.354469055321367,
+    "LoG_s2_maximo": 23.54540662222843,
+    "DoG_s2_media": -0.06876908680132311,
+    "DoG_s2_desviacion": 1.5378144818277728,
+    "DoG_s2_energia": 2.3696025678187094,
+    "DoG_s2_abs_media": 1.1343966684090026,
+    "DoG_s2_minimo": -4.966542657531022,
+    "DoG_s2_maximo": 5.311705620863378,
+    "Gauss_s4_media": 94.48573026646463,
+    "Gauss_s4_desviacion": 8.888840727280916,
+    "Gauss_s4_energia": 9006.564713462078,
+    "Gauss_s4_abs_media": 94.48573026646463,
+    "Gauss_s4_minimo": 76.61553500569936,
+    "Gauss_s4_maximo": 112.75261776228055,
+    "LoG_s4_media": -0.9799609421390837,
+    "LoG_s4_desviacion": 6.379111907439084,
+    "LoG_s4_energia": 41.65339217574924,
+    "LoG_s4_abs_media": 4.879943509507012,
+    "LoG_s4_minimo": -19.528805678645533,
+    "LoG_s4_maximo": 15.417155282543678,
+    "DoG_s4_media": -0.2178480901259324,
+    "DoG_s4_desviacion": 1.4329412909947286,
+    "DoG_s4_energia": 2.1007785338091556,
+    "DoG_s4_abs_media": 1.1036568284574897,
+    "DoG_s4_minimo": -4.124376237521034,
+    "DoG_s4_maximo": 3.4493697814276487,
+    "Gauss_s8_media": 93.9046027452124,
+    "Gauss_s8_desviacion": 6.108422499257513,
+    "Gauss_s8_energia": 8855.387242165589,
+    "Gauss_s8_abs_media": 93.9046027452124,
+    "Gauss_s8_minimo": 84.4541473721053,
+    "Gauss_s8_maximo": 107.26028487897352,
+    "LoG_s8_media": -0.5053979409936483,
+    "LoG_s8_desviacion": 5.643308684524278,
+    "LoG_s8_energia": 32.10235998758777,
+    "LoG_s8_abs_media": 4.361374503655543,
+    "LoG_s8_minimo": -14.378131560087605,
+    "LoG_s8_maximo": 13.533061406954257,
+    "DoG_s8_media": 0.001008159441525216,
+    "DoG_s8_desviacion": 1.2586702896145934,
+    "DoG_s8_energia": 1.5842519143439437,
+    "DoG_s8_abs_media": 0.9776470803232316,
+    "DoG_s8_minimo": -3.0292921957481553,
+    "DoG_s8_maximo": 3.0885790367244113
+  }
+}

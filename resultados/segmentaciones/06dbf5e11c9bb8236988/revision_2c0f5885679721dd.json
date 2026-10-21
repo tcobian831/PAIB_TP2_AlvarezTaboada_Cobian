@@ -1,0 +1,23 @@
+{
+  "imagen": "Retina2_gaussiano_clahe",
+  "imagen_hash": "867cda7443fb997739e6b12241643d6de1047c10c5f84853826cb4965f85c5f5",
+  "roi_id": "vaso_grueso",
+  "roi_hash": "315bf8fe78e19a8b389ea19163aa139804363844d9ecaa38f3ce048a4187b65a",
+  "archivo_mascara": "mascara_9d57f38ec90831571f0f.tif",
+  "mascara_hash": "9d57f38ec90831571f0fb0875f1166bc6ce45688f0a59f9c4c47dc8e9cd684dd",
+  "parametros": {
+    "sigmas": [
+      1,
+      2,
+      3
+    ],
+    "threshold": null,
+    "min_size": 20,
+    "closing": 0,
+    "fill_holes": 0
+  },
+  "umbral_efectivo": 0.0755375177399957,
+  "aprobada": false,
+  "editada_manualmente": false,
+  "nota_revision": ""
+}

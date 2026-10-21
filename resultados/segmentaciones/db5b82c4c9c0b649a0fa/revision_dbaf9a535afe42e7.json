@@ -1,0 +1,23 @@
+{
+  "imagen": "Retina2_gaussiano_clahe",
+  "imagen_hash": "867cda7443fb997739e6b12241643d6de1047c10c5f84853826cb4965f85c5f5",
+  "roi_id": "region_ramificada",
+  "roi_hash": "a14a212b431aacb1d507d6c034863259d923e8961fc596af36c99b47a4dec7db",
+  "archivo_mascara": "mascara_2f5cea4695367eeb270b.tif",
+  "mascara_hash": "2f5cea4695367eeb270b18f7ad9adc21b090e7ce55f0245c2a1f55554432e237",
+  "parametros": {
+    "sigmas": [
+      1,
+      2,
+      3
+    ],
+    "threshold": 0.025,
+    "min_size": 20,
+    "closing": 1,
+    "fill_holes": 0
+  },
+  "umbral_efectivo": 0.025,
+  "aprobada": false,
+  "editada_manualmente": false,
+  "nota_revision": ""
+}

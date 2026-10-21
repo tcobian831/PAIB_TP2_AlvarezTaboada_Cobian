@@ -1,0 +1,23 @@
+{
+  "imagen": "Retina1_referencia",
+  "imagen_hash": "6e994af1eaeb975b07ff150084e7d5b12a974e1938b50ade6ffc0d01ef64c2ae",
+  "roi_id": "region_ramificada",
+  "roi_hash": "a14a212b431aacb1d507d6c034863259d923e8961fc596af36c99b47a4dec7db",
+  "archivo_mascara": "mascara_cbe959187fcb36cdd65c.tif",
+  "mascara_hash": "cbe959187fcb36cdd65cf115cb02db70a02e44ddd8b0f4d9f80439f9d97fd827",
+  "parametros": {
+    "sigmas": [
+      1,
+      2,
+      3
+    ],
+    "threshold": 0.025,
+    "min_size": 20,
+    "closing": 1,
+    "fill_holes": 0
+  },
+  "umbral_efectivo": 0.025,
+  "aprobada": true,
+  "editada_manualmente": false,
+  "nota_revision": "Revisada visualmente por el usuario"
+}

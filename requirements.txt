@@ -1,0 +1,17 @@
+numpy==1.26.4
+scipy==1.13.1
+scikit-image==0.24.0
+pandas==2.2.3
+matplotlib==3.9.4
+PyWavelets==1.6.0
+tifffile==2024.8.30
+imagecodecs==2024.12.30
+opencv-python-headless==4.10.0.84
+napari==0.5.6
+PyQt5==5.15.11
+magicgui==0.10.1
+qtpy==2.4.3
+PyYAML==6.0.2
+SimpleITK==2.4.1
+pyradiomics==3.1.0
+pytest==8.3.5

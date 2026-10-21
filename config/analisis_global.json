@@ -1,0 +1,11 @@
+{
+  "rois_principales": ["vaso_grueso", "vaso_fino", "fondo", "region_ramificada", "region_macular"],
+  "comparacion_puntos": {"imagen_id": "Retina1_2", "variante": "realzada", "roi_id": "region_ramificada"},
+  "configuraciones_representativas": {
+    "03_estructura": {"prune_length": 0.0},
+    "04_lbp": {"points": 8, "radius": 1.0, "method": "uniform"},
+    "04_wavelet": {"wavelet": "db2", "level": 2},
+    "07_radiomica": {"mode": "count", "bins": 32, "distances": [1], "alpha": 0}
+  },
+  "sensibilidad_roi": {"original": "region_ramificada", "modificada": "region_ramificada_ampliada"}
+}

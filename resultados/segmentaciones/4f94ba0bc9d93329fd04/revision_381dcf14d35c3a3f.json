@@ -1,0 +1,23 @@
+{
+  "imagen": "Retina6_degradada",
+  "imagen_hash": "f865eed5440cf0d3f7a0bf5388ca3e507d2975a34f13c6db764de15f567033ae",
+  "roi_id": "region_ramificada",
+  "roi_hash": "a14a212b431aacb1d507d6c034863259d923e8961fc596af36c99b47a4dec7db",
+  "archivo_mascara": "mascara_81a446bf5c3530934927.tif",
+  "mascara_hash": "81a446bf5c3530934927180444ca1ef916488371cbe328a6adcb5e6f88ceafc0",
+  "parametros": {
+    "sigmas": [
+      1,
+      2,
+      3
+    ],
+    "threshold": null,
+    "min_size": 20,
+    "closing": 0,
+    "fill_holes": 0
+  },
+  "umbral_efectivo": 0.0987884781864041,
+  "aprobada": false,
+  "editada_manualmente": false,
+  "nota_revision": ""
+}

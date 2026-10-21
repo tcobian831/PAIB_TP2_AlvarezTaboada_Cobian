@@ -1,0 +1,23 @@
+{
+  "imagen": "Retina5_notch",
+  "imagen_hash": "fe17e1ef28c33151b5ebf0315aafbb418fb4929ae7d4a9f4b9d643310ab0e691",
+  "roi_id": "vaso_fino",
+  "roi_hash": "8ed059aaf347372ac3abc802070d2416e44e88128cbdb12c5ec898c943371b20",
+  "archivo_mascara": "mascara_f5a44ac521996243ab95.tif",
+  "mascara_hash": "f5a44ac521996243ab950c3a6204d35e18dbb83d746e9c6589d00abab279323e",
+  "parametros": {
+    "sigmas": [
+      1,
+      2,
+      3
+    ],
+    "threshold": null,
+    "min_size": 20,
+    "closing": 0,
+    "fill_holes": 0
+  },
+  "umbral_efectivo": 0.09529047411977232,
+  "aprobada": false,
+  "editada_manualmente": false,
+  "nota_revision": ""
+}

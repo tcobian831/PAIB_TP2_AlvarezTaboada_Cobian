@@ -1,0 +1,23 @@
+{
+  "imagen": "Retina3_variacion_total",
+  "imagen_hash": "3b996981ab3ca21fe16bdf52d7e364f0acebf802f777b45c23a4908c3f73c075",
+  "roi_id": "region_ramificada",
+  "roi_hash": "a14a212b431aacb1d507d6c034863259d923e8961fc596af36c99b47a4dec7db",
+  "archivo_mascara": "mascara_e0d01af6199c5073d7a7.tif",
+  "mascara_hash": "e0d01af6199c5073d7a7d0bed95083a80d666556e220041476e1d023c4ade33c",
+  "parametros": {
+    "sigmas": [
+      1,
+      2,
+      3
+    ],
+    "threshold": null,
+    "min_size": 20,
+    "closing": 0,
+    "fill_holes": 0
+  },
+  "umbral_efectivo": 0.062235577022416125,
+  "aprobada": false,
+  "editada_manualmente": false,
+  "nota_revision": ""
+}

@@ -1,0 +1,132 @@
+{
+  "total": 2,
+  "procesadas": 2,
+  "cancelado": false,
+  "filas": [
+    {
+      "estado": "omitida",
+      "detalle": "Medición idéntica ya guardada",
+      "imagen_id": "Retina1_2",
+      "variante": "original",
+      "roi_id": "region_ramificada",
+      "capa_imagen": "Retina1_referencia",
+      "capa_region": "Shapes",
+      "indice_region": 4,
+      "roi_geometria": {
+        "shape_type": "rectangle",
+        "vertices_fila_columna": [
+          [
+            335.555419921875,
+            122.70988464355469
+          ],
+          [
+            335.555419921875,
+            371.79852294921875
+          ],
+          [
+            422.5386047363281,
+            371.79852294921875
+          ],
+          [
+            422.5386047363281,
+            122.70988464355469
+          ]
+        ]
+      },
+      "fuente": {
+        "case_id": "Retina1_2",
+        "variant": "original",
+        "layer_name": "Retina1_referencia",
+        "path": "data/originales/Retina1.png",
+        "crop": [
+          10,
+          549,
+          10,
+          549
+        ],
+        "sha256": "e3400f5c7de92a37be14d538ca006ec5adf29112580404753f35a1233b1e50e5",
+        "original_source": "data/Retina1.png",
+        "source_blob_sha": "60324520687e806dae2f734414348c22ba970b11"
+      },
+      "coordinate_frame": "row,col; px; sin transformaciones",
+      "propiedad": "Características de intensidad, geometría de la ROI y organización espacial de la textura.",
+      "justificacion": "Evaluación de sensibilidad a la definición de la ROI mediante ampliación de su borde derecho, manteniendo imagen, discretización y vecindario.",
+      "parametros_solicitados": {
+        "mode": "count",
+        "low": 0,
+        "high": 255,
+        "alpha": 0,
+        "bins": 32,
+        "width": 8,
+        "distances": [
+          1
+        ]
+      },
+      "actividad_solicitada": "07_radiomica"
+    },
+    {
+      "estado": "guardada",
+      "detalle": "mediciones/82386a7aaac84370",
+      "medicion_id": "82386a7aaac84370",
+      "imagen_id": "Retina1_2",
+      "variante": "original",
+      "roi_id": "region_ramificada_ampliada",
+      "capa_imagen": "Retina1_referencia",
+      "capa_region": "Shapes",
+      "indice_region": 6,
+      "roi_geometria": {
+        "shape_type": "rectangle",
+        "vertices_fila_columna": [
+          [
+            335.555419921875,
+            122.70988464355469
+          ],
+          [
+            335.555419921875,
+            391.96087646484375
+          ],
+          [
+            422.5386047363281,
+            391.96087646484375
+          ],
+          [
+            422.5386047363281,
+            122.70988464355469
+          ]
+        ]
+      },
+      "fuente": {
+        "case_id": "Retina1_2",
+        "variant": "original",
+        "layer_name": "Retina1_referencia",
+        "path": "data/originales/Retina1.png",
+        "crop": [
+          10,
+          549,
+          10,
+          549
+        ],
+        "sha256": "e3400f5c7de92a37be14d538ca006ec5adf29112580404753f35a1233b1e50e5",
+        "original_source": "data/Retina1.png",
+        "source_blob_sha": "60324520687e806dae2f734414348c22ba970b11"
+      },
+      "coordinate_frame": "row,col; px; sin transformaciones",
+      "propiedad": "Características de intensidad, geometría de la ROI y organización espacial de la textura.",
+      "justificacion": "Evaluación de sensibilidad a la definición de la ROI mediante ampliación de su borde derecho, manteniendo imagen, discretización y vecindario.",
+      "parametros_solicitados": {
+        "mode": "count",
+        "low": 0,
+        "high": 255,
+        "alpha": 0,
+        "bins": 32,
+        "width": 8,
+        "distances": [
+          1
+        ]
+      },
+      "actividad_solicitada": "07_radiomica",
+      "firma_lote": "de0799b24b73044ec341a4746402bdb8e50e30852a78628b4a060a2fb1ddaa27",
+      "mapas_completos_guardados": false
+    }
+  ]
+}

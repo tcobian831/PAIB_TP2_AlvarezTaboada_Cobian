@@ -1,0 +1,134 @@
+{
+  "imagen_id": "Retina1_2",
+  "variante": "realzada",
+  "roi_id": "region_ramificada",
+  "capa_imagen": "Retina2_gaussiano_clahe",
+  "capa_region": "Shapes",
+  "indice_region": 4,
+  "roi_geometria": {
+    "shape_type": "rectangle",
+    "vertices_fila_columna": [
+      [
+        335.555419921875,
+        122.70988464355469
+      ],
+      [
+        335.555419921875,
+        371.79852294921875
+      ],
+      [
+        422.5386047363281,
+        371.79852294921875
+      ],
+      [
+        422.5386047363281,
+        122.70988464355469
+      ]
+    ]
+  },
+  "fuente": {
+    "case_id": "Retina1_2",
+    "variant": "realzada",
+    "layer_name": "Retina2_gaussiano_clahe",
+    "path": "data/procesadas/Retina2_gaussiano_clahe.tif",
+    "crop": null,
+    "sha256": "104e9f927137c2592f1adea1c70eb1984c7292d8600c934d78af376dd15d79f5",
+    "original_source": "resultados/imagenes_procesadas/Retina2_gaussiano_clahe.tif",
+    "source_blob_sha": "1ceb86178f20a2406457b0a6ed003adfaadcceb4"
+  },
+  "coordinate_frame": "row,col; px; sin transformaciones",
+  "propiedad": "Detección y correspondencia de puntos de interés en la región vascular ramificada.",
+  "justificacion": "Comparación de Harris, SIFT y ORB entre cada versión procesada y su original, utilizando la misma ROI y parámetros comunes para evaluar estabilidad y correspondencias.",
+  "parametros_solicitados": {
+    "max_points": 500,
+    "ratio": 0.75,
+    "mutual": true,
+    "tolerance": 3,
+    "low": 0,
+    "high": 255,
+    "harris_k": 0.04,
+    "harris_threshold": 0.01,
+    "min_distance": 5,
+    "harris_block": 3,
+    "harris_size": 3,
+    "subpixel": true,
+    "sift_contrast": 0.04,
+    "sift_edge": 10,
+    "sift_sigma": 1.6,
+    "orb_scale": 1.2,
+    "orb_levels": 8,
+    "orb_fast": 20,
+    "orb_patch": 31,
+    "method": "Harris"
+  },
+  "actividad_solicitada": "06_puntos",
+  "imagen_b_fuente": {
+    "case_id": "Retina1_2",
+    "variant": "original",
+    "layer_name": "Retina1_referencia",
+    "path": "data/originales/Retina1.png",
+    "crop": [
+      10,
+      549,
+      10,
+      549
+    ],
+    "sha256": "e3400f5c7de92a37be14d538ca006ec5adf29112580404753f35a1233b1e50e5",
+    "original_source": "data/Retina1.png",
+    "source_blob_sha": "60324520687e806dae2f734414348c22ba970b11"
+  },
+  "firma_lote": "ff39798eaf204296a207757fa6a6806f98ea56792968f4a215b2b1f2f98c2230",
+  "mapas_completos_guardados": false,
+  "imagen_snapshot": "insumos/imagen_867cda7443fb997739e6.tif",
+  "imagen_hash": "867cda7443fb997739e6b12241643d6de1047c10c5f84853826cb4965f85c5f5",
+  "roi_snapshot": "insumos/roi_a14a212b431aacb1d507.tif",
+  "roi_hash": "a14a212b431aacb1d507d6c034863259d923e8961fc596af36c99b47a4dec7db",
+  "medicion_id": "83ad1099330644d6",
+  "actividad": "06_puntos",
+  "parametros": {
+    "method": "Harris",
+    "max_points": 500,
+    "low": 0,
+    "high": 255,
+    "harris_k": 0.04,
+    "harris_threshold": 0.01,
+    "min_distance": 5,
+    "harris_block": 3,
+    "harris_size": 3,
+    "subpixel": true,
+    "sift_contrast": 0.04,
+    "sift_edge": 10,
+    "sift_sigma": 1.6,
+    "orb_scale": 1.2,
+    "orb_levels": 8,
+    "orb_fast": 20,
+    "orb_patch": 31,
+    "ratio": 0.75,
+    "mutual": true,
+    "tolerance": 3,
+    "descriptor": "SIFT sobre Harris",
+    "modelo_geometrico": "identidad; imágenes del pool alineadas"
+  },
+  "caracteristicas": {
+    "n_puntos_a": 78,
+    "n_puntos_b": 73,
+    "densidad_a_por_1000px": 3.6006093338872733,
+    "densidad_b_por_1000px": 3.3698010432534735,
+    "n_correspondencias": 42,
+    "n_compatibles_posicion": 37,
+    "fraccion_compatibles": 0.8809523809523809,
+    "error_mediano_px": 0.3809906625421379,
+    "repetibilidad_espacial": 0.7671232876712328,
+    "n_a_cuadrante_00": 0,
+    "n_a_cuadrante_01": 0,
+    "n_a_cuadrante_10": 49,
+    "n_a_cuadrante_11": 29,
+    "n_b_cuadrante_00": 0,
+    "n_b_cuadrante_01": 0,
+    "n_b_cuadrante_10": 45,
+    "n_b_cuadrante_11": 28
+  },
+  "imagen_b_snapshot": "insumos/imagen_6e994af1eaeb975b07ff.tif",
+  "imagen_b_hash": "6e994af1eaeb975b07ff150084e7d5b12a974e1938b50ade6ffc0d01ef64c2ae",
+  "matrices": "matrices.npz"
+}

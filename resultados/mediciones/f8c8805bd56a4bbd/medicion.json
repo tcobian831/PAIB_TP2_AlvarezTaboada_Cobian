@@ -1,0 +1,134 @@
+{
+  "imagen_id": "Retina6",
+  "variante": "intermedia",
+  "roi_id": "region_ramificada",
+  "capa_imagen": "Retina6_kernel_de_gran_escala",
+  "capa_region": "Shapes",
+  "indice_region": 4,
+  "roi_geometria": {
+    "shape_type": "rectangle",
+    "vertices_fila_columna": [
+      [
+        335.555419921875,
+        122.70988464355469
+      ],
+      [
+        335.555419921875,
+        371.79852294921875
+      ],
+      [
+        422.5386047363281,
+        371.79852294921875
+      ],
+      [
+        422.5386047363281,
+        122.70988464355469
+      ]
+    ]
+  },
+  "fuente": {
+    "case_id": "Retina6",
+    "variant": "intermedia",
+    "layer_name": "Retina6_kernel_de_gran_escala",
+    "path": "data/procesadas/Retina6_kernel_de_gran_escala.tif",
+    "crop": null,
+    "sha256": "0b56b387ba06dc8a3df5282be83821cd76f2bf9133fc9a0baa22683ae2c4a4d3",
+    "original_source": "resultados/imagenes_procesadas/Retina6_kernel_de_gran_escala.tif",
+    "source_blob_sha": "d6cd61d8114c7bd321022ac294966952ae77c4f4"
+  },
+  "coordinate_frame": "row,col; px; sin transformaciones",
+  "propiedad": "Detección y correspondencia de puntos de interés en la región vascular ramificada.",
+  "justificacion": "Comparación de Harris, SIFT y ORB entre cada versión procesada y su original, utilizando la misma ROI y parámetros comunes para evaluar estabilidad y correspondencias.",
+  "parametros_solicitados": {
+    "max_points": 500,
+    "ratio": 0.75,
+    "mutual": true,
+    "tolerance": 3,
+    "low": 0,
+    "high": 255,
+    "harris_k": 0.04,
+    "harris_threshold": 0.01,
+    "min_distance": 5,
+    "harris_block": 3,
+    "harris_size": 3,
+    "subpixel": true,
+    "sift_contrast": 0.04,
+    "sift_edge": 10,
+    "sift_sigma": 1.6,
+    "orb_scale": 1.2,
+    "orb_levels": 8,
+    "orb_fast": 20,
+    "orb_patch": 31,
+    "method": "ORB"
+  },
+  "actividad_solicitada": "06_puntos",
+  "imagen_b_fuente": {
+    "case_id": "Retina6",
+    "variant": "original",
+    "layer_name": "Retina6_degradada",
+    "path": "data/originales/Retina6.png",
+    "crop": [
+      10,
+      549,
+      10,
+      549
+    ],
+    "sha256": "27d894c4ad5ccb2022661afc5b3c5890d9ffa5b5faaccf13e7e3e5b0498d978d",
+    "original_source": "data/Retina6.png",
+    "source_blob_sha": "d115aa54be01390e987d60673b88a74f8d0ff773"
+  },
+  "firma_lote": "762ec0b93b4ee2c78a2d60755a4271429cd8c576dbeb610429d04cedda4b2ee1",
+  "mapas_completos_guardados": false,
+  "imagen_snapshot": "insumos/imagen_aca97fc7d23ea7974335.tif",
+  "imagen_hash": "aca97fc7d23ea797433573a2178964ef4f0b62a75f8d6042ee8ea2d574d80c4b",
+  "roi_snapshot": "insumos/roi_a14a212b431aacb1d507.tif",
+  "roi_hash": "a14a212b431aacb1d507d6c034863259d923e8961fc596af36c99b47a4dec7db",
+  "medicion_id": "f8c8805bd56a4bbd",
+  "actividad": "06_puntos",
+  "parametros": {
+    "method": "ORB",
+    "max_points": 500,
+    "low": 0,
+    "high": 255,
+    "harris_k": 0.04,
+    "harris_threshold": 0.01,
+    "min_distance": 5,
+    "harris_block": 3,
+    "harris_size": 3,
+    "subpixel": true,
+    "sift_contrast": 0.04,
+    "sift_edge": 10,
+    "sift_sigma": 1.6,
+    "orb_scale": 1.2,
+    "orb_levels": 8,
+    "orb_fast": 20,
+    "orb_patch": 31,
+    "ratio": 0.75,
+    "mutual": true,
+    "tolerance": 3,
+    "descriptor": "ORB rBRIEF 256 bits",
+    "modelo_geometrico": "identidad; imágenes del pool alineadas"
+  },
+  "caracteristicas": {
+    "n_puntos_a": 0,
+    "n_puntos_b": 0,
+    "densidad_a_por_1000px": 0.0,
+    "densidad_b_por_1000px": 0.0,
+    "n_correspondencias": 0,
+    "n_compatibles_posicion": 0,
+    "fraccion_compatibles": null,
+    "error_mediano_px": null,
+    "repetibilidad_espacial": null,
+    "n_a_cuadrante_00": 0,
+    "n_a_cuadrante_01": 0,
+    "n_a_cuadrante_10": 0,
+    "n_a_cuadrante_11": 0,
+    "n_b_cuadrante_00": 0,
+    "n_b_cuadrante_01": 0,
+    "n_b_cuadrante_10": 0,
+    "n_b_cuadrante_11": 0
+  },
+  "imagen_b_snapshot": "insumos/imagen_f865eed5440cf0d3f7a0.tif",
+  "imagen_b_hash": "f865eed5440cf0d3f7a0bf5388ca3e507d2975a34f13c6db764de15f567033ae",
+  "matrices": "matrices.npz"
+}

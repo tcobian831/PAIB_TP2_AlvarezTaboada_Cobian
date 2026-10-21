@@ -1,0 +1,155 @@
+{
+  "imagen_id": "Retina4",
+  "variante": "corregida",
+  "roi_id": "region_ramificada",
+  "capa_imagen": "Retina4_wiener",
+  "capa_region": "Shapes",
+  "indice_region": 4,
+  "roi_geometria": {
+    "shape_type": "rectangle",
+    "vertices_fila_columna": [
+      [
+        335.555419921875,
+        122.70988464355469
+      ],
+      [
+        335.555419921875,
+        371.79852294921875
+      ],
+      [
+        422.5386047363281,
+        371.79852294921875
+      ],
+      [
+        422.5386047363281,
+        122.70988464355469
+      ]
+    ]
+  },
+  "fuente": {
+    "case_id": "Retina4",
+    "variant": "corregida",
+    "layer_name": "Retina4_wiener",
+    "path": "data/procesadas/Retina4_wiener.tif",
+    "crop": null,
+    "sha256": "edb6cf5bdb2781b386117f540a28ceff43db9185b59cb1e68b0899b1810126f6",
+    "original_source": "resultados/imagenes_procesadas/Retina4_wiener.tif",
+    "source_blob_sha": "c5d41e1807216345fbf29b7a97d3c15864e98039"
+  },
+  "coordinate_frame": "row,col; px; sin transformaciones",
+  "propiedad": "",
+  "justificacion": "Comparación de la textura del fondo y de una región vascular mediante configuraciones comunes entre versiones de la imagen.",
+  "parametros_solicitados": {
+    "wavelengths": [
+      4,
+      8,
+      16
+    ],
+    "angles": [
+      0,
+      45,
+      90,
+      135
+    ],
+    "sigma_ratio": 0.56,
+    "gamma": 0.5
+  },
+  "actividad_solicitada": "04_gabor",
+  "firma_lote": "e9e0919168dc38a1f7f806bb71d1778701a25fe4d09464e761d6a9e500b45176",
+  "mapas_completos_guardados": false,
+  "imagen_snapshot": "insumos/imagen_88201fdb7320e2044df8.tif",
+  "imagen_hash": "88201fdb7320e2044df8a44b20daf6acb536ea959bdba22f9bf5896e0000d011",
+  "roi_snapshot": "insumos/roi_a14a212b431aacb1d507.tif",
+  "roi_hash": "a14a212b431aacb1d507d6c034863259d923e8961fc596af36c99b47a4dec7db",
+  "medicion_id": "a4b28a46034d4905",
+  "actividad": "04_gabor",
+  "parametros": {
+    "wavelengths": [
+      4,
+      8,
+      16
+    ],
+    "angles": [
+      0,
+      45,
+      90,
+      135
+    ],
+    "sigma_ratio": 0.56,
+    "gamma": 0.5
+  },
+  "caracteristicas": {
+    "gabor_l4_a0_media": 0.02299416434240787,
+    "gabor_l4_a0_desviacion": 0.01345749011843029,
+    "gabor_l4_a0_energia": 0.0007098356340933104,
+    "gabor_l4_a0_abs_media": 0.02299416434240787,
+    "gabor_l4_a0_minimo": 9.093010864753778e-05,
+    "gabor_l4_a0_maximo": 0.09544018473016655,
+    "gabor_l4_a45_media": 0.022541734083471578,
+    "gabor_l4_a45_desviacion": 0.011927042887810095,
+    "gabor_l4_a45_energia": 0.0006503841275376056,
+    "gabor_l4_a45_abs_media": 0.022541734083471578,
+    "gabor_l4_a45_minimo": 5.142591030870622e-05,
+    "gabor_l4_a45_maximo": 0.07856851484103547,
+    "gabor_l4_a90_media": 0.023366647126257592,
+    "gabor_l4_a90_desviacion": 0.012576446080509118,
+    "gabor_l4_a90_energia": 0.0007041671939389953,
+    "gabor_l4_a90_abs_media": 0.023366647126257592,
+    "gabor_l4_a90_minimo": 0.00021003607617695418,
+    "gabor_l4_a90_maximo": 0.08473197430602011,
+    "gabor_l4_a135_media": 0.020737537995838988,
+    "gabor_l4_a135_desviacion": 0.010492053909516463,
+    "gabor_l4_a135_energia": 0.0005401286773690652,
+    "gabor_l4_a135_abs_media": 0.020737537995838988,
+    "gabor_l4_a135_minimo": 0.00010871283140730705,
+    "gabor_l4_a135_maximo": 0.06543050536124544,
+    "gabor_l8_a0_media": 0.04831654987956132,
+    "gabor_l8_a0_desviacion": 0.04050890410331298,
+    "gabor_l8_a0_energia": 0.003975460303915544,
+    "gabor_l8_a0_abs_media": 0.04831654987956132,
+    "gabor_l8_a0_minimo": 0.00037273267276188236,
+    "gabor_l8_a0_maximo": 0.2505343256747627,
+    "gabor_l8_a45_media": 0.05175683745330239,
+    "gabor_l8_a45_desviacion": 0.049990321551862504,
+    "gabor_l8_a45_energia": 0.005177802472026174,
+    "gabor_l8_a45_abs_media": 0.05175683745330239,
+    "gabor_l8_a45_minimo": 0.0002577521453967132,
+    "gabor_l8_a45_maximo": 0.3801789547459008,
+    "gabor_l8_a90_media": 0.05469173088392153,
+    "gabor_l8_a90_desviacion": 0.0546894067956235,
+    "gabor_l8_a90_energia": 0.005982116642736485,
+    "gabor_l8_a90_abs_media": 0.05469173088392153,
+    "gabor_l8_a90_minimo": 0.00041067555306603383,
+    "gabor_l8_a90_maximo": 0.3835328621517502,
+    "gabor_l8_a135_media": 0.03673691053366138,
+    "gabor_l8_a135_desviacion": 0.022806751035254265,
+    "gabor_l8_a135_energia": 0.0018697484883423118,
+    "gabor_l8_a135_abs_media": 0.03673691053366138,
+    "gabor_l8_a135_minimo": 0.00040457345814149927,
+    "gabor_l8_a135_maximo": 0.179528997542307,
+    "gabor_l16_a0_media": 0.08174623934295393,
+    "gabor_l16_a0_desviacion": 0.05833754000370695,
+    "gabor_l16_a0_energia": 0.010085716220399618,
+    "gabor_l16_a0_abs_media": 0.08174623934295393,
+    "gabor_l16_a0_minimo": 0.00016106638432288126,
+    "gabor_l16_a0_maximo": 0.3004591924112836,
+    "gabor_l16_a45_media": 0.11602583573660367,
+    "gabor_l16_a45_desviacion": 0.10389614533668864,
+    "gabor_l16_a45_energia": 0.024256403574199666,
+    "gabor_l16_a45_abs_media": 0.11602583573660367,
+    "gabor_l16_a45_minimo": 0.0006040777113722354,
+    "gabor_l16_a45_maximo": 0.5987706226283962,
+    "gabor_l16_a90_media": 0.1337589125031343,
+    "gabor_l16_a90_desviacion": 0.14962175343043344,
+    "gabor_l16_a90_energia": 0.04027811577361856,
+    "gabor_l16_a90_abs_media": 0.1337589125031343,
+    "gabor_l16_a90_minimo": 0.0002503642926858169,
+    "gabor_l16_a90_maximo": 1.141977585059582,
+    "gabor_l16_a135_media": 0.061366885815740124,
+    "gabor_l16_a135_desviacion": 0.02918732605934214,
+    "gabor_l16_a135_energia": 0.004617794677216439,
+    "gabor_l16_a135_abs_media": 0.061366885815740124,
+    "gabor_l16_a135_minimo": 0.0009092473606005862,
+    "gabor_l16_a135_maximo": 0.23025570211756563
+  }
+}

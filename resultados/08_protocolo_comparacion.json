@@ -1,0 +1,3884 @@
+{
+  "configuracion": {
+    "rois_principales": [
+      "vaso_grueso",
+      "vaso_fino",
+      "fondo",
+      "region_ramificada",
+      "region_macular"
+    ],
+    "comparacion_puntos": {
+      "imagen_id": "Retina1_2",
+      "variante": "realzada",
+      "roi_id": "region_ramificada"
+    },
+    "configuraciones_representativas": {
+      "03_estructura": {
+        "prune_length": 0.0
+      },
+      "04_lbp": {
+        "points": 8,
+        "radius": 1.0,
+        "method": "uniform"
+      },
+      "04_wavelet": {
+        "wavelet": "db2",
+        "level": 2
+      },
+      "07_radiomica": {
+        "mode": "count",
+        "bins": 32,
+        "distances": [
+          1
+        ],
+        "alpha": 0
+      }
+    },
+    "sensibilidad_roi": {
+      "original": "region_ramificada",
+      "modificada": "region_ramificada_ampliada"
+    }
+  },
+  "seleccion": [
+    {
+      "imagen_id": "Retina1_2",
+      "variante": "original",
+      "roi_id": "fondo",
+      "familia": "04_lbp",
+      "medicion_id": "3b490727726340fb",
+      "parametros": {
+        "method": "uniform",
+        "points": 8,
+        "radius": 1.0
+      },
+      "roi_hash": "9a1c06f86507cf4cc13c471cc41ba4dd0a7ac157ae224d795560a33baab5b885"
+    },
+    {
+      "imagen_id": "Retina1_2",
+      "variante": "original",
+      "roi_id": "region_ramificada",
+      "familia": "03_estructura",
+      "medicion_id": "42fc117e91ea4c8e",
+      "parametros": {
+        "calculate_thickness": true,
+        "prune_length": 0.0
+      },
+      "roi_hash": "a14a212b431aacb1d507d6c034863259d923e8961fc596af36c99b47a4dec7db"
+    },
+    {
+      "imagen_id": "Retina1_2",
+      "variante": "original",
+      "roi_id": "fondo",
+      "familia": "04_gabor",
+      "medicion_id": "67eb48803bfb4dbc",
+      "parametros": {
+        "wavelengths": [
+          4,
+          8,
+          16
+        ],
+        "angles": [
+          0,
+          45,
+          90,
+          135
+        ],
+        "sigma_ratio": 0.56,
+        "gamma": 0.5
+      },
+      "roi_hash": "9a1c06f86507cf4cc13c471cc41ba4dd0a7ac157ae224d795560a33baab5b885"
+    },
+    {
+      "imagen_id": "Retina1_2",
+      "variante": "realzada",
+      "roi_id": "region_ramificada",
+      "familia": "06_puntos[Harris]",
+      "medicion_id": "83ad1099330644d6",
+      "parametros": {
+        "method": "Harris",
+        "max_points": 500,
+        "low": 0,
+        "high": 255,
+        "ratio": 0.75,
+        "mutual": true,
+        "tolerance": 3,
+        "harris_k": 0.04,
+        "harris_threshold": 0.01,
+        "min_distance": 5,
+        "harris_block": 3,
+        "harris_size": 3,
+        "subpixel": true
+      },
+      "roi_hash": "a14a212b431aacb1d507d6c034863259d923e8961fc596af36c99b47a4dec7db"
+    },
+    {
+      "imagen_id": "Retina1_2",
+      "variante": "original",
+      "roi_id": "fondo",
+      "familia": "04_wavelet",
+      "medicion_id": "8dcae5806b194657",
+      "parametros": {
+        "wavelet": "db2",
+        "level": 2
+      },
+      "roi_hash": "9a1c06f86507cf4cc13c471cc41ba4dd0a7ac157ae224d795560a33baab5b885"
+    },
+    {
+      "imagen_id": "Retina1_2",
+      "variante": "original",
+      "roi_id": "vaso_grueso",
+      "familia": "02_geometria",
+      "medicion_id": "ad9e2f3356f24560",
+      "parametros": {},
+      "roi_hash": "315bf8fe78e19a8b389ea19163aa139804363844d9ecaa38f3ce048a4187b65a"
+    },
+    {
+      "imagen_id": "Retina1_2",
+      "variante": "original",
+      "roi_id": "vaso_grueso",
+      "familia": "05_multiescala",
+      "medicion_id": "b7937c768b2e4c93",
+      "parametros": {
+        "sigmas": [
+          1,
+          2,
+          4,
+          8
+        ],
+        "dog_k": 1.2599210498948732
+      },
+      "roi_hash": "315bf8fe78e19a8b389ea19163aa139804363844d9ecaa38f3ce048a4187b65a"
+    },
+    {
+      "imagen_id": "Retina1_2",
+      "variante": "original",
+      "roi_id": "vaso_fino",
+      "familia": "05_multiescala",
+      "medicion_id": "0fb6ac92bdc94ff2",
+      "parametros": {
+        "sigmas": [
+          1,
+          2,
+          4,
+          8
+        ],
+        "dog_k": 1.2599210498948732
+      },
+      "roi_hash": "8ed059aaf347372ac3abc802070d2416e44e88128cbdb12c5ec898c943371b20"
+    },
+    {
+      "imagen_id": "Retina1_2",
+      "variante": "original",
+      "roi_id": "vaso_fino",
+      "familia": "02_geometria",
+      "medicion_id": "4762274491c0466f",
+      "parametros": {},
+      "roi_hash": "8ed059aaf347372ac3abc802070d2416e44e88128cbdb12c5ec898c943371b20"
+    },
+    {
+      "imagen_id": "Retina1_2",
+      "variante": "realzada",
+      "roi_id": "region_ramificada",
+      "familia": "06_puntos[SIFT]",
+      "medicion_id": "b036fc6bdcd04c0c",
+      "parametros": {
+        "method": "SIFT",
+        "max_points": 500,
+        "low": 0,
+        "high": 255,
+        "ratio": 0.75,
+        "mutual": true,
+        "tolerance": 3,
+        "sift_contrast": 0.02,
+        "sift_edge": 10,
+        "sift_sigma": 1.6
+      },
+      "roi_hash": "a14a212b431aacb1d507d6c034863259d923e8961fc596af36c99b47a4dec7db"
+    },
+    {
+      "imagen_id": "Retina1_2",
+      "variante": "original",
+      "roi_id": "region_ramificada",
+      "familia": "04_gabor",
+      "medicion_id": "926242f1639b4198",
+      "parametros": {
+        "wavelengths": [
+          4,
+          8,
+          16
+        ],
+        "angles": [
+          0,
+          45,
+          90,
+          135
+        ],
+        "sigma_ratio": 0.56,
+        "gamma": 0.5
+      },
+      "roi_hash": "a14a212b431aacb1d507d6c034863259d923e8961fc596af36c99b47a4dec7db"
+    },
+    {
+      "imagen_id": "Retina3",
+      "variante": "original",
+      "roi_id": "region_ramificada",
+      "familia": "03_estructura",
+      "medicion_id": "d5b1fefd81d6404f",
+      "parametros": {
+        "calculate_thickness": true,
+        "prune_length": 0.0
+      },
+      "roi_hash": "a14a212b431aacb1d507d6c034863259d923e8961fc596af36c99b47a4dec7db"
+    },
+    {
+      "imagen_id": "Retina1_2",
+      "variante": "original",
+      "roi_id": "region_ramificada",
+      "familia": "02_geometria",
+      "medicion_id": "05ace3c1e0304d3a",
+      "parametros": {},
+      "roi_hash": "a14a212b431aacb1d507d6c034863259d923e8961fc596af36c99b47a4dec7db"
+    },
+    {
+      "imagen_id": "Retina1_2",
+      "variante": "original",
+      "roi_id": "region_ramificada",
+      "familia": "04_wavelet",
+      "medicion_id": "204e3d5aa1ab49b8",
+      "parametros": {
+        "wavelet": "db2",
+        "level": 2
+      },
+      "roi_hash": "a14a212b431aacb1d507d6c034863259d923e8961fc596af36c99b47a4dec7db"
+    },
+    {
+      "imagen_id": "Retina3",
+      "variante": "original",
+      "roi_id": "vaso_grueso",
+      "familia": "05_multiescala",
+      "medicion_id": "4b8ec9da08d84cde",
+      "parametros": {
+        "sigmas": [
+          1,
+          2,
+          4,
+          8
+        ],
+        "dog_k": 1.2599210498948732
+      },
+      "roi_hash": "315bf8fe78e19a8b389ea19163aa139804363844d9ecaa38f3ce048a4187b65a"
+    },
+    {
+      "imagen_id": "Retina1_2",
+      "variante": "original",
+      "roi_id": "fondo",
+      "familia": "07_radiomica",
+      "medicion_id": "a33f0d189c4140c2",
+      "parametros": {
+        "mode": "count",
+        "low": 0,
+        "high": 255,
+        "distances": [
+          1
+        ],
+        "alpha": 0,
+        "bins": 32
+      },
+      "roi_hash": "9a1c06f86507cf4cc13c471cc41ba4dd0a7ac157ae224d795560a33baab5b885"
+    },
+    {
+      "imagen_id": "Retina4",
+      "variante": "original",
+      "roi_id": "region_ramificada",
+      "familia": "03_estructura",
+      "medicion_id": "aea1f1038dd54cc3",
+      "parametros": {
+        "calculate_thickness": true,
+        "prune_length": 0.0
+      },
+      "roi_hash": "a14a212b431aacb1d507d6c034863259d923e8961fc596af36c99b47a4dec7db"
+    },
+    {
+      "imagen_id": "Retina3",
+      "variante": "original",
+      "roi_id": "fondo",
+      "familia": "04_gabor",
+      "medicion_id": "e0b3ad06da8d43a5",
+      "parametros": {
+        "wavelengths": [
+          4,
+          8,
+          16
+        ],
+        "angles": [
+          0,
+          45,
+          90,
+          135
+        ],
+        "sigma_ratio": 0.56,
+        "gamma": 0.5
+      },
+      "roi_hash": "9a1c06f86507cf4cc13c471cc41ba4dd0a7ac157ae224d795560a33baab5b885"
+    },
+    {
+      "imagen_id": "Retina1_2",
+      "variante": "realzada",
+      "roi_id": "region_ramificada",
+      "familia": "06_puntos[ORB]",
+      "medicion_id": "40c8de0b6cfe438f",
+      "parametros": {
+        "method": "ORB",
+        "max_points": 500,
+        "low": 0,
+        "high": 255,
+        "ratio": 0.75,
+        "mutual": true,
+        "tolerance": 3,
+        "orb_scale": 1.2,
+        "orb_levels": 8,
+        "orb_fast": 5,
+        "orb_patch": 31
+      },
+      "roi_hash": "a14a212b431aacb1d507d6c034863259d923e8961fc596af36c99b47a4dec7db"
+    },
+    {
+      "imagen_id": "Retina3",
+      "variante": "original",
+      "roi_id": "region_ramificada",
+      "familia": "04_gabor",
+      "medicion_id": "44e4c30574d04b07",
+      "parametros": {
+        "wavelengths": [
+          4,
+          8,
+          16
+        ],
+        "angles": [
+          0,
+          45,
+          90,
+          135
+        ],
+        "sigma_ratio": 0.56,
+        "gamma": 0.5
+      },
+      "roi_hash": "a14a212b431aacb1d507d6c034863259d923e8961fc596af36c99b47a4dec7db"
+    },
+    {
+      "imagen_id": "Retina1_2",
+      "variante": "original",
+      "roi_id": "region_ramificada",
+      "familia": "04_lbp",
+      "medicion_id": "49c45168517949bb",
+      "parametros": {
+        "method": "uniform",
+        "points": 8,
+        "radius": 1.0
+      },
+      "roi_hash": "a14a212b431aacb1d507d6c034863259d923e8961fc596af36c99b47a4dec7db"
+    },
+    {
+      "imagen_id": "Retina5",
+      "variante": "original",
+      "roi_id": "region_ramificada",
+      "familia": "03_estructura",
+      "medicion_id": "4ee50e85b4a44398",
+      "parametros": {
+        "calculate_thickness": true,
+        "prune_length": 0.0
+      },
+      "roi_hash": "a14a212b431aacb1d507d6c034863259d923e8961fc596af36c99b47a4dec7db"
+    },
+    {
+      "imagen_id": "Retina3",
+      "variante": "original",
+      "roi_id": "vaso_grueso",
+      "familia": "02_geometria",
+      "medicion_id": "70c5897a8cbc4a48",
+      "parametros": {},
+      "roi_hash": "315bf8fe78e19a8b389ea19163aa139804363844d9ecaa38f3ce048a4187b65a"
+    },
+    {
+      "imagen_id": "Retina3",
+      "variante": "original",
+      "roi_id": "vaso_fino",
+      "familia": "05_multiescala",
+      "medicion_id": "9ca1d3617b624214",
+      "parametros": {
+        "sigmas": [
+          1,
+          2,
+          4,
+          8
+        ],
+        "dog_k": 1.2599210498948732
+      },
+      "roi_hash": "8ed059aaf347372ac3abc802070d2416e44e88128cbdb12c5ec898c943371b20"
+    },
+    {
+      "imagen_id": "Retina3",
+      "variante": "original",
+      "roi_id": "vaso_fino",
+      "familia": "02_geometria",
+      "medicion_id": "34a94aab88854056",
+      "parametros": {},
+      "roi_hash": "8ed059aaf347372ac3abc802070d2416e44e88128cbdb12c5ec898c943371b20"
+    },
+    {
+      "imagen_id": "Retina6",
+      "variante": "original",
+      "roi_id": "region_ramificada",
+      "familia": "03_estructura",
+      "medicion_id": "4d142eef9b8f4451",
+      "parametros": {
+        "calculate_thickness": true,
+        "prune_length": 0.0
+      },
+      "roi_hash": "a14a212b431aacb1d507d6c034863259d923e8961fc596af36c99b47a4dec7db"
+    },
+    {
+      "imagen_id": "Retina4",
+      "variante": "original",
+      "roi_id": "vaso_grueso",
+      "familia": "05_multiescala",
+      "medicion_id": "63926ca4849b4438",
+      "parametros": {
+        "sigmas": [
+          1,
+          2,
+          4,
+          8
+        ],
+        "dog_k": 1.2599210498948732
+      },
+      "roi_hash": "315bf8fe78e19a8b389ea19163aa139804363844d9ecaa38f3ce048a4187b65a"
+    },
+    {
+      "imagen_id": "Retina3",
+      "variante": "original",
+      "roi_id": "fondo",
+      "familia": "04_wavelet",
+      "medicion_id": "a599c4398fe84e60",
+      "parametros": {
+        "wavelet": "db2",
+        "level": 2
+      },
+      "roi_hash": "9a1c06f86507cf4cc13c471cc41ba4dd0a7ac157ae224d795560a33baab5b885"
+    },
+    {
+      "imagen_id": "Retina4",
+      "variante": "original",
+      "roi_id": "fondo",
+      "familia": "04_gabor",
+      "medicion_id": "c27279b84dc1465c",
+      "parametros": {
+        "wavelengths": [
+          4,
+          8,
+          16
+        ],
+        "angles": [
+          0,
+          45,
+          90,
+          135
+        ],
+        "sigma_ratio": 0.56,
+        "gamma": 0.5
+      },
+      "roi_hash": "9a1c06f86507cf4cc13c471cc41ba4dd0a7ac157ae224d795560a33baab5b885"
+    },
+    {
+      "imagen_id": "Retina7",
+      "variante": "original",
+      "roi_id": "region_ramificada",
+      "familia": "03_estructura",
+      "medicion_id": "0877683e2aba4a94",
+      "parametros": {
+        "calculate_thickness": true,
+        "prune_length": 0.0
+      },
+      "roi_hash": "a14a212b431aacb1d507d6c034863259d923e8961fc596af36c99b47a4dec7db"
+    },
+    {
+      "imagen_id": "Retina3",
+      "variante": "original",
+      "roi_id": "region_ramificada",
+      "familia": "02_geometria",
+      "medicion_id": "1d44b7b52850468b",
+      "parametros": {},
+      "roi_hash": "a14a212b431aacb1d507d6c034863259d923e8961fc596af36c99b47a4dec7db"
+    },
+    {
+      "imagen_id": "Retina4",
+      "variante": "original",
+      "roi_id": "region_ramificada",
+      "familia": "04_gabor",
+      "medicion_id": "82077f4f821543c6",
+      "parametros": {
+        "wavelengths": [
+          4,
+          8,
+          16
+        ],
+        "angles": [
+          0,
+          45,
+          90,
+          135
+        ],
+        "sigma_ratio": 0.56,
+        "gamma": 0.5
+      },
+      "roi_hash": "a14a212b431aacb1d507d6c034863259d923e8961fc596af36c99b47a4dec7db"
+    },
+    {
+      "imagen_id": "Retina4",
+      "variante": "original",
+      "roi_id": "vaso_fino",
+      "familia": "05_multiescala",
+      "medicion_id": "a2b321da95174cf1",
+      "parametros": {
+        "sigmas": [
+          1,
+          2,
+          4,
+          8
+        ],
+        "dog_k": 1.2599210498948732
+      },
+      "roi_hash": "8ed059aaf347372ac3abc802070d2416e44e88128cbdb12c5ec898c943371b20"
+    },
+    {
+      "imagen_id": "Retina5",
+      "variante": "original",
+      "roi_id": "fondo",
+      "familia": "04_gabor",
+      "medicion_id": "16cfc340a7ba4147",
+      "parametros": {
+        "wavelengths": [
+          4,
+          8,
+          16
+        ],
+        "angles": [
+          0,
+          45,
+          90,
+          135
+        ],
+        "sigma_ratio": 0.56,
+        "gamma": 0.5
+      },
+      "roi_hash": "9a1c06f86507cf4cc13c471cc41ba4dd0a7ac157ae224d795560a33baab5b885"
+    },
+    {
+      "imagen_id": "Retina1_2",
+      "variante": "realzada",
+      "roi_id": "region_ramificada",
+      "familia": "03_estructura",
+      "medicion_id": "c29cf0232c66440b",
+      "parametros": {
+        "calculate_thickness": true,
+        "prune_length": 0.0
+      },
+      "roi_hash": "a14a212b431aacb1d507d6c034863259d923e8961fc596af36c99b47a4dec7db"
+    },
+    {
+      "imagen_id": "Retina4",
+      "variante": "original",
+      "roi_id": "vaso_grueso",
+      "familia": "02_geometria",
+      "medicion_id": "c2b96652bf29432d",
+      "parametros": {},
+      "roi_hash": "315bf8fe78e19a8b389ea19163aa139804363844d9ecaa38f3ce048a4187b65a"
+    },
+    {
+      "imagen_id": "Retina3",
+      "variante": "original",
+      "roi_id": "fondo",
+      "familia": "04_lbp",
+      "medicion_id": "c54cc2ee5e5b4084",
+      "parametros": {
+        "method": "uniform",
+        "points": 8,
+        "radius": 1.0
+      },
+      "roi_hash": "9a1c06f86507cf4cc13c471cc41ba4dd0a7ac157ae224d795560a33baab5b885"
+    },
+    {
+      "imagen_id": "Retina5",
+      "variante": "original",
+      "roi_id": "vaso_grueso",
+      "familia": "05_multiescala",
+      "medicion_id": "fb27c90f94b2478c",
+      "parametros": {
+        "sigmas": [
+          1,
+          2,
+          4,
+          8
+        ],
+        "dog_k": 1.2599210498948732
+      },
+      "roi_hash": "315bf8fe78e19a8b389ea19163aa139804363844d9ecaa38f3ce048a4187b65a"
+    },
+    {
+      "imagen_id": "Retina3",
+      "variante": "original",
+      "roi_id": "region_ramificada",
+      "familia": "04_wavelet",
+      "medicion_id": "fe48b95cde2c45e9",
+      "parametros": {
+        "wavelet": "db2",
+        "level": 2
+      },
+      "roi_hash": "a14a212b431aacb1d507d6c034863259d923e8961fc596af36c99b47a4dec7db"
+    },
+    {
+      "imagen_id": "Retina5",
+      "variante": "original",
+      "roi_id": "vaso_fino",
+      "familia": "05_multiescala",
+      "medicion_id": "77b0bfeadff04818",
+      "parametros": {
+        "sigmas": [
+          1,
+          2,
+          4,
+          8
+        ],
+        "dog_k": 1.2599210498948732
+      },
+      "roi_hash": "8ed059aaf347372ac3abc802070d2416e44e88128cbdb12c5ec898c943371b20"
+    },
+    {
+      "imagen_id": "Retina3",
+      "variante": "corregida",
+      "roi_id": "region_ramificada",
+      "familia": "03_estructura",
+      "medicion_id": "a4853d7e4fac4a3f",
+      "parametros": {
+        "calculate_thickness": true,
+        "prune_length": 0.0
+      },
+      "roi_hash": "a14a212b431aacb1d507d6c034863259d923e8961fc596af36c99b47a4dec7db"
+    },
+    {
+      "imagen_id": "Retina5",
+      "variante": "original",
+      "roi_id": "region_ramificada",
+      "familia": "04_gabor",
+      "medicion_id": "c422779db10d4e83",
+      "parametros": {
+        "wavelengths": [
+          4,
+          8,
+          16
+        ],
+        "angles": [
+          0,
+          45,
+          90,
+          135
+        ],
+        "sigma_ratio": 0.56,
+        "gamma": 0.5
+      },
+      "roi_hash": "a14a212b431aacb1d507d6c034863259d923e8961fc596af36c99b47a4dec7db"
+    },
+    {
+      "imagen_id": "Retina4",
+      "variante": "original",
+      "roi_id": "vaso_fino",
+      "familia": "02_geometria",
+      "medicion_id": "f50cfbd5f6504148",
+      "parametros": {},
+      "roi_hash": "8ed059aaf347372ac3abc802070d2416e44e88128cbdb12c5ec898c943371b20"
+    },
+    {
+      "imagen_id": "Retina6",
+      "variante": "original",
+      "roi_id": "fondo",
+      "familia": "04_gabor",
+      "medicion_id": "266326cc5aa24a9f",
+      "parametros": {
+        "wavelengths": [
+          4,
+          8,
+          16
+        ],
+        "angles": [
+          0,
+          45,
+          90,
+          135
+        ],
+        "sigma_ratio": 0.56,
+        "gamma": 0.5
+      },
+      "roi_hash": "9a1c06f86507cf4cc13c471cc41ba4dd0a7ac157ae224d795560a33baab5b885"
+    },
+    {
+      "imagen_id": "Retina4",
+      "variante": "original",
+      "roi_id": "region_ramificada",
+      "familia": "02_geometria",
+      "medicion_id": "26fc28ff0d9d452d",
+      "parametros": {},
+      "roi_hash": "a14a212b431aacb1d507d6c034863259d923e8961fc596af36c99b47a4dec7db"
+    },
+    {
+      "imagen_id": "Retina6",
+      "variante": "original",
+      "roi_id": "vaso_grueso",
+      "familia": "05_multiescala",
+      "medicion_id": "41619e4faf774025",
+      "parametros": {
+        "sigmas": [
+          1,
+          2,
+          4,
+          8
+        ],
+        "dog_k": 1.2599210498948732
+      },
+      "roi_hash": "315bf8fe78e19a8b389ea19163aa139804363844d9ecaa38f3ce048a4187b65a"
+    },
+    {
+      "imagen_id": "Retina4",
+      "variante": "original",
+      "roi_id": "fondo",
+      "familia": "04_wavelet",
+      "medicion_id": "9807e9f2e1d8415b",
+      "parametros": {
+        "wavelet": "db2",
+        "level": 2
+      },
+      "roi_hash": "9a1c06f86507cf4cc13c471cc41ba4dd0a7ac157ae224d795560a33baab5b885"
+    },
+    {
+      "imagen_id": "Retina4",
+      "variante": "corregida",
+      "roi_id": "region_ramificada",
+      "familia": "03_estructura",
+      "medicion_id": "ae7893456ce84f7a",
+      "parametros": {
+        "calculate_thickness": true,
+        "prune_length": 0.0
+      },
+      "roi_hash": "a14a212b431aacb1d507d6c034863259d923e8961fc596af36c99b47a4dec7db"
+    },
+    {
+      "imagen_id": "Retina1_2",
+      "variante": "original",
+      "roi_id": "region_ramificada",
+      "familia": "07_radiomica",
+      "medicion_id": "dd32f7eb5af847b3",
+      "parametros": {
+        "mode": "count",
+        "low": 0,
+        "high": 255,
+        "distances": [
+          1
+        ],
+        "alpha": 0,
+        "bins": 32
+      },
+      "roi_hash": "a14a212b431aacb1d507d6c034863259d923e8961fc596af36c99b47a4dec7db"
+    },
+    {
+      "imagen_id": "Retina6",
+      "variante": "original",
+      "roi_id": "region_ramificada",
+      "familia": "04_gabor",
+      "medicion_id": "2644145d9f624fa3",
+      "parametros": {
+        "wavelengths": [
+          4,
+          8,
+          16
+        ],
+        "angles": [
+          0,
+          45,
+          90,
+          135
+        ],
+        "sigma_ratio": 0.56,
+        "gamma": 0.5
+      },
+      "roi_hash": "a14a212b431aacb1d507d6c034863259d923e8961fc596af36c99b47a4dec7db"
+    },
+    {
+      "imagen_id": "Retina5",
+      "variante": "original",
+      "roi_id": "vaso_grueso",
+      "familia": "02_geometria",
+      "medicion_id": "6c18c21f36434ac9",
+      "parametros": {},
+      "roi_hash": "315bf8fe78e19a8b389ea19163aa139804363844d9ecaa38f3ce048a4187b65a"
+    },
+    {
+      "imagen_id": "Retina3",
+      "variante": "original",
+      "roi_id": "region_ramificada",
+      "familia": "04_lbp",
+      "medicion_id": "a94da054dc014b68",
+      "parametros": {
+        "method": "uniform",
+        "points": 8,
+        "radius": 1.0
+      },
+      "roi_hash": "a14a212b431aacb1d507d6c034863259d923e8961fc596af36c99b47a4dec7db"
+    },
+    {
+      "imagen_id": "Retina6",
+      "variante": "original",
+      "roi_id": "vaso_fino",
+      "familia": "05_multiescala",
+      "medicion_id": "b481fd09c99e495f",
+      "parametros": {
+        "sigmas": [
+          1,
+          2,
+          4,
+          8
+        ],
+        "dog_k": 1.2599210498948732
+      },
+      "roi_hash": "8ed059aaf347372ac3abc802070d2416e44e88128cbdb12c5ec898c943371b20"
+    },
+    {
+      "imagen_id": "Retina5",
+      "variante": "corregida",
+      "roi_id": "region_ramificada",
+      "familia": "03_estructura",
+      "medicion_id": "b703e980ed544092",
+      "parametros": {
+        "calculate_thickness": true,
+        "prune_length": 0.0
+      },
+      "roi_hash": "a14a212b431aacb1d507d6c034863259d923e8961fc596af36c99b47a4dec7db"
+    },
+    {
+      "imagen_id": "Retina6",
+      "variante": "intermedia",
+      "roi_id": "region_ramificada",
+      "familia": "03_estructura",
+      "medicion_id": "0c40b3b5f797462f",
+      "parametros": {
+        "calculate_thickness": true,
+        "prune_length": 0.0
+      },
+      "roi_hash": "a14a212b431aacb1d507d6c034863259d923e8961fc596af36c99b47a4dec7db"
+    },
+    {
+      "imagen_id": "Retina5",
+      "variante": "original",
+      "roi_id": "vaso_fino",
+      "familia": "02_geometria",
+      "medicion_id": "17133088f1ce484c",
+      "parametros": {},
+      "roi_hash": "8ed059aaf347372ac3abc802070d2416e44e88128cbdb12c5ec898c943371b20"
+    },
+    {
+      "imagen_id": "Retina7",
+      "variante": "original",
+      "roi_id": "fondo",
+      "familia": "04_gabor",
+      "medicion_id": "ad29c6ea0de54b60",
+      "parametros": {
+        "wavelengths": [
+          4,
+          8,
+          16
+        ],
+        "angles": [
+          0,
+          45,
+          90,
+          135
+        ],
+        "sigma_ratio": 0.56,
+        "gamma": 0.5
+      },
+      "roi_hash": "9a1c06f86507cf4cc13c471cc41ba4dd0a7ac157ae224d795560a33baab5b885"
+    },
+    {
+      "imagen_id": "Retina7",
+      "variante": "original",
+      "roi_id": "vaso_grueso",
+      "familia": "05_multiescala",
+      "medicion_id": "d3efef0822f4434c",
+      "parametros": {
+        "sigmas": [
+          1,
+          2,
+          4,
+          8
+        ],
+        "dog_k": 1.2599210498948732
+      },
+      "roi_hash": "315bf8fe78e19a8b389ea19163aa139804363844d9ecaa38f3ce048a4187b65a"
+    },
+    {
+      "imagen_id": "Retina4",
+      "variante": "original",
+      "roi_id": "region_ramificada",
+      "familia": "04_wavelet",
+      "medicion_id": "e41fc3a4f9d34906",
+      "parametros": {
+        "wavelet": "db2",
+        "level": 2
+      },
+      "roi_hash": "a14a212b431aacb1d507d6c034863259d923e8961fc596af36c99b47a4dec7db"
+    },
+    {
+      "imagen_id": "Retina5",
+      "variante": "original",
+      "roi_id": "region_ramificada",
+      "familia": "02_geometria",
+      "medicion_id": "23e37c1273414670",
+      "parametros": {},
+      "roi_hash": "a14a212b431aacb1d507d6c034863259d923e8961fc596af36c99b47a4dec7db"
+    },
+    {
+      "imagen_id": "Retina6",
+      "variante": "corregida",
+      "roi_id": "region_ramificada",
+      "familia": "03_estructura",
+      "medicion_id": "5aaf3659413c4a70",
+      "parametros": {
+        "calculate_thickness": true,
+        "prune_length": 0.0
+      },
+      "roi_hash": "a14a212b431aacb1d507d6c034863259d923e8961fc596af36c99b47a4dec7db"
+    },
+    {
+      "imagen_id": "Retina7",
+      "variante": "original",
+      "roi_id": "region_ramificada",
+      "familia": "04_gabor",
+      "medicion_id": "bff9bcbb97d34734",
+      "parametros": {
+        "wavelengths": [
+          4,
+          8,
+          16
+        ],
+        "angles": [
+          0,
+          45,
+          90,
+          135
+        ],
+        "sigma_ratio": 0.56,
+        "gamma": 0.5
+      },
+      "roi_hash": "a14a212b431aacb1d507d6c034863259d923e8961fc596af36c99b47a4dec7db"
+    },
+    {
+      "imagen_id": "Retina7",
+      "variante": "original",
+      "roi_id": "vaso_fino",
+      "familia": "05_multiescala",
+      "medicion_id": "cfe83ee4bf2d45f2",
+      "parametros": {
+        "sigmas": [
+          1,
+          2,
+          4,
+          8
+        ],
+        "dog_k": 1.2599210498948732
+      },
+      "roi_hash": "8ed059aaf347372ac3abc802070d2416e44e88128cbdb12c5ec898c943371b20"
+    },
+    {
+      "imagen_id": "Retina7",
+      "variante": "corregida",
+      "roi_id": "region_ramificada",
+      "familia": "03_estructura",
+      "medicion_id": "292036ab2e024786",
+      "parametros": {
+        "calculate_thickness": true,
+        "prune_length": 0.0
+      },
+      "roi_hash": "a14a212b431aacb1d507d6c034863259d923e8961fc596af36c99b47a4dec7db"
+    },
+    {
+      "imagen_id": "Retina4",
+      "variante": "original",
+      "roi_id": "fondo",
+      "familia": "04_lbp",
+      "medicion_id": "7e7b161e38c943d1",
+      "parametros": {
+        "method": "uniform",
+        "points": 8,
+        "radius": 1.0
+      },
+      "roi_hash": "9a1c06f86507cf4cc13c471cc41ba4dd0a7ac157ae224d795560a33baab5b885"
+    },
+    {
+      "imagen_id": "Retina5",
+      "variante": "original",
+      "roi_id": "fondo",
+      "familia": "04_wavelet",
+      "medicion_id": "c5eee91b7fee4be4",
+      "parametros": {
+        "wavelet": "db2",
+        "level": 2
+      },
+      "roi_hash": "9a1c06f86507cf4cc13c471cc41ba4dd0a7ac157ae224d795560a33baab5b885"
+    },
+    {
+      "imagen_id": "Retina1_2",
+      "variante": "realzada",
+      "roi_id": "vaso_grueso",
+      "familia": "05_multiescala",
+      "medicion_id": "c7dc5351362e407c",
+      "parametros": {
+        "sigmas": [
+          1,
+          2,
+          4,
+          8
+        ],
+        "dog_k": 1.2599210498948732
+      },
+      "roi_hash": "315bf8fe78e19a8b389ea19163aa139804363844d9ecaa38f3ce048a4187b65a"
+    },
+    {
+      "imagen_id": "Retina6",
+      "variante": "original",
+      "roi_id": "vaso_grueso",
+      "familia": "02_geometria",
+      "medicion_id": "ca5ff5896bc74cba",
+      "parametros": {},
+      "roi_hash": "315bf8fe78e19a8b389ea19163aa139804363844d9ecaa38f3ce048a4187b65a"
+    },
+    {
+      "imagen_id": "Retina1_2",
+      "variante": "realzada",
+      "roi_id": "fondo",
+      "familia": "04_gabor",
+      "medicion_id": "db483ba8a20d4f31",
+      "parametros": {
+        "wavelengths": [
+          4,
+          8,
+          16
+        ],
+        "angles": [
+          0,
+          45,
+          90,
+          135
+        ],
+        "sigma_ratio": 0.56,
+        "gamma": 0.5
+      },
+      "roi_hash": "9a1c06f86507cf4cc13c471cc41ba4dd0a7ac157ae224d795560a33baab5b885"
+    },
+    {
+      "imagen_id": "Retina6",
+      "variante": "original",
+      "roi_id": "vaso_fino",
+      "familia": "02_geometria",
+      "medicion_id": "2abccba66fc34251",
+      "parametros": {},
+      "roi_hash": "8ed059aaf347372ac3abc802070d2416e44e88128cbdb12c5ec898c943371b20"
+    },
+    {
+      "imagen_id": "Retina1_2",
+      "variante": "realzada",
+      "roi_id": "region_ramificada",
+      "familia": "04_gabor",
+      "medicion_id": "773e1aeb2eee4dca",
+      "parametros": {
+        "wavelengths": [
+          4,
+          8,
+          16
+        ],
+        "angles": [
+          0,
+          45,
+          90,
+          135
+        ],
+        "sigma_ratio": 0.56,
+        "gamma": 0.5
+      },
+      "roi_hash": "a14a212b431aacb1d507d6c034863259d923e8961fc596af36c99b47a4dec7db"
+    },
+    {
+      "imagen_id": "Retina1_2",
+      "variante": "realzada",
+      "roi_id": "vaso_fino",
+      "familia": "05_multiescala",
+      "medicion_id": "d579f64f63654abd",
+      "parametros": {
+        "sigmas": [
+          1,
+          2,
+          4,
+          8
+        ],
+        "dog_k": 1.2599210498948732
+      },
+      "roi_hash": "8ed059aaf347372ac3abc802070d2416e44e88128cbdb12c5ec898c943371b20"
+    },
+    {
+      "imagen_id": "Retina5",
+      "variante": "original",
+      "roi_id": "region_ramificada",
+      "familia": "04_wavelet",
+      "medicion_id": "4c8134054c964a96",
+      "parametros": {
+        "wavelet": "db2",
+        "level": 2
+      },
+      "roi_hash": "a14a212b431aacb1d507d6c034863259d923e8961fc596af36c99b47a4dec7db"
+    },
+    {
+      "imagen_id": "Retina6",
+      "variante": "original",
+      "roi_id": "region_ramificada",
+      "familia": "02_geometria",
+      "medicion_id": "53cc97575be54179",
+      "parametros": {},
+      "roi_hash": "a14a212b431aacb1d507d6c034863259d923e8961fc596af36c99b47a4dec7db"
+    },
+    {
+      "imagen_id": "Retina3",
+      "variante": "corregida",
+      "roi_id": "vaso_grueso",
+      "familia": "05_multiescala",
+      "medicion_id": "56945cacf3104820",
+      "parametros": {
+        "sigmas": [
+          1,
+          2,
+          4,
+          8
+        ],
+        "dog_k": 1.2599210498948732
+      },
+      "roi_hash": "315bf8fe78e19a8b389ea19163aa139804363844d9ecaa38f3ce048a4187b65a"
+    },
+    {
+      "imagen_id": "Retina3",
+      "variante": "corregida",
+      "roi_id": "fondo",
+      "familia": "04_gabor",
+      "medicion_id": "91d312d949fb4fed",
+      "parametros": {
+        "wavelengths": [
+          4,
+          8,
+          16
+        ],
+        "angles": [
+          0,
+          45,
+          90,
+          135
+        ],
+        "sigma_ratio": 0.56,
+        "gamma": 0.5
+      },
+      "roi_hash": "9a1c06f86507cf4cc13c471cc41ba4dd0a7ac157ae224d795560a33baab5b885"
+    },
+    {
+      "imagen_id": "Retina3",
+      "variante": "original",
+      "roi_id": "fondo",
+      "familia": "07_radiomica",
+      "medicion_id": "a473f097a03046bf",
+      "parametros": {
+        "mode": "count",
+        "low": 0,
+        "high": 255,
+        "distances": [
+          1
+        ],
+        "alpha": 0,
+        "bins": 32
+      },
+      "roi_hash": "9a1c06f86507cf4cc13c471cc41ba4dd0a7ac157ae224d795560a33baab5b885"
+    },
+    {
+      "imagen_id": "Retina7",
+      "variante": "original",
+      "roi_id": "vaso_grueso",
+      "familia": "02_geometria",
+      "medicion_id": "54ffdffa55034a95",
+      "parametros": {},
+      "roi_hash": "315bf8fe78e19a8b389ea19163aa139804363844d9ecaa38f3ce048a4187b65a"
+    },
+    {
+      "imagen_id": "Retina3",
+      "variante": "corregida",
+      "roi_id": "region_ramificada",
+      "familia": "04_gabor",
+      "medicion_id": "a76e55ed8b594170",
+      "parametros": {
+        "wavelengths": [
+          4,
+          8,
+          16
+        ],
+        "angles": [
+          0,
+          45,
+          90,
+          135
+        ],
+        "sigma_ratio": 0.56,
+        "gamma": 0.5
+      },
+      "roi_hash": "a14a212b431aacb1d507d6c034863259d923e8961fc596af36c99b47a4dec7db"
+    },
+    {
+      "imagen_id": "Retina3",
+      "variante": "corregida",
+      "roi_id": "vaso_fino",
+      "familia": "05_multiescala",
+      "medicion_id": "ad5e911496fa4d0e",
+      "parametros": {
+        "sigmas": [
+          1,
+          2,
+          4,
+          8
+        ],
+        "dog_k": 1.2599210498948732
+      },
+      "roi_hash": "8ed059aaf347372ac3abc802070d2416e44e88128cbdb12c5ec898c943371b20"
+    },
+    {
+      "imagen_id": "Retina4",
+      "variante": "original",
+      "roi_id": "region_ramificada",
+      "familia": "04_lbp",
+      "medicion_id": "bb2ff343bdec40dc",
+      "parametros": {
+        "method": "uniform",
+        "points": 8,
+        "radius": 1.0
+      },
+      "roi_hash": "a14a212b431aacb1d507d6c034863259d923e8961fc596af36c99b47a4dec7db"
+    },
+    {
+      "imagen_id": "Retina7",
+      "variante": "original",
+      "roi_id": "vaso_fino",
+      "familia": "02_geometria",
+      "medicion_id": "3b7abf907a564909",
+      "parametros": {},
+      "roi_hash": "8ed059aaf347372ac3abc802070d2416e44e88128cbdb12c5ec898c943371b20"
+    },
+    {
+      "imagen_id": "Retina6",
+      "variante": "original",
+      "roi_id": "fondo",
+      "familia": "04_wavelet",
+      "medicion_id": "4a7d9d2eb7964076",
+      "parametros": {
+        "wavelet": "db2",
+        "level": 2
+      },
+      "roi_hash": "9a1c06f86507cf4cc13c471cc41ba4dd0a7ac157ae224d795560a33baab5b885"
+    },
+    {
+      "imagen_id": "Retina4",
+      "variante": "corregida",
+      "roi_id": "vaso_grueso",
+      "familia": "05_multiescala",
+      "medicion_id": "4d575d0e491f4dba",
+      "parametros": {
+        "sigmas": [
+          1,
+          2,
+          4,
+          8
+        ],
+        "dog_k": 1.2599210498948732
+      },
+      "roi_hash": "315bf8fe78e19a8b389ea19163aa139804363844d9ecaa38f3ce048a4187b65a"
+    },
+    {
+      "imagen_id": "Retina4",
+      "variante": "corregida",
+      "roi_id": "fondo",
+      "familia": "04_gabor",
+      "medicion_id": "7c0cbcfc33a94713",
+      "parametros": {
+        "wavelengths": [
+          4,
+          8,
+          16
+        ],
+        "angles": [
+          0,
+          45,
+          90,
+          135
+        ],
+        "sigma_ratio": 0.56,
+        "gamma": 0.5
+      },
+      "roi_hash": "9a1c06f86507cf4cc13c471cc41ba4dd0a7ac157ae224d795560a33baab5b885"
+    },
+    {
+      "imagen_id": "Retina4",
+      "variante": "corregida",
+      "roi_id": "vaso_fino",
+      "familia": "05_multiescala",
+      "medicion_id": "2123748105d04f55",
+      "parametros": {
+        "sigmas": [
+          1,
+          2,
+          4,
+          8
+        ],
+        "dog_k": 1.2599210498948732
+      },
+      "roi_hash": "8ed059aaf347372ac3abc802070d2416e44e88128cbdb12c5ec898c943371b20"
+    },
+    {
+      "imagen_id": "Retina7",
+      "variante": "original",
+      "roi_id": "region_ramificada",
+      "familia": "02_geometria",
+      "medicion_id": "620b2fa340e241a7",
+      "parametros": {},
+      "roi_hash": "a14a212b431aacb1d507d6c034863259d923e8961fc596af36c99b47a4dec7db"
+    },
+    {
+      "imagen_id": "Retina4",
+      "variante": "corregida",
+      "roi_id": "region_ramificada",
+      "familia": "04_gabor",
+      "medicion_id": "a4b28a46034d4905",
+      "parametros": {
+        "wavelengths": [
+          4,
+          8,
+          16
+        ],
+        "angles": [
+          0,
+          45,
+          90,
+          135
+        ],
+        "sigma_ratio": 0.56,
+        "gamma": 0.5
+      },
+      "roi_hash": "a14a212b431aacb1d507d6c034863259d923e8961fc596af36c99b47a4dec7db"
+    },
+    {
+      "imagen_id": "Retina5",
+      "variante": "corregida",
+      "roi_id": "fondo",
+      "familia": "04_gabor",
+      "medicion_id": "5b6cfd1ec215473b",
+      "parametros": {
+        "wavelengths": [
+          4,
+          8,
+          16
+        ],
+        "angles": [
+          0,
+          45,
+          90,
+          135
+        ],
+        "sigma_ratio": 0.56,
+        "gamma": 0.5
+      },
+      "roi_hash": "9a1c06f86507cf4cc13c471cc41ba4dd0a7ac157ae224d795560a33baab5b885"
+    },
+    {
+      "imagen_id": "Retina1_2",
+      "variante": "realzada",
+      "roi_id": "vaso_grueso",
+      "familia": "02_geometria",
+      "medicion_id": "71da41ebcf3c4f48",
+      "parametros": {},
+      "roi_hash": "315bf8fe78e19a8b389ea19163aa139804363844d9ecaa38f3ce048a4187b65a"
+    },
+    {
+      "imagen_id": "Retina5",
+      "variante": "original",
+      "roi_id": "fondo",
+      "familia": "04_lbp",
+      "medicion_id": "775c5a0c566c4629",
+      "parametros": {
+        "method": "uniform",
+        "points": 8,
+        "radius": 1.0
+      },
+      "roi_hash": "9a1c06f86507cf4cc13c471cc41ba4dd0a7ac157ae224d795560a33baab5b885"
+    },
+    {
+      "imagen_id": "Retina6",
+      "variante": "original",
+      "roi_id": "region_ramificada",
+      "familia": "04_wavelet",
+      "medicion_id": "824eadf8aa7c434d",
+      "parametros": {
+        "wavelet": "db2",
+        "level": 2
+      },
+      "roi_hash": "a14a212b431aacb1d507d6c034863259d923e8961fc596af36c99b47a4dec7db"
+    },
+    {
+      "imagen_id": "Retina5",
+      "variante": "corregida",
+      "roi_id": "vaso_grueso",
+      "familia": "05_multiescala",
+      "medicion_id": "f97874e800c54f1e",
+      "parametros": {
+        "sigmas": [
+          1,
+          2,
+          4,
+          8
+        ],
+        "dog_k": 1.2599210498948732
+      },
+      "roi_hash": "315bf8fe78e19a8b389ea19163aa139804363844d9ecaa38f3ce048a4187b65a"
+    },
+    {
+      "imagen_id": "Retina5",
+      "variante": "corregida",
+      "roi_id": "region_ramificada",
+      "familia": "04_gabor",
+      "medicion_id": "095bfe3557434e01",
+      "parametros": {
+        "wavelengths": [
+          4,
+          8,
+          16
+        ],
+        "angles": [
+          0,
+          45,
+          90,
+          135
+        ],
+        "sigma_ratio": 0.56,
+        "gamma": 0.5
+      },
+      "roi_hash": "a14a212b431aacb1d507d6c034863259d923e8961fc596af36c99b47a4dec7db"
+    },
+    {
+      "imagen_id": "Retina1_2",
+      "variante": "realzada",
+      "roi_id": "vaso_fino",
+      "familia": "02_geometria",
+      "medicion_id": "4306918f449d4cf8",
+      "parametros": {},
+      "roi_hash": "8ed059aaf347372ac3abc802070d2416e44e88128cbdb12c5ec898c943371b20"
+    },
+    {
+      "imagen_id": "Retina5",
+      "variante": "corregida",
+      "roi_id": "vaso_fino",
+      "familia": "05_multiescala",
+      "medicion_id": "f6b1f75bdf6c4329",
+      "parametros": {
+        "sigmas": [
+          1,
+          2,
+          4,
+          8
+        ],
+        "dog_k": 1.2599210498948732
+      },
+      "roi_hash": "8ed059aaf347372ac3abc802070d2416e44e88128cbdb12c5ec898c943371b20"
+    },
+    {
+      "imagen_id": "Retina7",
+      "variante": "original",
+      "roi_id": "fondo",
+      "familia": "04_wavelet",
+      "medicion_id": "19d105a5659e4d15",
+      "parametros": {
+        "wavelet": "db2",
+        "level": 2
+      },
+      "roi_hash": "9a1c06f86507cf4cc13c471cc41ba4dd0a7ac157ae224d795560a33baab5b885"
+    },
+    {
+      "imagen_id": "Retina6",
+      "variante": "intermedia",
+      "roi_id": "vaso_grueso",
+      "familia": "05_multiescala",
+      "medicion_id": "4aabd4c8368f43bf",
+      "parametros": {
+        "sigmas": [
+          1,
+          2,
+          4,
+          8
+        ],
+        "dog_k": 1.2599210498948732
+      },
+      "roi_hash": "315bf8fe78e19a8b389ea19163aa139804363844d9ecaa38f3ce048a4187b65a"
+    },
+    {
+      "imagen_id": "Retina3",
+      "variante": "original",
+      "roi_id": "region_ramificada",
+      "familia": "07_radiomica",
+      "medicion_id": "55da137261f24be2",
+      "parametros": {
+        "mode": "count",
+        "low": 0,
+        "high": 255,
+        "distances": [
+          1
+        ],
+        "alpha": 0,
+        "bins": 32
+      },
+      "roi_hash": "a14a212b431aacb1d507d6c034863259d923e8961fc596af36c99b47a4dec7db"
+    },
+    {
+      "imagen_id": "Retina1_2",
+      "variante": "realzada",
+      "roi_id": "region_ramificada",
+      "familia": "02_geometria",
+      "medicion_id": "55dc9931994048e8",
+      "parametros": {},
+      "roi_hash": "a14a212b431aacb1d507d6c034863259d923e8961fc596af36c99b47a4dec7db"
+    },
+    {
+      "imagen_id": "Retina6",
+      "variante": "intermedia",
+      "roi_id": "fondo",
+      "familia": "04_gabor",
+      "medicion_id": "8a1c4b59dada4165",
+      "parametros": {
+        "wavelengths": [
+          4,
+          8,
+          16
+        ],
+        "angles": [
+          0,
+          45,
+          90,
+          135
+        ],
+        "sigma_ratio": 0.56,
+        "gamma": 0.5
+      },
+      "roi_hash": "9a1c06f86507cf4cc13c471cc41ba4dd0a7ac157ae224d795560a33baab5b885"
+    },
+    {
+      "imagen_id": "Retina5",
+      "variante": "original",
+      "roi_id": "region_ramificada",
+      "familia": "04_lbp",
+      "medicion_id": "435185234fde4eec",
+      "parametros": {
+        "method": "uniform",
+        "points": 8,
+        "radius": 1.0
+      },
+      "roi_hash": "a14a212b431aacb1d507d6c034863259d923e8961fc596af36c99b47a4dec7db"
+    },
+    {
+      "imagen_id": "Retina3",
+      "variante": "corregida",
+      "roi_id": "vaso_grueso",
+      "familia": "02_geometria",
+      "medicion_id": "87e4547bc03d4f8b",
+      "parametros": {},
+      "roi_hash": "315bf8fe78e19a8b389ea19163aa139804363844d9ecaa38f3ce048a4187b65a"
+    },
+    {
+      "imagen_id": "Retina6",
+      "variante": "intermedia",
+      "roi_id": "region_ramificada",
+      "familia": "04_gabor",
+      "medicion_id": "8ec523261628494b",
+      "parametros": {
+        "wavelengths": [
+          4,
+          8,
+          16
+        ],
+        "angles": [
+          0,
+          45,
+          90,
+          135
+        ],
+        "sigma_ratio": 0.56,
+        "gamma": 0.5
+      },
+      "roi_hash": "a14a212b431aacb1d507d6c034863259d923e8961fc596af36c99b47a4dec7db"
+    },
+    {
+      "imagen_id": "Retina6",
+      "variante": "intermedia",
+      "roi_id": "vaso_fino",
+      "familia": "05_multiescala",
+      "medicion_id": "9e37eafb76874c68",
+      "parametros": {
+        "sigmas": [
+          1,
+          2,
+          4,
+          8
+        ],
+        "dog_k": 1.2599210498948732
+      },
+      "roi_hash": "8ed059aaf347372ac3abc802070d2416e44e88128cbdb12c5ec898c943371b20"
+    },
+    {
+      "imagen_id": "Retina6",
+      "variante": "corregida",
+      "roi_id": "vaso_grueso",
+      "familia": "05_multiescala",
+      "medicion_id": "4d9c59f672b04912",
+      "parametros": {
+        "sigmas": [
+          1,
+          2,
+          4,
+          8
+        ],
+        "dog_k": 1.2599210498948732
+      },
+      "roi_hash": "315bf8fe78e19a8b389ea19163aa139804363844d9ecaa38f3ce048a4187b65a"
+    },
+    {
+      "imagen_id": "Retina6",
+      "variante": "corregida",
+      "roi_id": "fondo",
+      "familia": "04_gabor",
+      "medicion_id": "83cf282234774c9b",
+      "parametros": {
+        "wavelengths": [
+          4,
+          8,
+          16
+        ],
+        "angles": [
+          0,
+          45,
+          90,
+          135
+        ],
+        "sigma_ratio": 0.56,
+        "gamma": 0.5
+      },
+      "roi_hash": "9a1c06f86507cf4cc13c471cc41ba4dd0a7ac157ae224d795560a33baab5b885"
+    },
+    {
+      "imagen_id": "Retina7",
+      "variante": "original",
+      "roi_id": "region_ramificada",
+      "familia": "04_wavelet",
+      "medicion_id": "8c2abba078ff4ad9",
+      "parametros": {
+        "wavelet": "db2",
+        "level": 2
+      },
+      "roi_hash": "a14a212b431aacb1d507d6c034863259d923e8961fc596af36c99b47a4dec7db"
+    },
+    {
+      "imagen_id": "Retina3",
+      "variante": "corregida",
+      "roi_id": "vaso_fino",
+      "familia": "02_geometria",
+      "medicion_id": "aa6bb6e401694ad1",
+      "parametros": {},
+      "roi_hash": "8ed059aaf347372ac3abc802070d2416e44e88128cbdb12c5ec898c943371b20"
+    },
+    {
+      "imagen_id": "Retina6",
+      "variante": "corregida",
+      "roi_id": "region_ramificada",
+      "familia": "04_gabor",
+      "medicion_id": "2fedce1f8ab24ab6",
+      "parametros": {
+        "wavelengths": [
+          4,
+          8,
+          16
+        ],
+        "angles": [
+          0,
+          45,
+          90,
+          135
+        ],
+        "sigma_ratio": 0.56,
+        "gamma": 0.5
+      },
+      "roi_hash": "a14a212b431aacb1d507d6c034863259d923e8961fc596af36c99b47a4dec7db"
+    },
+    {
+      "imagen_id": "Retina3",
+      "variante": "corregida",
+      "roi_id": "region_ramificada",
+      "familia": "02_geometria",
+      "medicion_id": "632709602b0f408c",
+      "parametros": {},
+      "roi_hash": "a14a212b431aacb1d507d6c034863259d923e8961fc596af36c99b47a4dec7db"
+    },
+    {
+      "imagen_id": "Retina6",
+      "variante": "corregida",
+      "roi_id": "vaso_fino",
+      "familia": "05_multiescala",
+      "medicion_id": "c9cb6e4ed527496e",
+      "parametros": {
+        "sigmas": [
+          1,
+          2,
+          4,
+          8
+        ],
+        "dog_k": 1.2599210498948732
+      },
+      "roi_hash": "8ed059aaf347372ac3abc802070d2416e44e88128cbdb12c5ec898c943371b20"
+    },
+    {
+      "imagen_id": "Retina6",
+      "variante": "original",
+      "roi_id": "fondo",
+      "familia": "04_lbp",
+      "medicion_id": "174a8189be4842a1",
+      "parametros": {
+        "method": "uniform",
+        "points": 8,
+        "radius": 1.0
+      },
+      "roi_hash": "9a1c06f86507cf4cc13c471cc41ba4dd0a7ac157ae224d795560a33baab5b885"
+    },
+    {
+      "imagen_id": "Retina7",
+      "variante": "corregida",
+      "roi_id": "fondo",
+      "familia": "04_gabor",
+      "medicion_id": "3d361dc6946e4dbc",
+      "parametros": {
+        "wavelengths": [
+          4,
+          8,
+          16
+        ],
+        "angles": [
+          0,
+          45,
+          90,
+          135
+        ],
+        "sigma_ratio": 0.56,
+        "gamma": 0.5
+      },
+      "roi_hash": "9a1c06f86507cf4cc13c471cc41ba4dd0a7ac157ae224d795560a33baab5b885"
+    },
+    {
+      "imagen_id": "Retina7",
+      "variante": "corregida",
+      "roi_id": "vaso_grueso",
+      "familia": "05_multiescala",
+      "medicion_id": "8d024c4d438e409c",
+      "parametros": {
+        "sigmas": [
+          1,
+          2,
+          4,
+          8
+        ],
+        "dog_k": 1.2599210498948732
+      },
+      "roi_hash": "315bf8fe78e19a8b389ea19163aa139804363844d9ecaa38f3ce048a4187b65a"
+    },
+    {
+      "imagen_id": "Retina4",
+      "variante": "corregida",
+      "roi_id": "vaso_grueso",
+      "familia": "02_geometria",
+      "medicion_id": "a0966191d915490f",
+      "parametros": {},
+      "roi_hash": "315bf8fe78e19a8b389ea19163aa139804363844d9ecaa38f3ce048a4187b65a"
+    },
+    {
+      "imagen_id": "Retina1_2",
+      "variante": "realzada",
+      "roi_id": "fondo",
+      "familia": "04_wavelet",
+      "medicion_id": "f77f7a140ce64429",
+      "parametros": {
+        "wavelet": "db2",
+        "level": 2
+      },
+      "roi_hash": "9a1c06f86507cf4cc13c471cc41ba4dd0a7ac157ae224d795560a33baab5b885"
+    },
+    {
+      "imagen_id": "Retina7",
+      "variante": "corregida",
+      "roi_id": "region_ramificada",
+      "familia": "04_gabor",
+      "medicion_id": "5f6c3895296f467b",
+      "parametros": {
+        "wavelengths": [
+          4,
+          8,
+          16
+        ],
+        "angles": [
+          0,
+          45,
+          90,
+          135
+        ],
+        "sigma_ratio": 0.56,
+        "gamma": 0.5
+      },
+      "roi_hash": "a14a212b431aacb1d507d6c034863259d923e8961fc596af36c99b47a4dec7db"
+    },
+    {
+      "imagen_id": "Retina7",
+      "variante": "corregida",
+      "roi_id": "vaso_fino",
+      "familia": "05_multiescala",
+      "medicion_id": "66619c96117146c5",
+      "parametros": {
+        "sigmas": [
+          1,
+          2,
+          4,
+          8
+        ],
+        "dog_k": 1.2599210498948732
+      },
+      "roi_hash": "8ed059aaf347372ac3abc802070d2416e44e88128cbdb12c5ec898c943371b20"
+    },
+    {
+      "imagen_id": "Retina4",
+      "variante": "corregida",
+      "roi_id": "vaso_fino",
+      "familia": "02_geometria",
+      "medicion_id": "7367585d1faa405b",
+      "parametros": {},
+      "roi_hash": "8ed059aaf347372ac3abc802070d2416e44e88128cbdb12c5ec898c943371b20"
+    },
+    {
+      "imagen_id": "Retina4",
+      "variante": "original",
+      "roi_id": "fondo",
+      "familia": "07_radiomica",
+      "medicion_id": "90036e4b26824545",
+      "parametros": {
+        "mode": "count",
+        "low": 0,
+        "high": 255,
+        "distances": [
+          1
+        ],
+        "alpha": 0,
+        "bins": 32
+      },
+      "roi_hash": "9a1c06f86507cf4cc13c471cc41ba4dd0a7ac157ae224d795560a33baab5b885"
+    },
+    {
+      "imagen_id": "Retina1_2",
+      "variante": "realzada",
+      "roi_id": "region_ramificada",
+      "familia": "04_wavelet",
+      "medicion_id": "97696a04cf474ed9",
+      "parametros": {
+        "wavelet": "db2",
+        "level": 2
+      },
+      "roi_hash": "a14a212b431aacb1d507d6c034863259d923e8961fc596af36c99b47a4dec7db"
+    },
+    {
+      "imagen_id": "Retina4",
+      "variante": "corregida",
+      "roi_id": "region_ramificada",
+      "familia": "02_geometria",
+      "medicion_id": "fa137534e0d2407a",
+      "parametros": {},
+      "roi_hash": "a14a212b431aacb1d507d6c034863259d923e8961fc596af36c99b47a4dec7db"
+    },
+    {
+      "imagen_id": "Retina5",
+      "variante": "corregida",
+      "roi_id": "vaso_grueso",
+      "familia": "02_geometria",
+      "medicion_id": "657c847e72fc4b48",
+      "parametros": {},
+      "roi_hash": "315bf8fe78e19a8b389ea19163aa139804363844d9ecaa38f3ce048a4187b65a"
+    },
+    {
+      "imagen_id": "Retina6",
+      "variante": "original",
+      "roi_id": "region_ramificada",
+      "familia": "04_lbp",
+      "medicion_id": "fc7f739c37d64324",
+      "parametros": {
+        "method": "uniform",
+        "points": 8,
+        "radius": 1.0
+      },
+      "roi_hash": "a14a212b431aacb1d507d6c034863259d923e8961fc596af36c99b47a4dec7db"
+    },
+    {
+      "imagen_id": "Retina5",
+      "variante": "corregida",
+      "roi_id": "vaso_fino",
+      "familia": "02_geometria",
+      "medicion_id": "2d703e212fb2465e",
+      "parametros": {},
+      "roi_hash": "8ed059aaf347372ac3abc802070d2416e44e88128cbdb12c5ec898c943371b20"
+    },
+    {
+      "imagen_id": "Retina3",
+      "variante": "corregida",
+      "roi_id": "fondo",
+      "familia": "04_wavelet",
+      "medicion_id": "357fd7ecad44459c",
+      "parametros": {
+        "wavelet": "db2",
+        "level": 2
+      },
+      "roi_hash": "9a1c06f86507cf4cc13c471cc41ba4dd0a7ac157ae224d795560a33baab5b885"
+    },
+    {
+      "imagen_id": "Retina5",
+      "variante": "corregida",
+      "roi_id": "region_ramificada",
+      "familia": "02_geometria",
+      "medicion_id": "95366516cec7414b",
+      "parametros": {},
+      "roi_hash": "a14a212b431aacb1d507d6c034863259d923e8961fc596af36c99b47a4dec7db"
+    },
+    {
+      "imagen_id": "Retina6",
+      "variante": "intermedia",
+      "roi_id": "vaso_grueso",
+      "familia": "02_geometria",
+      "medicion_id": "3578cb9dd1974a35",
+      "parametros": {},
+      "roi_hash": "315bf8fe78e19a8b389ea19163aa139804363844d9ecaa38f3ce048a4187b65a"
+    },
+    {
+      "imagen_id": "Retina3",
+      "variante": "corregida",
+      "roi_id": "region_ramificada",
+      "familia": "04_wavelet",
+      "medicion_id": "74907e5a4a304dbf",
+      "parametros": {
+        "wavelet": "db2",
+        "level": 2
+      },
+      "roi_hash": "a14a212b431aacb1d507d6c034863259d923e8961fc596af36c99b47a4dec7db"
+    },
+    {
+      "imagen_id": "Retina7",
+      "variante": "original",
+      "roi_id": "fondo",
+      "familia": "04_lbp",
+      "medicion_id": "fe8de3489f694430",
+      "parametros": {
+        "method": "uniform",
+        "points": 8,
+        "radius": 1.0
+      },
+      "roi_hash": "9a1c06f86507cf4cc13c471cc41ba4dd0a7ac157ae224d795560a33baab5b885"
+    },
+    {
+      "imagen_id": "Retina6",
+      "variante": "intermedia",
+      "roi_id": "vaso_fino",
+      "familia": "02_geometria",
+      "medicion_id": "3470d65a20184199",
+      "parametros": {},
+      "roi_hash": "8ed059aaf347372ac3abc802070d2416e44e88128cbdb12c5ec898c943371b20"
+    },
+    {
+      "imagen_id": "Retina4",
+      "variante": "corregida",
+      "roi_id": "fondo",
+      "familia": "04_wavelet",
+      "medicion_id": "2aa60325a5e54a36",
+      "parametros": {
+        "wavelet": "db2",
+        "level": 2
+      },
+      "roi_hash": "9a1c06f86507cf4cc13c471cc41ba4dd0a7ac157ae224d795560a33baab5b885"
+    },
+    {
+      "imagen_id": "Retina4",
+      "variante": "original",
+      "roi_id": "region_ramificada",
+      "familia": "07_radiomica",
+      "medicion_id": "c944942fff414819",
+      "parametros": {
+        "mode": "count",
+        "low": 0,
+        "high": 255,
+        "distances": [
+          1
+        ],
+        "alpha": 0,
+        "bins": 32
+      },
+      "roi_hash": "a14a212b431aacb1d507d6c034863259d923e8961fc596af36c99b47a4dec7db"
+    },
+    {
+      "imagen_id": "Retina6",
+      "variante": "intermedia",
+      "roi_id": "region_ramificada",
+      "familia": "02_geometria",
+      "medicion_id": "e1715f72d7804e04",
+      "parametros": {},
+      "roi_hash": "a14a212b431aacb1d507d6c034863259d923e8961fc596af36c99b47a4dec7db"
+    },
+    {
+      "imagen_id": "Retina7",
+      "variante": "original",
+      "roi_id": "region_ramificada",
+      "familia": "04_lbp",
+      "medicion_id": "70624658ef4c4a43",
+      "parametros": {
+        "method": "uniform",
+        "points": 8,
+        "radius": 1.0
+      },
+      "roi_hash": "a14a212b431aacb1d507d6c034863259d923e8961fc596af36c99b47a4dec7db"
+    },
+    {
+      "imagen_id": "Retina6",
+      "variante": "corregida",
+      "roi_id": "vaso_grueso",
+      "familia": "02_geometria",
+      "medicion_id": "fd6882e3739641ed",
+      "parametros": {},
+      "roi_hash": "315bf8fe78e19a8b389ea19163aa139804363844d9ecaa38f3ce048a4187b65a"
+    },
+    {
+      "imagen_id": "Retina4",
+      "variante": "corregida",
+      "roi_id": "region_ramificada",
+      "familia": "04_wavelet",
+      "medicion_id": "ac0261cedcbc4f34",
+      "parametros": {
+        "wavelet": "db2",
+        "level": 2
+      },
+      "roi_hash": "a14a212b431aacb1d507d6c034863259d923e8961fc596af36c99b47a4dec7db"
+    },
+    {
+      "imagen_id": "Retina6",
+      "variante": "corregida",
+      "roi_id": "vaso_fino",
+      "familia": "02_geometria",
+      "medicion_id": "d23e5fc0b1bb4c19",
+      "parametros": {},
+      "roi_hash": "8ed059aaf347372ac3abc802070d2416e44e88128cbdb12c5ec898c943371b20"
+    },
+    {
+      "imagen_id": "Retina6",
+      "variante": "corregida",
+      "roi_id": "region_ramificada",
+      "familia": "02_geometria",
+      "medicion_id": "8603a18d7f8046d5",
+      "parametros": {},
+      "roi_hash": "a14a212b431aacb1d507d6c034863259d923e8961fc596af36c99b47a4dec7db"
+    },
+    {
+      "imagen_id": "Retina7",
+      "variante": "corregida",
+      "roi_id": "vaso_grueso",
+      "familia": "02_geometria",
+      "medicion_id": "210146c211f14fc1",
+      "parametros": {},
+      "roi_hash": "315bf8fe78e19a8b389ea19163aa139804363844d9ecaa38f3ce048a4187b65a"
+    },
+    {
+      "imagen_id": "Retina5",
+      "variante": "corregida",
+      "roi_id": "fondo",
+      "familia": "04_wavelet",
+      "medicion_id": "5e00b8dd944b453f",
+      "parametros": {
+        "wavelet": "db2",
+        "level": 2
+      },
+      "roi_hash": "9a1c06f86507cf4cc13c471cc41ba4dd0a7ac157ae224d795560a33baab5b885"
+    },
+    {
+      "imagen_id": "Retina1_2",
+      "variante": "realzada",
+      "roi_id": "fondo",
+      "familia": "04_lbp",
+      "medicion_id": "cd09c44c41784d48",
+      "parametros": {
+        "method": "uniform",
+        "points": 8,
+        "radius": 1.0
+      },
+      "roi_hash": "9a1c06f86507cf4cc13c471cc41ba4dd0a7ac157ae224d795560a33baab5b885"
+    },
+    {
+      "imagen_id": "Retina7",
+      "variante": "corregida",
+      "roi_id": "vaso_fino",
+      "familia": "02_geometria",
+      "medicion_id": "cbec0c5fda974d84",
+      "parametros": {},
+      "roi_hash": "8ed059aaf347372ac3abc802070d2416e44e88128cbdb12c5ec898c943371b20"
+    },
+    {
+      "imagen_id": "Retina5",
+      "variante": "original",
+      "roi_id": "fondo",
+      "familia": "07_radiomica",
+      "medicion_id": "8774daf819c6458a",
+      "parametros": {
+        "mode": "count",
+        "low": 0,
+        "high": 255,
+        "distances": [
+          1
+        ],
+        "alpha": 0,
+        "bins": 32
+      },
+      "roi_hash": "9a1c06f86507cf4cc13c471cc41ba4dd0a7ac157ae224d795560a33baab5b885"
+    },
+    {
+      "imagen_id": "Retina7",
+      "variante": "corregida",
+      "roi_id": "region_ramificada",
+      "familia": "02_geometria",
+      "medicion_id": "bb5027021c8943c3",
+      "parametros": {},
+      "roi_hash": "a14a212b431aacb1d507d6c034863259d923e8961fc596af36c99b47a4dec7db"
+    },
+    {
+      "imagen_id": "Retina5",
+      "variante": "corregida",
+      "roi_id": "region_ramificada",
+      "familia": "04_wavelet",
+      "medicion_id": "c204275837b94fa7",
+      "parametros": {
+        "wavelet": "db2",
+        "level": 2
+      },
+      "roi_hash": "a14a212b431aacb1d507d6c034863259d923e8961fc596af36c99b47a4dec7db"
+    },
+    {
+      "imagen_id": "Retina1_2",
+      "variante": "realzada",
+      "roi_id": "region_ramificada",
+      "familia": "04_lbp",
+      "medicion_id": "ec610aec4bc14c31",
+      "parametros": {
+        "method": "uniform",
+        "points": 8,
+        "radius": 1.0
+      },
+      "roi_hash": "a14a212b431aacb1d507d6c034863259d923e8961fc596af36c99b47a4dec7db"
+    },
+    {
+      "imagen_id": "Retina6",
+      "variante": "intermedia",
+      "roi_id": "fondo",
+      "familia": "04_wavelet",
+      "medicion_id": "d7d41fe5d122457b",
+      "parametros": {
+        "wavelet": "db2",
+        "level": 2
+      },
+      "roi_hash": "9a1c06f86507cf4cc13c471cc41ba4dd0a7ac157ae224d795560a33baab5b885"
+    },
+    {
+      "imagen_id": "Retina6",
+      "variante": "intermedia",
+      "roi_id": "region_ramificada",
+      "familia": "04_wavelet",
+      "medicion_id": "1b65db085d9a41f3",
+      "parametros": {
+        "wavelet": "db2",
+        "level": 2
+      },
+      "roi_hash": "a14a212b431aacb1d507d6c034863259d923e8961fc596af36c99b47a4dec7db"
+    },
+    {
+      "imagen_id": "Retina3",
+      "variante": "corregida",
+      "roi_id": "fondo",
+      "familia": "04_lbp",
+      "medicion_id": "f84ff9ced15743f6",
+      "parametros": {
+        "method": "uniform",
+        "points": 8,
+        "radius": 1.0
+      },
+      "roi_hash": "9a1c06f86507cf4cc13c471cc41ba4dd0a7ac157ae224d795560a33baab5b885"
+    },
+    {
+      "imagen_id": "Retina5",
+      "variante": "original",
+      "roi_id": "region_ramificada",
+      "familia": "07_radiomica",
+      "medicion_id": "58848ea8418d4d0f",
+      "parametros": {
+        "mode": "count",
+        "low": 0,
+        "high": 255,
+        "distances": [
+          1
+        ],
+        "alpha": 0,
+        "bins": 32
+      },
+      "roi_hash": "a14a212b431aacb1d507d6c034863259d923e8961fc596af36c99b47a4dec7db"
+    },
+    {
+      "imagen_id": "Retina6",
+      "variante": "corregida",
+      "roi_id": "fondo",
+      "familia": "04_wavelet",
+      "medicion_id": "f8766539ecf94310",
+      "parametros": {
+        "wavelet": "db2",
+        "level": 2
+      },
+      "roi_hash": "9a1c06f86507cf4cc13c471cc41ba4dd0a7ac157ae224d795560a33baab5b885"
+    },
+    {
+      "imagen_id": "Retina3",
+      "variante": "corregida",
+      "roi_id": "region_ramificada",
+      "familia": "04_lbp",
+      "medicion_id": "414d733f22144464",
+      "parametros": {
+        "method": "uniform",
+        "points": 8,
+        "radius": 1.0
+      },
+      "roi_hash": "a14a212b431aacb1d507d6c034863259d923e8961fc596af36c99b47a4dec7db"
+    },
+    {
+      "imagen_id": "Retina6",
+      "variante": "corregida",
+      "roi_id": "region_ramificada",
+      "familia": "04_wavelet",
+      "medicion_id": "d1d61097d3be4af0",
+      "parametros": {
+        "wavelet": "db2",
+        "level": 2
+      },
+      "roi_hash": "a14a212b431aacb1d507d6c034863259d923e8961fc596af36c99b47a4dec7db"
+    },
+    {
+      "imagen_id": "Retina7",
+      "variante": "corregida",
+      "roi_id": "fondo",
+      "familia": "04_wavelet",
+      "medicion_id": "adbf8c53847e4a18",
+      "parametros": {
+        "wavelet": "db2",
+        "level": 2
+      },
+      "roi_hash": "9a1c06f86507cf4cc13c471cc41ba4dd0a7ac157ae224d795560a33baab5b885"
+    },
+    {
+      "imagen_id": "Retina4",
+      "variante": "corregida",
+      "roi_id": "fondo",
+      "familia": "04_lbp",
+      "medicion_id": "cf537e9f39cd441d",
+      "parametros": {
+        "method": "uniform",
+        "points": 8,
+        "radius": 1.0
+      },
+      "roi_hash": "9a1c06f86507cf4cc13c471cc41ba4dd0a7ac157ae224d795560a33baab5b885"
+    },
+    {
+      "imagen_id": "Retina7",
+      "variante": "corregida",
+      "roi_id": "region_ramificada",
+      "familia": "04_wavelet",
+      "medicion_id": "28a9ecbd52a64948",
+      "parametros": {
+        "wavelet": "db2",
+        "level": 2
+      },
+      "roi_hash": "a14a212b431aacb1d507d6c034863259d923e8961fc596af36c99b47a4dec7db"
+    },
+    {
+      "imagen_id": "Retina6",
+      "variante": "original",
+      "roi_id": "fondo",
+      "familia": "07_radiomica",
+      "medicion_id": "8fd64c8637134b01",
+      "parametros": {
+        "mode": "count",
+        "low": 0,
+        "high": 255,
+        "distances": [
+          1
+        ],
+        "alpha": 0,
+        "bins": 32
+      },
+      "roi_hash": "9a1c06f86507cf4cc13c471cc41ba4dd0a7ac157ae224d795560a33baab5b885"
+    },
+    {
+      "imagen_id": "Retina4",
+      "variante": "corregida",
+      "roi_id": "region_ramificada",
+      "familia": "04_lbp",
+      "medicion_id": "6172acbbbcb6493c",
+      "parametros": {
+        "method": "uniform",
+        "points": 8,
+        "radius": 1.0
+      },
+      "roi_hash": "a14a212b431aacb1d507d6c034863259d923e8961fc596af36c99b47a4dec7db"
+    },
+    {
+      "imagen_id": "Retina5",
+      "variante": "corregida",
+      "roi_id": "fondo",
+      "familia": "04_lbp",
+      "medicion_id": "9837303a2d924222",
+      "parametros": {
+        "method": "uniform",
+        "points": 8,
+        "radius": 1.0
+      },
+      "roi_hash": "9a1c06f86507cf4cc13c471cc41ba4dd0a7ac157ae224d795560a33baab5b885"
+    },
+    {
+      "imagen_id": "Retina6",
+      "variante": "original",
+      "roi_id": "region_ramificada",
+      "familia": "07_radiomica",
+      "medicion_id": "45b6a8cf3d2e4da1",
+      "parametros": {
+        "mode": "count",
+        "low": 0,
+        "high": 255,
+        "distances": [
+          1
+        ],
+        "alpha": 0,
+        "bins": 32
+      },
+      "roi_hash": "a14a212b431aacb1d507d6c034863259d923e8961fc596af36c99b47a4dec7db"
+    },
+    {
+      "imagen_id": "Retina5",
+      "variante": "corregida",
+      "roi_id": "region_ramificada",
+      "familia": "04_lbp",
+      "medicion_id": "4cd524c4cb40436c",
+      "parametros": {
+        "method": "uniform",
+        "points": 8,
+        "radius": 1.0
+      },
+      "roi_hash": "a14a212b431aacb1d507d6c034863259d923e8961fc596af36c99b47a4dec7db"
+    },
+    {
+      "imagen_id": "Retina6",
+      "variante": "intermedia",
+      "roi_id": "fondo",
+      "familia": "04_lbp",
+      "medicion_id": "e37050846c504852",
+      "parametros": {
+        "method": "uniform",
+        "points": 8,
+        "radius": 1.0
+      },
+      "roi_hash": "9a1c06f86507cf4cc13c471cc41ba4dd0a7ac157ae224d795560a33baab5b885"
+    },
+    {
+      "imagen_id": "Retina7",
+      "variante": "original",
+      "roi_id": "fondo",
+      "familia": "07_radiomica",
+      "medicion_id": "5e1b9527a5d3436f",
+      "parametros": {
+        "mode": "count",
+        "low": 0,
+        "high": 255,
+        "distances": [
+          1
+        ],
+        "alpha": 0,
+        "bins": 32
+      },
+      "roi_hash": "9a1c06f86507cf4cc13c471cc41ba4dd0a7ac157ae224d795560a33baab5b885"
+    },
+    {
+      "imagen_id": "Retina6",
+      "variante": "intermedia",
+      "roi_id": "region_ramificada",
+      "familia": "04_lbp",
+      "medicion_id": "77e8e9ce115f442c",
+      "parametros": {
+        "method": "uniform",
+        "points": 8,
+        "radius": 1.0
+      },
+      "roi_hash": "a14a212b431aacb1d507d6c034863259d923e8961fc596af36c99b47a4dec7db"
+    },
+    {
+      "imagen_id": "Retina1_2",
+      "variante": "original",
+      "roi_id": "vaso_grueso",
+      "familia": "01_intensidad",
+      "medicion_id": "2402a73091e04567",
+      "parametros": {
+        "percentiles": [
+          10,
+          25,
+          50,
+          75,
+          90
+        ]
+      },
+      "roi_hash": "315bf8fe78e19a8b389ea19163aa139804363844d9ecaa38f3ce048a4187b65a"
+    },
+    {
+      "imagen_id": "Retina1_2",
+      "variante": "original",
+      "roi_id": "vaso_fino",
+      "familia": "01_intensidad",
+      "medicion_id": "5293dce03b6746e6",
+      "parametros": {
+        "percentiles": [
+          10,
+          25,
+          50,
+          75,
+          90
+        ]
+      },
+      "roi_hash": "8ed059aaf347372ac3abc802070d2416e44e88128cbdb12c5ec898c943371b20"
+    },
+    {
+      "imagen_id": "Retina6",
+      "variante": "corregida",
+      "roi_id": "fondo",
+      "familia": "04_lbp",
+      "medicion_id": "766faae48d7e41a4",
+      "parametros": {
+        "method": "uniform",
+        "points": 8,
+        "radius": 1.0
+      },
+      "roi_hash": "9a1c06f86507cf4cc13c471cc41ba4dd0a7ac157ae224d795560a33baab5b885"
+    },
+    {
+      "imagen_id": "Retina1_2",
+      "variante": "original",
+      "roi_id": "fondo",
+      "familia": "01_intensidad",
+      "medicion_id": "2552ad81eb7c4d5b",
+      "parametros": {
+        "percentiles": [
+          10,
+          25,
+          50,
+          75,
+          90
+        ]
+      },
+      "roi_hash": "9a1c06f86507cf4cc13c471cc41ba4dd0a7ac157ae224d795560a33baab5b885"
+    },
+    {
+      "imagen_id": "Retina7",
+      "variante": "original",
+      "roi_id": "region_ramificada",
+      "familia": "07_radiomica",
+      "medicion_id": "a107fc6d98fd45df",
+      "parametros": {
+        "mode": "count",
+        "low": 0,
+        "high": 255,
+        "distances": [
+          1
+        ],
+        "alpha": 0,
+        "bins": 32
+      },
+      "roi_hash": "a14a212b431aacb1d507d6c034863259d923e8961fc596af36c99b47a4dec7db"
+    },
+    {
+      "imagen_id": "Retina1_2",
+      "variante": "original",
+      "roi_id": "region_ramificada",
+      "familia": "01_intensidad",
+      "medicion_id": "ecbf5dba6d4d40ea",
+      "parametros": {
+        "percentiles": [
+          10,
+          25,
+          50,
+          75,
+          90
+        ]
+      },
+      "roi_hash": "a14a212b431aacb1d507d6c034863259d923e8961fc596af36c99b47a4dec7db"
+    },
+    {
+      "imagen_id": "Retina1_2",
+      "variante": "original",
+      "roi_id": "region_macular",
+      "familia": "01_intensidad",
+      "medicion_id": "a34b078790bb40b3",
+      "parametros": {
+        "percentiles": [
+          10,
+          25,
+          50,
+          75,
+          90
+        ]
+      },
+      "roi_hash": "d39e946c0a567ff53794d64da7beddf0a60abc9adefa3e6642fbd9c9626424d2"
+    },
+    {
+      "imagen_id": "Retina6",
+      "variante": "corregida",
+      "roi_id": "region_ramificada",
+      "familia": "04_lbp",
+      "medicion_id": "66318be7c80e48a5",
+      "parametros": {
+        "method": "uniform",
+        "points": 8,
+        "radius": 1.0
+      },
+      "roi_hash": "a14a212b431aacb1d507d6c034863259d923e8961fc596af36c99b47a4dec7db"
+    },
+    {
+      "imagen_id": "Retina3",
+      "variante": "original",
+      "roi_id": "vaso_grueso",
+      "familia": "01_intensidad",
+      "medicion_id": "e3b285b3bbee43b1",
+      "parametros": {
+        "percentiles": [
+          10,
+          25,
+          50,
+          75,
+          90
+        ]
+      },
+      "roi_hash": "315bf8fe78e19a8b389ea19163aa139804363844d9ecaa38f3ce048a4187b65a"
+    },
+    {
+      "imagen_id": "Retina3",
+      "variante": "original",
+      "roi_id": "vaso_fino",
+      "familia": "01_intensidad",
+      "medicion_id": "6f8e392c1b8140e7",
+      "parametros": {
+        "percentiles": [
+          10,
+          25,
+          50,
+          75,
+          90
+        ]
+      },
+      "roi_hash": "8ed059aaf347372ac3abc802070d2416e44e88128cbdb12c5ec898c943371b20"
+    },
+    {
+      "imagen_id": "Retina3",
+      "variante": "original",
+      "roi_id": "fondo",
+      "familia": "01_intensidad",
+      "medicion_id": "a238968aa3194ff7",
+      "parametros": {
+        "percentiles": [
+          10,
+          25,
+          50,
+          75,
+          90
+        ]
+      },
+      "roi_hash": "9a1c06f86507cf4cc13c471cc41ba4dd0a7ac157ae224d795560a33baab5b885"
+    },
+    {
+      "imagen_id": "Retina7",
+      "variante": "corregida",
+      "roi_id": "fondo",
+      "familia": "04_lbp",
+      "medicion_id": "8a80854b91544c37",
+      "parametros": {
+        "method": "uniform",
+        "points": 8,
+        "radius": 1.0
+      },
+      "roi_hash": "9a1c06f86507cf4cc13c471cc41ba4dd0a7ac157ae224d795560a33baab5b885"
+    },
+    {
+      "imagen_id": "Retina3",
+      "variante": "original",
+      "roi_id": "region_ramificada",
+      "familia": "01_intensidad",
+      "medicion_id": "f81012cc11c745b0",
+      "parametros": {
+        "percentiles": [
+          10,
+          25,
+          50,
+          75,
+          90
+        ]
+      },
+      "roi_hash": "a14a212b431aacb1d507d6c034863259d923e8961fc596af36c99b47a4dec7db"
+    },
+    {
+      "imagen_id": "Retina1_2",
+      "variante": "realzada",
+      "roi_id": "fondo",
+      "familia": "07_radiomica",
+      "medicion_id": "697934f9edb840f5",
+      "parametros": {
+        "mode": "count",
+        "low": 0,
+        "high": 255,
+        "distances": [
+          1
+        ],
+        "alpha": 0,
+        "bins": 32
+      },
+      "roi_hash": "9a1c06f86507cf4cc13c471cc41ba4dd0a7ac157ae224d795560a33baab5b885"
+    },
+    {
+      "imagen_id": "Retina3",
+      "variante": "original",
+      "roi_id": "region_macular",
+      "familia": "01_intensidad",
+      "medicion_id": "d0bb71e8189c4739",
+      "parametros": {
+        "percentiles": [
+          10,
+          25,
+          50,
+          75,
+          90
+        ]
+      },
+      "roi_hash": "d39e946c0a567ff53794d64da7beddf0a60abc9adefa3e6642fbd9c9626424d2"
+    },
+    {
+      "imagen_id": "Retina7",
+      "variante": "corregida",
+      "roi_id": "region_ramificada",
+      "familia": "04_lbp",
+      "medicion_id": "42b9c95827e943f9",
+      "parametros": {
+        "method": "uniform",
+        "points": 8,
+        "radius": 1.0
+      },
+      "roi_hash": "a14a212b431aacb1d507d6c034863259d923e8961fc596af36c99b47a4dec7db"
+    },
+    {
+      "imagen_id": "Retina4",
+      "variante": "original",
+      "roi_id": "vaso_grueso",
+      "familia": "01_intensidad",
+      "medicion_id": "a46f7c089561429c",
+      "parametros": {
+        "percentiles": [
+          10,
+          25,
+          50,
+          75,
+          90
+        ]
+      },
+      "roi_hash": "315bf8fe78e19a8b389ea19163aa139804363844d9ecaa38f3ce048a4187b65a"
+    },
+    {
+      "imagen_id": "Retina4",
+      "variante": "original",
+      "roi_id": "vaso_fino",
+      "familia": "01_intensidad",
+      "medicion_id": "5d973a220c484ff8",
+      "parametros": {
+        "percentiles": [
+          10,
+          25,
+          50,
+          75,
+          90
+        ]
+      },
+      "roi_hash": "8ed059aaf347372ac3abc802070d2416e44e88128cbdb12c5ec898c943371b20"
+    },
+    {
+      "imagen_id": "Retina4",
+      "variante": "original",
+      "roi_id": "fondo",
+      "familia": "01_intensidad",
+      "medicion_id": "dd56727d3669448c",
+      "parametros": {
+        "percentiles": [
+          10,
+          25,
+          50,
+          75,
+          90
+        ]
+      },
+      "roi_hash": "9a1c06f86507cf4cc13c471cc41ba4dd0a7ac157ae224d795560a33baab5b885"
+    },
+    {
+      "imagen_id": "Retina4",
+      "variante": "original",
+      "roi_id": "region_ramificada",
+      "familia": "01_intensidad",
+      "medicion_id": "f2010669c1284df2",
+      "parametros": {
+        "percentiles": [
+          10,
+          25,
+          50,
+          75,
+          90
+        ]
+      },
+      "roi_hash": "a14a212b431aacb1d507d6c034863259d923e8961fc596af36c99b47a4dec7db"
+    },
+    {
+      "imagen_id": "Retina4",
+      "variante": "original",
+      "roi_id": "region_macular",
+      "familia": "01_intensidad",
+      "medicion_id": "c4c5b5a042734115",
+      "parametros": {
+        "percentiles": [
+          10,
+          25,
+          50,
+          75,
+          90
+        ]
+      },
+      "roi_hash": "d39e946c0a567ff53794d64da7beddf0a60abc9adefa3e6642fbd9c9626424d2"
+    },
+    {
+      "imagen_id": "Retina5",
+      "variante": "original",
+      "roi_id": "vaso_grueso",
+      "familia": "01_intensidad",
+      "medicion_id": "2b444321bbed4c83",
+      "parametros": {
+        "percentiles": [
+          10,
+          25,
+          50,
+          75,
+          90
+        ]
+      },
+      "roi_hash": "315bf8fe78e19a8b389ea19163aa139804363844d9ecaa38f3ce048a4187b65a"
+    },
+    {
+      "imagen_id": "Retina1_2",
+      "variante": "realzada",
+      "roi_id": "region_ramificada",
+      "familia": "07_radiomica",
+      "medicion_id": "b3dd360fb4ad4eeb",
+      "parametros": {
+        "mode": "count",
+        "low": 0,
+        "high": 255,
+        "distances": [
+          1
+        ],
+        "alpha": 0,
+        "bins": 32
+      },
+      "roi_hash": "a14a212b431aacb1d507d6c034863259d923e8961fc596af36c99b47a4dec7db"
+    },
+    {
+      "imagen_id": "Retina5",
+      "variante": "original",
+      "roi_id": "vaso_fino",
+      "familia": "01_intensidad",
+      "medicion_id": "6288a6da41214fa9",
+      "parametros": {
+        "percentiles": [
+          10,
+          25,
+          50,
+          75,
+          90
+        ]
+      },
+      "roi_hash": "8ed059aaf347372ac3abc802070d2416e44e88128cbdb12c5ec898c943371b20"
+    },
+    {
+      "imagen_id": "Retina5",
+      "variante": "original",
+      "roi_id": "fondo",
+      "familia": "01_intensidad",
+      "medicion_id": "1a0dde30e42a4cb0",
+      "parametros": {
+        "percentiles": [
+          10,
+          25,
+          50,
+          75,
+          90
+        ]
+      },
+      "roi_hash": "9a1c06f86507cf4cc13c471cc41ba4dd0a7ac157ae224d795560a33baab5b885"
+    },
+    {
+      "imagen_id": "Retina5",
+      "variante": "original",
+      "roi_id": "region_ramificada",
+      "familia": "01_intensidad",
+      "medicion_id": "97828997e6cb4b92",
+      "parametros": {
+        "percentiles": [
+          10,
+          25,
+          50,
+          75,
+          90
+        ]
+      },
+      "roi_hash": "a14a212b431aacb1d507d6c034863259d923e8961fc596af36c99b47a4dec7db"
+    },
+    {
+      "imagen_id": "Retina5",
+      "variante": "original",
+      "roi_id": "region_macular",
+      "familia": "01_intensidad",
+      "medicion_id": "fcb56341542f419e",
+      "parametros": {
+        "percentiles": [
+          10,
+          25,
+          50,
+          75,
+          90
+        ]
+      },
+      "roi_hash": "d39e946c0a567ff53794d64da7beddf0a60abc9adefa3e6642fbd9c9626424d2"
+    },
+    {
+      "imagen_id": "Retina6",
+      "variante": "original",
+      "roi_id": "vaso_grueso",
+      "familia": "01_intensidad",
+      "medicion_id": "44e1327b2d934ee9",
+      "parametros": {
+        "percentiles": [
+          10,
+          25,
+          50,
+          75,
+          90
+        ]
+      },
+      "roi_hash": "315bf8fe78e19a8b389ea19163aa139804363844d9ecaa38f3ce048a4187b65a"
+    },
+    {
+      "imagen_id": "Retina3",
+      "variante": "corregida",
+      "roi_id": "fondo",
+      "familia": "07_radiomica",
+      "medicion_id": "2240a067ec454fe5",
+      "parametros": {
+        "mode": "count",
+        "low": 0,
+        "high": 255,
+        "distances": [
+          1
+        ],
+        "alpha": 0,
+        "bins": 32
+      },
+      "roi_hash": "9a1c06f86507cf4cc13c471cc41ba4dd0a7ac157ae224d795560a33baab5b885"
+    },
+    {
+      "imagen_id": "Retina6",
+      "variante": "original",
+      "roi_id": "vaso_fino",
+      "familia": "01_intensidad",
+      "medicion_id": "debb203c19994b7c",
+      "parametros": {
+        "percentiles": [
+          10,
+          25,
+          50,
+          75,
+          90
+        ]
+      },
+      "roi_hash": "8ed059aaf347372ac3abc802070d2416e44e88128cbdb12c5ec898c943371b20"
+    },
+    {
+      "imagen_id": "Retina6",
+      "variante": "original",
+      "roi_id": "fondo",
+      "familia": "01_intensidad",
+      "medicion_id": "888b101662ef436c",
+      "parametros": {
+        "percentiles": [
+          10,
+          25,
+          50,
+          75,
+          90
+        ]
+      },
+      "roi_hash": "9a1c06f86507cf4cc13c471cc41ba4dd0a7ac157ae224d795560a33baab5b885"
+    },
+    {
+      "imagen_id": "Retina6",
+      "variante": "original",
+      "roi_id": "region_ramificada",
+      "familia": "01_intensidad",
+      "medicion_id": "ead4e2284f464891",
+      "parametros": {
+        "percentiles": [
+          10,
+          25,
+          50,
+          75,
+          90
+        ]
+      },
+      "roi_hash": "a14a212b431aacb1d507d6c034863259d923e8961fc596af36c99b47a4dec7db"
+    },
+    {
+      "imagen_id": "Retina6",
+      "variante": "original",
+      "roi_id": "region_macular",
+      "familia": "01_intensidad",
+      "medicion_id": "f07f0c61dec94a08",
+      "parametros": {
+        "percentiles": [
+          10,
+          25,
+          50,
+          75,
+          90
+        ]
+      },
+      "roi_hash": "d39e946c0a567ff53794d64da7beddf0a60abc9adefa3e6642fbd9c9626424d2"
+    },
+    {
+      "imagen_id": "Retina7",
+      "variante": "original",
+      "roi_id": "vaso_grueso",
+      "familia": "01_intensidad",
+      "medicion_id": "a80c181d74fb4820",
+      "parametros": {
+        "percentiles": [
+          10,
+          25,
+          50,
+          75,
+          90
+        ]
+      },
+      "roi_hash": "315bf8fe78e19a8b389ea19163aa139804363844d9ecaa38f3ce048a4187b65a"
+    },
+    {
+      "imagen_id": "Retina7",
+      "variante": "original",
+      "roi_id": "vaso_fino",
+      "familia": "01_intensidad",
+      "medicion_id": "8a8dfe65f84a46bc",
+      "parametros": {
+        "percentiles": [
+          10,
+          25,
+          50,
+          75,
+          90
+        ]
+      },
+      "roi_hash": "8ed059aaf347372ac3abc802070d2416e44e88128cbdb12c5ec898c943371b20"
+    },
+    {
+      "imagen_id": "Retina3",
+      "variante": "corregida",
+      "roi_id": "region_ramificada",
+      "familia": "07_radiomica",
+      "medicion_id": "3866d9721d184925",
+      "parametros": {
+        "mode": "count",
+        "low": 0,
+        "high": 255,
+        "distances": [
+          1
+        ],
+        "alpha": 0,
+        "bins": 32
+      },
+      "roi_hash": "a14a212b431aacb1d507d6c034863259d923e8961fc596af36c99b47a4dec7db"
+    },
+    {
+      "imagen_id": "Retina7",
+      "variante": "original",
+      "roi_id": "fondo",
+      "familia": "01_intensidad",
+      "medicion_id": "973b4873abfa4ed2",
+      "parametros": {
+        "percentiles": [
+          10,
+          25,
+          50,
+          75,
+          90
+        ]
+      },
+      "roi_hash": "9a1c06f86507cf4cc13c471cc41ba4dd0a7ac157ae224d795560a33baab5b885"
+    },
+    {
+      "imagen_id": "Retina7",
+      "variante": "original",
+      "roi_id": "region_ramificada",
+      "familia": "01_intensidad",
+      "medicion_id": "fcfa9cd34de54895",
+      "parametros": {
+        "percentiles": [
+          10,
+          25,
+          50,
+          75,
+          90
+        ]
+      },
+      "roi_hash": "a14a212b431aacb1d507d6c034863259d923e8961fc596af36c99b47a4dec7db"
+    },
+    {
+      "imagen_id": "Retina7",
+      "variante": "original",
+      "roi_id": "region_macular",
+      "familia": "01_intensidad",
+      "medicion_id": "05d581a39b8b4daf",
+      "parametros": {
+        "percentiles": [
+          10,
+          25,
+          50,
+          75,
+          90
+        ]
+      },
+      "roi_hash": "d39e946c0a567ff53794d64da7beddf0a60abc9adefa3e6642fbd9c9626424d2"
+    },
+    {
+      "imagen_id": "Retina1_2",
+      "variante": "realzada",
+      "roi_id": "vaso_grueso",
+      "familia": "01_intensidad",
+      "medicion_id": "7c3eda18f7ee4d81",
+      "parametros": {
+        "percentiles": [
+          10,
+          25,
+          50,
+          75,
+          90
+        ]
+      },
+      "roi_hash": "315bf8fe78e19a8b389ea19163aa139804363844d9ecaa38f3ce048a4187b65a"
+    },
+    {
+      "imagen_id": "Retina1_2",
+      "variante": "realzada",
+      "roi_id": "vaso_fino",
+      "familia": "01_intensidad",
+      "medicion_id": "37ff5bd2a37b4150",
+      "parametros": {
+        "percentiles": [
+          10,
+          25,
+          50,
+          75,
+          90
+        ]
+      },
+      "roi_hash": "8ed059aaf347372ac3abc802070d2416e44e88128cbdb12c5ec898c943371b20"
+    },
+    {
+      "imagen_id": "Retina1_2",
+      "variante": "realzada",
+      "roi_id": "fondo",
+      "familia": "01_intensidad",
+      "medicion_id": "00270484ca684ee3",
+      "parametros": {
+        "percentiles": [
+          10,
+          25,
+          50,
+          75,
+          90
+        ]
+      },
+      "roi_hash": "9a1c06f86507cf4cc13c471cc41ba4dd0a7ac157ae224d795560a33baab5b885"
+    },
+    {
+      "imagen_id": "Retina1_2",
+      "variante": "realzada",
+      "roi_id": "region_ramificada",
+      "familia": "01_intensidad",
+      "medicion_id": "9fd4b0d5dae64d7b",
+      "parametros": {
+        "percentiles": [
+          10,
+          25,
+          50,
+          75,
+          90
+        ]
+      },
+      "roi_hash": "a14a212b431aacb1d507d6c034863259d923e8961fc596af36c99b47a4dec7db"
+    },
+    {
+      "imagen_id": "Retina4",
+      "variante": "corregida",
+      "roi_id": "fondo",
+      "familia": "07_radiomica",
+      "medicion_id": "b85ae4226f1c4f34",
+      "parametros": {
+        "mode": "count",
+        "low": 0,
+        "high": 255,
+        "distances": [
+          1
+        ],
+        "alpha": 0,
+        "bins": 32
+      },
+      "roi_hash": "9a1c06f86507cf4cc13c471cc41ba4dd0a7ac157ae224d795560a33baab5b885"
+    },
+    {
+      "imagen_id": "Retina1_2",
+      "variante": "realzada",
+      "roi_id": "region_macular",
+      "familia": "01_intensidad",
+      "medicion_id": "32b37ae054a246be",
+      "parametros": {
+        "percentiles": [
+          10,
+          25,
+          50,
+          75,
+          90
+        ]
+      },
+      "roi_hash": "d39e946c0a567ff53794d64da7beddf0a60abc9adefa3e6642fbd9c9626424d2"
+    },
+    {
+      "imagen_id": "Retina3",
+      "variante": "corregida",
+      "roi_id": "vaso_grueso",
+      "familia": "01_intensidad",
+      "medicion_id": "5608d7c39e464f8b",
+      "parametros": {
+        "percentiles": [
+          10,
+          25,
+          50,
+          75,
+          90
+        ]
+      },
+      "roi_hash": "315bf8fe78e19a8b389ea19163aa139804363844d9ecaa38f3ce048a4187b65a"
+    },
+    {
+      "imagen_id": "Retina3",
+      "variante": "corregida",
+      "roi_id": "vaso_fino",
+      "familia": "01_intensidad",
+      "medicion_id": "52a62484356d4c1c",
+      "parametros": {
+        "percentiles": [
+          10,
+          25,
+          50,
+          75,
+          90
+        ]
+      },
+      "roi_hash": "8ed059aaf347372ac3abc802070d2416e44e88128cbdb12c5ec898c943371b20"
+    },
+    {
+      "imagen_id": "Retina3",
+      "variante": "corregida",
+      "roi_id": "fondo",
+      "familia": "01_intensidad",
+      "medicion_id": "25be9d69b3cf4a18",
+      "parametros": {
+        "percentiles": [
+          10,
+          25,
+          50,
+          75,
+          90
+        ]
+      },
+      "roi_hash": "9a1c06f86507cf4cc13c471cc41ba4dd0a7ac157ae224d795560a33baab5b885"
+    },
+    {
+      "imagen_id": "Retina3",
+      "variante": "corregida",
+      "roi_id": "region_ramificada",
+      "familia": "01_intensidad",
+      "medicion_id": "2d188d9c239944fc",
+      "parametros": {
+        "percentiles": [
+          10,
+          25,
+          50,
+          75,
+          90
+        ]
+      },
+      "roi_hash": "a14a212b431aacb1d507d6c034863259d923e8961fc596af36c99b47a4dec7db"
+    },
+    {
+      "imagen_id": "Retina3",
+      "variante": "corregida",
+      "roi_id": "region_macular",
+      "familia": "01_intensidad",
+      "medicion_id": "59be9cf016074b97",
+      "parametros": {
+        "percentiles": [
+          10,
+          25,
+          50,
+          75,
+          90
+        ]
+      },
+      "roi_hash": "d39e946c0a567ff53794d64da7beddf0a60abc9adefa3e6642fbd9c9626424d2"
+    },
+    {
+      "imagen_id": "Retina4",
+      "variante": "corregida",
+      "roi_id": "region_ramificada",
+      "familia": "07_radiomica",
+      "medicion_id": "e38d489a8c554f38",
+      "parametros": {
+        "mode": "count",
+        "low": 0,
+        "high": 255,
+        "distances": [
+          1
+        ],
+        "alpha": 0,
+        "bins": 32
+      },
+      "roi_hash": "a14a212b431aacb1d507d6c034863259d923e8961fc596af36c99b47a4dec7db"
+    },
+    {
+      "imagen_id": "Retina4",
+      "variante": "corregida",
+      "roi_id": "vaso_grueso",
+      "familia": "01_intensidad",
+      "medicion_id": "5e458bebfa3f4ecb",
+      "parametros": {
+        "percentiles": [
+          10,
+          25,
+          50,
+          75,
+          90
+        ]
+      },
+      "roi_hash": "315bf8fe78e19a8b389ea19163aa139804363844d9ecaa38f3ce048a4187b65a"
+    },
+    {
+      "imagen_id": "Retina4",
+      "variante": "corregida",
+      "roi_id": "vaso_fino",
+      "familia": "01_intensidad",
+      "medicion_id": "6efa643368644e61",
+      "parametros": {
+        "percentiles": [
+          10,
+          25,
+          50,
+          75,
+          90
+        ]
+      },
+      "roi_hash": "8ed059aaf347372ac3abc802070d2416e44e88128cbdb12c5ec898c943371b20"
+    },
+    {
+      "imagen_id": "Retina4",
+      "variante": "corregida",
+      "roi_id": "fondo",
+      "familia": "01_intensidad",
+      "medicion_id": "ee48e052003d42c1",
+      "parametros": {
+        "percentiles": [
+          10,
+          25,
+          50,
+          75,
+          90
+        ]
+      },
+      "roi_hash": "9a1c06f86507cf4cc13c471cc41ba4dd0a7ac157ae224d795560a33baab5b885"
+    },
+    {
+      "imagen_id": "Retina4",
+      "variante": "corregida",
+      "roi_id": "region_ramificada",
+      "familia": "01_intensidad",
+      "medicion_id": "cf57cd8a641644bc",
+      "parametros": {
+        "percentiles": [
+          10,
+          25,
+          50,
+          75,
+          90
+        ]
+      },
+      "roi_hash": "a14a212b431aacb1d507d6c034863259d923e8961fc596af36c99b47a4dec7db"
+    },
+    {
+      "imagen_id": "Retina4",
+      "variante": "corregida",
+      "roi_id": "region_macular",
+      "familia": "01_intensidad",
+      "medicion_id": "e5eb8694148744f5",
+      "parametros": {
+        "percentiles": [
+          10,
+          25,
+          50,
+          75,
+          90
+        ]
+      },
+      "roi_hash": "d39e946c0a567ff53794d64da7beddf0a60abc9adefa3e6642fbd9c9626424d2"
+    },
+    {
+      "imagen_id": "Retina5",
+      "variante": "corregida",
+      "roi_id": "vaso_grueso",
+      "familia": "01_intensidad",
+      "medicion_id": "07ceca53b4c84843",
+      "parametros": {
+        "percentiles": [
+          10,
+          25,
+          50,
+          75,
+          90
+        ]
+      },
+      "roi_hash": "315bf8fe78e19a8b389ea19163aa139804363844d9ecaa38f3ce048a4187b65a"
+    },
+    {
+      "imagen_id": "Retina5",
+      "variante": "corregida",
+      "roi_id": "fondo",
+      "familia": "07_radiomica",
+      "medicion_id": "4688856606044bb7",
+      "parametros": {
+        "mode": "count",
+        "low": 0,
+        "high": 255,
+        "distances": [
+          1
+        ],
+        "alpha": 0,
+        "bins": 32
+      },
+      "roi_hash": "9a1c06f86507cf4cc13c471cc41ba4dd0a7ac157ae224d795560a33baab5b885"
+    },
+    {
+      "imagen_id": "Retina5",
+      "variante": "corregida",
+      "roi_id": "vaso_fino",
+      "familia": "01_intensidad",
+      "medicion_id": "7b0ef1d266d64dc6",
+      "parametros": {
+        "percentiles": [
+          10,
+          25,
+          50,
+          75,
+          90
+        ]
+      },
+      "roi_hash": "8ed059aaf347372ac3abc802070d2416e44e88128cbdb12c5ec898c943371b20"
+    },
+    {
+      "imagen_id": "Retina5",
+      "variante": "corregida",
+      "roi_id": "fondo",
+      "familia": "01_intensidad",
+      "medicion_id": "693ee23c89074512",
+      "parametros": {
+        "percentiles": [
+          10,
+          25,
+          50,
+          75,
+          90
+        ]
+      },
+      "roi_hash": "9a1c06f86507cf4cc13c471cc41ba4dd0a7ac157ae224d795560a33baab5b885"
+    },
+    {
+      "imagen_id": "Retina5",
+      "variante": "corregida",
+      "roi_id": "region_ramificada",
+      "familia": "01_intensidad",
+      "medicion_id": "333dbace23864a71",
+      "parametros": {
+        "percentiles": [
+          10,
+          25,
+          50,
+          75,
+          90
+        ]
+      },
+      "roi_hash": "a14a212b431aacb1d507d6c034863259d923e8961fc596af36c99b47a4dec7db"
+    },
+    {
+      "imagen_id": "Retina5",
+      "variante": "corregida",
+      "roi_id": "region_macular",
+      "familia": "01_intensidad",
+      "medicion_id": "6b51a9d4f1414d61",
+      "parametros": {
+        "percentiles": [
+          10,
+          25,
+          50,
+          75,
+          90
+        ]
+      },
+      "roi_hash": "d39e946c0a567ff53794d64da7beddf0a60abc9adefa3e6642fbd9c9626424d2"
+    },
+    {
+      "imagen_id": "Retina6",
+      "variante": "intermedia",
+      "roi_id": "vaso_grueso",
+      "familia": "01_intensidad",
+      "medicion_id": "730d90bb42ee4149",
+      "parametros": {
+        "percentiles": [
+          10,
+          25,
+          50,
+          75,
+          90
+        ]
+      },
+      "roi_hash": "315bf8fe78e19a8b389ea19163aa139804363844d9ecaa38f3ce048a4187b65a"
+    },
+    {
+      "imagen_id": "Retina6",
+      "variante": "intermedia",
+      "roi_id": "vaso_fino",
+      "familia": "01_intensidad",
+      "medicion_id": "72b84d39d58a4482",
+      "parametros": {
+        "percentiles": [
+          10,
+          25,
+          50,
+          75,
+          90
+        ]
+      },
+      "roi_hash": "8ed059aaf347372ac3abc802070d2416e44e88128cbdb12c5ec898c943371b20"
+    },
+    {
+      "imagen_id": "Retina5",
+      "variante": "corregida",
+      "roi_id": "region_ramificada",
+      "familia": "07_radiomica",
+      "medicion_id": "8c48569c4c3e4854",
+      "parametros": {
+        "mode": "count",
+        "low": 0,
+        "high": 255,
+        "distances": [
+          1
+        ],
+        "alpha": 0,
+        "bins": 32
+      },
+      "roi_hash": "a14a212b431aacb1d507d6c034863259d923e8961fc596af36c99b47a4dec7db"
+    },
+    {
+      "imagen_id": "Retina6",
+      "variante": "intermedia",
+      "roi_id": "fondo",
+      "familia": "01_intensidad",
+      "medicion_id": "ab5ffee6787d459e",
+      "parametros": {
+        "percentiles": [
+          10,
+          25,
+          50,
+          75,
+          90
+        ]
+      },
+      "roi_hash": "9a1c06f86507cf4cc13c471cc41ba4dd0a7ac157ae224d795560a33baab5b885"
+    },
+    {
+      "imagen_id": "Retina6",
+      "variante": "intermedia",
+      "roi_id": "region_ramificada",
+      "familia": "01_intensidad",
+      "medicion_id": "b378d1d299cf4898",
+      "parametros": {
+        "percentiles": [
+          10,
+          25,
+          50,
+          75,
+          90
+        ]
+      },
+      "roi_hash": "a14a212b431aacb1d507d6c034863259d923e8961fc596af36c99b47a4dec7db"
+    },
+    {
+      "imagen_id": "Retina6",
+      "variante": "intermedia",
+      "roi_id": "region_macular",
+      "familia": "01_intensidad",
+      "medicion_id": "c54ade2c467945f0",
+      "parametros": {
+        "percentiles": [
+          10,
+          25,
+          50,
+          75,
+          90
+        ]
+      },
+      "roi_hash": "d39e946c0a567ff53794d64da7beddf0a60abc9adefa3e6642fbd9c9626424d2"
+    },
+    {
+      "imagen_id": "Retina6",
+      "variante": "corregida",
+      "roi_id": "vaso_grueso",
+      "familia": "01_intensidad",
+      "medicion_id": "aa0178dbba1143e1",
+      "parametros": {
+        "percentiles": [
+          10,
+          25,
+          50,
+          75,
+          90
+        ]
+      },
+      "roi_hash": "315bf8fe78e19a8b389ea19163aa139804363844d9ecaa38f3ce048a4187b65a"
+    },
+    {
+      "imagen_id": "Retina6",
+      "variante": "corregida",
+      "roi_id": "vaso_fino",
+      "familia": "01_intensidad",
+      "medicion_id": "b12484850f694afc",
+      "parametros": {
+        "percentiles": [
+          10,
+          25,
+          50,
+          75,
+          90
+        ]
+      },
+      "roi_hash": "8ed059aaf347372ac3abc802070d2416e44e88128cbdb12c5ec898c943371b20"
+    },
+    {
+      "imagen_id": "Retina6",
+      "variante": "intermedia",
+      "roi_id": "fondo",
+      "familia": "07_radiomica",
+      "medicion_id": "1f234dac61fb4c77",
+      "parametros": {
+        "mode": "count",
+        "low": 0,
+        "high": 255,
+        "distances": [
+          1
+        ],
+        "alpha": 0,
+        "bins": 32
+      },
+      "roi_hash": "9a1c06f86507cf4cc13c471cc41ba4dd0a7ac157ae224d795560a33baab5b885"
+    },
+    {
+      "imagen_id": "Retina6",
+      "variante": "corregida",
+      "roi_id": "fondo",
+      "familia": "01_intensidad",
+      "medicion_id": "4fd89d873be94746",
+      "parametros": {
+        "percentiles": [
+          10,
+          25,
+          50,
+          75,
+          90
+        ]
+      },
+      "roi_hash": "9a1c06f86507cf4cc13c471cc41ba4dd0a7ac157ae224d795560a33baab5b885"
+    },
+    {
+      "imagen_id": "Retina6",
+      "variante": "corregida",
+      "roi_id": "region_ramificada",
+      "familia": "01_intensidad",
+      "medicion_id": "c4e17f6425aa4871",
+      "parametros": {
+        "percentiles": [
+          10,
+          25,
+          50,
+          75,
+          90
+        ]
+      },
+      "roi_hash": "a14a212b431aacb1d507d6c034863259d923e8961fc596af36c99b47a4dec7db"
+    },
+    {
+      "imagen_id": "Retina6",
+      "variante": "corregida",
+      "roi_id": "region_macular",
+      "familia": "01_intensidad",
+      "medicion_id": "ff74822f0069432b",
+      "parametros": {
+        "percentiles": [
+          10,
+          25,
+          50,
+          75,
+          90
+        ]
+      },
+      "roi_hash": "d39e946c0a567ff53794d64da7beddf0a60abc9adefa3e6642fbd9c9626424d2"
+    },
+    {
+      "imagen_id": "Retina7",
+      "variante": "corregida",
+      "roi_id": "vaso_grueso",
+      "familia": "01_intensidad",
+      "medicion_id": "f9de8d06fdf947cc",
+      "parametros": {
+        "percentiles": [
+          10,
+          25,
+          50,
+          75,
+          90
+        ]
+      },
+      "roi_hash": "315bf8fe78e19a8b389ea19163aa139804363844d9ecaa38f3ce048a4187b65a"
+    },
+    {
+      "imagen_id": "Retina7",
+      "variante": "corregida",
+      "roi_id": "vaso_fino",
+      "familia": "01_intensidad",
+      "medicion_id": "be7fbf53f7664d24",
+      "parametros": {
+        "percentiles": [
+          10,
+          25,
+          50,
+          75,
+          90
+        ]
+      },
+      "roi_hash": "8ed059aaf347372ac3abc802070d2416e44e88128cbdb12c5ec898c943371b20"
+    },
+    {
+      "imagen_id": "Retina7",
+      "variante": "corregida",
+      "roi_id": "fondo",
+      "familia": "01_intensidad",
+      "medicion_id": "d769bbf047ca4bff",
+      "parametros": {
+        "percentiles": [
+          10,
+          25,
+          50,
+          75,
+          90
+        ]
+      },
+      "roi_hash": "9a1c06f86507cf4cc13c471cc41ba4dd0a7ac157ae224d795560a33baab5b885"
+    },
+    {
+      "imagen_id": "Retina6",
+      "variante": "intermedia",
+      "roi_id": "region_ramificada",
+      "familia": "07_radiomica",
+      "medicion_id": "317e3a17a4e44309",
+      "parametros": {
+        "mode": "count",
+        "low": 0,
+        "high": 255,
+        "distances": [
+          1
+        ],
+        "alpha": 0,
+        "bins": 32
+      },
+      "roi_hash": "a14a212b431aacb1d507d6c034863259d923e8961fc596af36c99b47a4dec7db"
+    },
+    {
+      "imagen_id": "Retina7",
+      "variante": "corregida",
+      "roi_id": "region_ramificada",
+      "familia": "01_intensidad",
+      "medicion_id": "54a3b0f6f38d47ff",
+      "parametros": {
+        "percentiles": [
+          10,
+          25,
+          50,
+          75,
+          90
+        ]
+      },
+      "roi_hash": "a14a212b431aacb1d507d6c034863259d923e8961fc596af36c99b47a4dec7db"
+    },
+    {
+      "imagen_id": "Retina7",
+      "variante": "corregida",
+      "roi_id": "region_macular",
+      "familia": "01_intensidad",
+      "medicion_id": "bf00104e692e4d1d",
+      "parametros": {
+        "percentiles": [
+          10,
+          25,
+          50,
+          75,
+          90
+        ]
+      },
+      "roi_hash": "d39e946c0a567ff53794d64da7beddf0a60abc9adefa3e6642fbd9c9626424d2"
+    },
+    {
+      "imagen_id": "Retina6",
+      "variante": "corregida",
+      "roi_id": "fondo",
+      "familia": "07_radiomica",
+      "medicion_id": "48fbcb267354480b",
+      "parametros": {
+        "mode": "count",
+        "low": 0,
+        "high": 255,
+        "distances": [
+          1
+        ],
+        "alpha": 0,
+        "bins": 32
+      },
+      "roi_hash": "9a1c06f86507cf4cc13c471cc41ba4dd0a7ac157ae224d795560a33baab5b885"
+    },
+    {
+      "imagen_id": "Retina6",
+      "variante": "corregida",
+      "roi_id": "region_ramificada",
+      "familia": "07_radiomica",
+      "medicion_id": "11ebf0d17a2245a4",
+      "parametros": {
+        "mode": "count",
+        "low": 0,
+        "high": 255,
+        "distances": [
+          1
+        ],
+        "alpha": 0,
+        "bins": 32
+      },
+      "roi_hash": "a14a212b431aacb1d507d6c034863259d923e8961fc596af36c99b47a4dec7db"
+    },
+    {
+      "imagen_id": "Retina7",
+      "variante": "corregida",
+      "roi_id": "fondo",
+      "familia": "07_radiomica",
+      "medicion_id": "a9a71852cb9d4cfd",
+      "parametros": {
+        "mode": "count",
+        "low": 0,
+        "high": 255,
+        "distances": [
+          1
+        ],
+        "alpha": 0,
+        "bins": 32
+      },
+      "roi_hash": "9a1c06f86507cf4cc13c471cc41ba4dd0a7ac157ae224d795560a33baab5b885"
+    },
+    {
+      "imagen_id": "Retina7",
+      "variante": "corregida",
+      "roi_id": "region_ramificada",
+      "familia": "07_radiomica",
+      "medicion_id": "1540748b8dad4312",
+      "parametros": {
+        "mode": "count",
+        "low": 0,
+        "high": 255,
+        "distances": [
+          1
+        ],
+        "alpha": 0,
+        "bins": 32
+      },
+      "roi_hash": "a14a212b431aacb1d507d6c034863259d923e8961fc596af36c99b47a4dec7db"
+    }
+  ],
+  "criterios": [
+    "Comparaciones descriptivas: una misma retina y sus versiones, sin significación estadística.",
+    "Cercanía a la referencia no demuestra exactitud anatómica de una segmentación.",
+    "Vacíos: característica no calculada o indefinida; no sustituir por cero.",
+    "Correlaciones dentro de cada ROI, con al menos cinco versiones y características variables."
+  ]
+}

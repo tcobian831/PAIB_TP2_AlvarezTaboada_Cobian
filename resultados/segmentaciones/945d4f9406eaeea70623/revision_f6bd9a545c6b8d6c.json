@@ -1,0 +1,23 @@
+{
+  "imagen": "Retina5_notch",
+  "imagen_hash": "fe17e1ef28c33151b5ebf0315aafbb418fb4929ae7d4a9f4b9d643310ab0e691",
+  "roi_id": "region_ramificada",
+  "roi_hash": "a14a212b431aacb1d507d6c034863259d923e8961fc596af36c99b47a4dec7db",
+  "archivo_mascara": "mascara_406dd38428e748f37215.tif",
+  "mascara_hash": "406dd38428e748f3721563f44d4d689199bb41b8ad5579162c15aaf55547b063",
+  "parametros": {
+    "sigmas": [
+      1,
+      2,
+      3
+    ],
+    "threshold": 0.025,
+    "min_size": 20,
+    "closing": 1,
+    "fill_holes": 0
+  },
+  "umbral_efectivo": 0.025,
+  "aprobada": false,
+  "editada_manualmente": false,
+  "nota_revision": ""
+}

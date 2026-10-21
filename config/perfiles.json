@@ -1,0 +1,97 @@
+{
+  "nota": "Configuraciones iniciales exploratorias; no son resultados ni sustituyen revisar ROIs y máscaras.",
+  "lbp": [
+    {
+      "points": 8,
+      "radius": 1,
+      "method": "uniform"
+    },
+    {
+      "points": 16,
+      "radius": 2,
+      "method": "uniform"
+    },
+    {
+      "points": 24,
+      "radius": 3,
+      "method": "uniform"
+    }
+  ],
+  "gabor": {
+    "wavelengths": [
+      4,
+      8,
+      16
+    ],
+    "angles": [
+      0,
+      45,
+      90,
+      135
+    ],
+    "sigma_ratio": 0.56,
+    "gamma": 0.5
+  },
+  "wavelet": {
+    "wavelet": "db2",
+    "level": 2
+  },
+  "multiescala": {
+    "sigmas": [
+      1,
+      2,
+      4,
+      8
+    ],
+    "dog_k": 1.2599210498948732
+  },
+  "radiomica": [
+    {
+      "mode": "count",
+      "bins": 16,
+      "low": 0,
+      "high": 255,
+      "distances": [
+        1
+      ],
+      "alpha": 0
+    },
+    {
+      "mode": "count",
+      "bins": 32,
+      "low": 0,
+      "high": 255,
+      "distances": [
+        1
+      ],
+      "alpha": 0
+    },
+    {
+      "mode": "count",
+      "bins": 64,
+      "low": 0,
+      "high": 255,
+      "distances": [
+        1
+      ],
+      "alpha": 0
+    }
+  ],
+  "frangi": {
+    "sigmas": [
+      1,
+      2,
+      3
+    ],
+    "threshold": null,
+    "min_size": 20,
+    "closing": 0,
+    "fill_holes": 0
+  },
+  "correspondencias": {
+    "ratio": 0.75,
+    "mutual": true,
+    "tolerance": 3,
+    "max_points": 500
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "imagen_id": "Retina3",
+  "variante": "corregida",
+  "roi_id": "disco_optico",
+  "capa_imagen": "Retina3_variacion_total",
+  "capa_region": "Shapes",
+  "indice_region": 5,
+  "roi_geometria": {
+    "shape_type": "rectangle",
+    "vertices_fila_columna": [
+      [
+        236.7107391357422,
+        221.55455017089844
+      ],
+      [
+        236.71115112304688,
+        332.2606201171875
+      ],
+      [
+        305.2431945800781,
+        332.26068115234375
+      ],
+      [
+        305.24285888671875,
+        221.55465698242188
+      ]
+    ]
+  },
+  "fuente": {
+    "case_id": "Retina3",
+    "variant": "corregida",
+    "layer_name": "Retina3_variacion_total",
+    "path": "data/procesadas/Retina3_variacion_total.tif",
+    "crop": null,
+    "sha256": "e20dfcfd87476a989b083af55c03d18d6a9d507a234f774c1732f25a26f522e0",
+    "original_source": "resultados/imagenes_procesadas/Retina3_variacion_total.tif",
+    "source_blob_sha": "3ae2d5b7bd15e0403e85a036a7d7c14772c6d891"
+  },
+  "propiedad": "",
+  "justificacion": "",
+  "coordinate_frame": "row,col; px; matriz visible sin transformaciones",
+  "imagen_snapshot": "insumos/imagen_3b996981ab3ca21fe16b.tif",
+  "imagen_hash": "3b996981ab3ca21fe16bdf52d7e364f0acebf802f777b45c23a4908c3f73c075",
+  "roi_snapshot": "insumos/roi_d39e946c0a567ff53794.tif",
+  "roi_hash": "d39e946c0a567ff53794d64da7beddf0a60abc9adefa3e6642fbd9c9626424d2",
+  "medicion_id": "61d3cb6ac0eb46ea",
+  "actividad": "01_intensidad",
+  "parametros": {
+    "percentiles": [
+      1.0,
+      5.0,
+      10.0,
+      25.0,
+      50.0,
+      75.0,
+      90.0,
+      95.0,
+      99.0
+    ]
+  },
+  "caracteristicas": {
+    "n_pixeles": 7659,
+    "media": 46.34889784460098,
+    "mediana": 46.343324069724595,
+    "desviacion": 16.26815429866917,
+    "varianza": 264.6528442853082,
+    "minimo": 13.144051027995236,
+    "maximo": 81.08494360186101,
+    "iqr": 24.654923506882746,
+    "mad": 12.374341582267547,
+    "asimetria": -0.06254323009259877,
+    "curtosis_pearson": 2.1368157567255146,
+    "intensidad_integrada": 354986.2085917989,
+    "p1": 14.694503140361565,
+    "p5": 19.06978497854521,
+    "p10": 22.846127222684554,
+    "p25": 34.62794725998442,
+    "p50": 46.343324069724595,
+    "p75": 59.28287076686716,
+    "p90": 68.23215112204917,
+    "p95": 71.86213854292625,
+    "p99": 77.86407893775004,
+    "media_fondo": null,
+    "media_corregida_fondo": null,
+    "intensidad_integrada_corregida": null
+  },
+  "registro_json": "mediciones/61d3cb6ac0eb46ea/medicion.json"
+}
