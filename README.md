@@ -1,6 +1,6 @@
 # TP2 · Caracterización cuantitativa, textura y descriptores de retinas
 
-**Autores:** Victoria Sol Alvarez Taboada y Tomás Cobián  
+**Autores:** Victoria Sol Álvarez Taboada y Tomás Cobián  
 **Asignatura:** 16.85 — Procesamiento Avanzado de Imágenes en Biología y Biomedicina  
 **Profesor:** Roberto Sebastián Tomás  
 **Período:** segundo cuatrimestre de 2026
